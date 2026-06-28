@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<idmltoword>
+    <Type Name="word" DocumentType="2010">
+        <!-- paranumber process steps        -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/RawMap.xslt" XmlFile="/ParaNumber/designmap.xml"
+            output="/ParaNumber/dummy.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/LinkingStyles.xslt" XmlFile="/ParaNumber/Styles.xml"
+            output="/ParaNumber/linked.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/MergeStory.xslt" XmlFile="/ParaNumber/StoryCleanedmap.xml"
+            output="/ParaNumber/Manifest.xml" Input="True"/>        
+        <Steps Process="Parser" XsltFile="/ParaNumber/ParaNumbering.xslt" XmlFile="/ParaNumber/Manifest.xml"
+            output="/ParaNumber/PnoManifest.xml" Input="True"/>
+        
+        <Steps Process="Parser" XsltFile="/ParaNumber/SplitStory.xslt" XmlFile="/ParaNumber/PnoManifest.xml"
+            output="/ParaNumber/splitStory.xml" Input="True"/>    
+             <Steps Process="Parser" XsltFile="/ParaNumber/ReplacingStory.xslt" XmlFile="/ParaNumber/splitStory.xml"
+            output="/ParaNumber/ReplacingStory.xml" Input="True"/>  
+        <Steps Process="Parser" XsltFile="/ParaNumber/ReplacingStoryTab.xslt" XmlFile="/ParaNumber/ReplacingStory.xml"
+            output="/ParaNumber/ReplacingStoryTab.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/Table.xslt" XmlFile="/ParaNumber/ReplacingStoryTab.xml"
+            output="/ParaNumber/Table.xml" Input="True"/>
+<!-- Added on 18-sep -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/nestedChar.xslt" XmlFile="/ParaNumber/Table.xml"
+            output="/ParaNumber/nestedChar.xml" Input="custom"/>
+        
+        <Steps Process="Parser" XsltFile="/ParaNumber/SpreadImageLink.xslt" XmlFile="/ParaNumber/SpreadCleanedmap.xml"
+            output="/ParaNumber/SpreadImageLink.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/ReplacingSpread.xslt" XmlFile="/ParaNumber/SpreadImageLink.xml"
+            output="/ParaNumber/ReplacingSpread.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/textInp.xslt" XmlFile="/ParaNumber/ReplacingSpread.xml"
+            output="/ParaNumber/textInp.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/Styles.xslt" XmlFile="/ParaNumber/linked.xml"
+            output="/ParaNumber/styles.xml" Input="True"/>  
+<!-- Added on 18-sep -->
+              <Steps Process="Parser" XsltFile="/ParaNumber/genxhtml.xslt" XmlFile="filename.xml"
+            output="/ParaNumber/Inp1.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/genxhtml15.xslt" XmlFile="/ParaNumber/Inp1.xml"
+            output="/ParaNumber/Inp.xml" Input="True"/>
+                <Steps Process="Parser" XsltFile="/ParaNumber/Footnote.xslt" XmlFile="filename.xml"
+            output="/Chapter/word/footnotes.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/Footnote.xslt" XmlFile="filename.xml"
+            output="/ParaNumber/footnotes.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/Comments.xslt" XmlFile="filename.xml"
+            output="/Chapter/word/comments.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/Comments.xslt" XmlFile="filename.xml"
+            output="/ParaNumber/comments.xml" Input="True"/>
+                     
+            
+<!-- Added on 26-oct  -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/textInpSorting.xslt" XmlFile="/ParaNumber/textInp.xml"
+            output="/ParaNumber/textInpSorting.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/textInpPlacement.xslt" XmlFile="/ParaNumber/textInpSorting.xml"
+            output="/ParaNumber/txtFrmPlacement.xslt" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/txtFrmPlacement.xslt" XmlFile="/ParaNumber/textInpSorting.xml"
+            output="/ParaNumber/txtFrmPlacement.xml" Input="True"/>
+<!-- Added on 26-oct  ends-->
+        
+            
+            
+            
+        <Steps Process="Parser" XsltFile="/ParaNumber/WordTB.xslt" XmlFile="/ParaNumber/txtFrmPlacement.xml"
+            output="/ParaNumber/WordTB.xml" Input="True"/>
+          
+               <Steps Process="Parser" XsltFile="/ParaNumber/MergeSpread.xslt" XmlFile="/ParaNumber/WordTB.xml"
+            output="/ParaNumber/MergedSpreads.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/SortBy.xslt" XmlFile="/ParaNumber/MergedSpreads.xml"
+            output="/ParaNumber/SortBy.xml" Input="True"/>
+<!-- Added on 19-sep, list conversion done here -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/1-LIST-IDML.xslt" XmlFile="/ParaNumber/SortBy.xml"
+            output="/ParaNumber/L1.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/15-LIST-IDML.xslt" XmlFile="/ParaNumber/L1.xml"
+            output="/ParaNumber/L2.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/2-LIST-IDML.xslt" XmlFile="/ParaNumber/L2.xml"
+            output="/ParaNumber/L3.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/3-LIST-IDML.xslt" XmlFile="/ParaNumber/L3.xml"
+            output="/ParaNumber/L4.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/35-LIST-IDML.xslt" XmlFile="/ParaNumber/L4.xml"
+            output="/ParaNumber/L5.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/4-LIST-IDML.xslt" XmlFile="/ParaNumber/L5.xml"
+            output="/ParaNumber/L6.xml" Input="True"/>
+<!-- Added on 19-sep -->
+            <Steps Process="Parser" XsltFile="/ParaNumber/SortBypage.xslt" XmlFile="/ParaNumber/L6.xml"
+            output="/ParaNumber/SortByPage.xml" Input="True"/>
+           <Steps Process="Parser" XsltFile="/ParaNumber/RemovingDubplicate.xslt" XmlFile="/ParaNumber/SortByPage.xml"
+            output="/ParaNumber/MergedSpreads1.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/ccRemover.xslt" XmlFile="/ParaNumber/MergedSpreads1.xml"
+            output="/ParaNumber/ccRemover.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/00-MergeIDML.xslt" XmlFile="/ParaNumber/ccRemover.xml"
+            output="/ParaNumber/Inp2.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/genxhtml2.xslt" XmlFile="/ParaNumber/Inp2.xml"
+            output="/ParaNumber/A1.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/02-Remove-xmlns-IDML.xslt" XmlFile="/ParaNumber/A1.xml"
+            output="/ParaNumber/A2.xml" Input="True"/>
+
+             <Steps Process="Parser" XsltFile="/ParaNumber/03-Final-IDML.xslt" XmlFile="/ParaNumber/A2.xml"
+            output="/ParaNumber/A3.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/04-Final-IDML _link.xslt" XmlFile="/ParaNumber/A3.xml"
+            output="/ParaNumber/Final1.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/04-Final-IDML.xslt" XmlFile="/ParaNumber/Final1.xml"
+            output="/ParaNumber/Final.xml" Input="True"/>
+             
+      		
+	        <SplitSteps Process="Parser" XsltFile="/ParaNumber/1_Split_RemoveNameSpace.xsl" XmlFile="/ParaNumber/input.xml" output="/ParaNumber/Splitout.xml" Input="True"/>
+                <SplitSteps Process="Parser" XsltFile="/ParaNumber/2_Split_Grouping.xsl" XmlFile="/ParaNumber/Splitout.xml" output="/ParaNumber/Splitout1.xml" Input="True"/>
+                <SplitSteps Process="Parser" XsltFile="/ParaNumber/3_Split_parabookmarkid.xsl" XmlFile="/ParaNumber/Splitout1.xml" output="/ParaNumber/Splitout2.xml" Input="True"/>
+                <SplitSteps Process="Parser" XsltFile="/ParaNumber/4_Split_sorting.xsl" XmlFile="/ParaNumber/Splitout2.xml" output="/ParaNumber/Splitout3.xml" Input="True"/>
+                <SplitSteps Process="Parser" XsltFile="/ParaNumber/5_Split_sorting.xsl" XmlFile="/ParaNumber/Splitout3.xml" output="/ParaNumber/Splitout4.xml" Input="True"/>
+                <SplitSteps Process="Parser" XsltFile="/ParaNumber/6_Split_Grouping.xsl" XmlFile="/ParaNumber/Splitout4.xml" output="/ParaNumber/Splitout5.xml" Input="True"/>
+                <SplitSteps Process="Parser" XsltFile="/ParaNumber/7_Split_SplitPage.xsl" XmlFile="/ParaNumber/Splitout5.xml" output="/ParaNumber/SplitoutFinal.xhtml" Input="True"/>
+                
+
+
+                  <LinkSteps Process="Parser" XsltFile="/ParaNumber/1_Link_RemoveNameSpace.xsl" XmlFile="/SplitFilesFolder/splitinput.xhtml" output="/SplitFilesFolder/linkout1.xml" Input="True"/>
+                  <!--<LinkSteps Process="Parser" XsltFile="/ParaNumber/2_Link_parabookmarkid.xsl" XmlFile="/SplitFilesFolder/linkout1.xml" output="/SplitFilesFolder/linkout2.xml" Input="True"/>
+                  <LinkSteps Process="Parser" XsltFile="/ParaNumber/3_Link_sorting.xsl" XmlFile="/SplitFilesFolder/linkout2.xml" output="/SplitFilesFolder/linkout3.xml" Input="True"/>
+                  <LinkSteps Process="Parser" XsltFile="/ParaNumber/4_Link_sorting.xsl" XmlFile="/SplitFilesFolder/linkout3.xml" output="/SplitFilesFolder/linkout4.xml" Input="True"/>-->
+                  <LinkSteps Process="Parser" XsltFile="/ParaNumber/2_Link_Citaionmatch.xsl" XmlFile="/SplitFilesFolder/linkout1.xml" output="/SplitFilesFolder/linkout2.xml" Input="True"/>
+                  <LinkSteps Process="Parser" XsltFile="/ParaNumber/abbr.xsl" XmlFile="/SplitFilesFolder/linkout2.xml" output="/SplitFilesFolder/linkoutFinal.xhtml" Input="True"/>
+                        
+   
+<Move Index="Support" />
+   <!-- 
+<Temp Delete="true"/>
+-->  
+    </Type>
+
+</idmltoword>

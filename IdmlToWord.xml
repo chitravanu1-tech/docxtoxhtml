@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<idmltoword>
+    <Type Name="word" DocumentType="2010">
+        <!-- paranumber process steps        -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/RawMap.xslt" XmlFile="/ParaNumber/designmap.xml"
+            output="/ParaNumber/dummy.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/LinkingStyles.xslt" XmlFile="/ParaNumber/Styles.xml"
+            output="/ParaNumber/linked.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/MergeStory.xslt" XmlFile="/ParaNumber/StoryCleanedmap.xml"
+            output="/ParaNumber/Manifest.xml" Input="True"/>        
+        <Steps Process="Parser" XsltFile="/ParaNumber/ParaNumbering.xslt" XmlFile="/ParaNumber/Manifest.xml"
+            output="/ParaNumber/PnoManifest.xml" Input="True"/>
+        
+        <Steps Process="Parser" XsltFile="/ParaNumber/SplitStory.xslt" XmlFile="/ParaNumber/PnoManifest.xml"
+            output="/ParaNumber/splitStory.xml" Input="True"/>    
+             <Steps Process="Parser" XsltFile="/ParaNumber/ReplacingStory.xslt" XmlFile="/ParaNumber/splitStory.xml"
+            output="/ParaNumber/ReplacingStory.xml" Input="True"/>  
+        <Steps Process="Parser" XsltFile="/ParaNumber/ReplacingStoryTab.xslt" XmlFile="/ParaNumber/ReplacingStory.xml"
+            output="/ParaNumber/ReplacingStoryTab.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/Table.xslt" XmlFile="/ParaNumber/ReplacingStoryTab.xml"
+            output="/ParaNumber/Table.xml" Input="True"/>
+<!-- Added on 18-sep -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/nestedChar.xslt" XmlFile="/ParaNumber/Table.xml"
+            output="/ParaNumber/nestedChar.xml" Input="custom"/>
+        
+        <Steps Process="Parser" XsltFile="/ParaNumber/SpreadImageLink.xslt" XmlFile="/ParaNumber/SpreadCleanedmap.xml"
+            output="/ParaNumber/SpreadImageLink.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/ReplacingSpread.xslt" XmlFile="/ParaNumber/SpreadImageLink.xml"
+            output="/ParaNumber/ReplacingSpread.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/textInp.xslt" XmlFile="/ParaNumber/ReplacingSpread.xml"
+            output="/ParaNumber/textInp.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/Styles.xslt" XmlFile="/ParaNumber/linked.xml"
+            output="/ParaNumber/styles.xml" Input="True"/>  
+<!-- Added on 18-sep -->
+              <Steps Process="Parser" XsltFile="/ParaNumber/genxhtml.xslt" XmlFile="filename.xml"
+            output="/ParaNumber/Inp1.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/genxhtml15.xslt" XmlFile="/ParaNumber/Inp1.xml"
+            output="/ParaNumber/Inp.xml" Input="True"/>
+                <Steps Process="Parser" XsltFile="/ParaNumber/Footnote.xslt" XmlFile="filename.xml"
+            output="/Chapter/word/footnotes.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/Footnote.xslt" XmlFile="filename.xml"
+            output="/ParaNumber/footnotes.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/Comments.xslt" XmlFile="filename.xml"
+            output="/Chapter/word/comments.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/Comments.xslt" XmlFile="filename.xml"
+            output="/ParaNumber/comments.xml" Input="True"/>
+                     
+            
+<!-- Added on 26-oct  -->
+<!-- Added on 06-2026  -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/18-textFrameSorting.xslt" XmlFile="/ParaNumber/textInp.xml"
+            output="/ParaNumber/textFrameSorting.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/findDupPageNo.xslt" XmlFile="/ParaNumber/textFrameSorting.xml"
+            output="/ParaNumber/findDupPageNo.xml" Input="True"/>
+        <!-- Added on 06-2026  -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/textInpSorting.xslt" XmlFile="/ParaNumber/findDupPageNo.xml"
+            output="/ParaNumber/textInpSorting.xml" Input="True"/>
+        
+        <Steps Process="Parser" XsltFile="/ParaNumber/textInpPlacement.xslt" XmlFile="/ParaNumber/textInpSorting.xml"
+            output="/ParaNumber/txtFrmPlacement.xslt" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/txtFrmPlacement.xslt" XmlFile="/ParaNumber/textInpSorting.xml"
+            output="/ParaNumber/txtFrmPlacement.xml" Input="True"/>
+<!-- Added on 26-oct  ends-->
+                    
+            
+        <Steps Process="Parser" XsltFile="/ParaNumber/WordTB.xslt" XmlFile="/ParaNumber/txtFrmPlacement.xml"
+            output="/ParaNumber/WordTB.xml" Input="True"/>
+          
+               <Steps Process="Parser" XsltFile="/ParaNumber/MergeSpread.xslt" XmlFile="/ParaNumber/WordTB.xml"
+            output="/ParaNumber/MergedSpreads.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/SortBy.xslt" XmlFile="/ParaNumber/MergedSpreads.xml"
+            output="/ParaNumber/SortBy.xml" Input="True"/>
+<!-- Added on 19-sep, list conversion done here -->
+        <Steps Process="Parser" XsltFile="/ParaNumber/1-LIST-IDML.xslt" XmlFile="/ParaNumber/SortBy.xml"
+            output="/ParaNumber/L1.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/15-LIST-IDML.xslt" XmlFile="/ParaNumber/L1.xml"
+            output="/ParaNumber/L2.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/2-LIST-IDML.xslt" XmlFile="/ParaNumber/L2.xml"
+            output="/ParaNumber/L3.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/3-LIST-IDML.xslt" XmlFile="/ParaNumber/L3.xml"
+            output="/ParaNumber/L4.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/35-LIST-IDML.xslt" XmlFile="/ParaNumber/L4.xml"
+            output="/ParaNumber/L5.xml" Input="True"/>
+        <Steps Process="Parser" XsltFile="/ParaNumber/4-LIST-IDML.xslt" XmlFile="/ParaNumber/L5.xml"
+            output="/ParaNumber/L6.xml" Input="True"/>
+<!-- Added on 19-sep -->
+            <Steps Process="Parser" XsltFile="/ParaNumber/SortBypage.xslt" XmlFile="/ParaNumber/L6.xml"
+            output="/ParaNumber/SortByPage.xml" Input="True"/>
+           <Steps Process="Parser" XsltFile="/ParaNumber/RemovingDubplicate.xslt" XmlFile="/ParaNumber/SortByPage.xml"
+            output="/ParaNumber/MergedSpreads1.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/ccRemover.xslt" XmlFile="/ParaNumber/MergedSpreads1.xml"
+            output="/ParaNumber/ccRemover.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/00-MergeIDML.xslt" XmlFile="/ParaNumber/ccRemover.xml"
+            output="/ParaNumber/Inp2.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/genxhtml2.xslt" XmlFile="/ParaNumber/Inp2.xml"
+            output="/ParaNumber/A1.xml" Input="True"/>
+            <Steps Process="Parser" XsltFile="/ParaNumber/02-Remove-xmlns-IDML.xslt" XmlFile="/ParaNumber/A1.xml"
+            output="/ParaNumber/A2.xml" Input="True"/>
+      
+			<!--<Steps Process="Parser" XsltFile="/ParaNumber/1-LIST-IDML.xslt" XmlFile="/ParaNumber/2.xml"
+            output="/ParaNumber/L1.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/15-LIST-IDML.xslt" XmlFile="/ParaNumber/L1.xml"
+            output="/ParaNumber/L2.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/2-LIST-IDML.xslt" XmlFile="/ParaNumber/L2.xml"
+            output="/ParaNumber/L3.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/3-LIST-IDML.xslt" XmlFile="/ParaNumber/L3.xml"
+            output="/ParaNumber/L4.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/35-LIST-IDML.xslt" XmlFile="/ParaNumber/L4.xml"
+            output="/ParaNumber/L5.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/4-LIST-IDML.xslt" XmlFile="/ParaNumber/L5.xml"
+            output="/ParaNumber/L6.xml" Input="True"/>-->
+             <Steps Process="Parser" XsltFile="/ParaNumber/03-Final-IDML.xslt" XmlFile="/ParaNumber/A2.xml"
+            output="/ParaNumber/Final1.xml" Input="True"/>
+             <Steps Process="Parser" XsltFile="/ParaNumber/04-Final-IDML.xslt" XmlFile="/ParaNumber/Final1.xml"
+            output="/ParaNumber/Final.xml" Input="True"/>
+             
+      	<!-- For Toc -->
+      
+			<Steps Process="Toc" XsltFile="/ParaNumbe/0_RMspace.xsl" XmlFile="/ParaNumber/Manifest.xml"
+            output="/ParaNumber/toc1.xml" Input="True"/>
+			<Steps Process="Toc" XsltFile="/ParaNumbe/1_RemoveNameSpace.xsl" XmlFile="/ParaNumber/toc1.xml"
+            output="/ParaNumber/toc2.xml" Input="True"/>
+            <Steps Process="Toc" XsltFile="/ParaNumbe/TocGen.xsl" XmlFile="/ParaNumber/toc2.xml"
+            output="/ParaNumber/toc.xhtml" Input="True"/>
+            
+                        <!-- For Index -->
+      
+			<Steps Process="Index" XsltFile="/ParaNumber/0_RMspace_Index.xsl" XmlFile="/ParaNumber/Manifest.xml" output="/ParaNumber/index1.xml" Input="True"/>
+            <Steps Process="Index" XsltFile="/ParaNumber/1_index.xsl" XmlFile="/ParaNumber/index1.xml" output="/ParaNumber/index2.xml" Input="True"/>
+                        <Steps Process="Index" XsltFile="/ParaNumber/2_index.xsl" XmlFile="/ParaNumber/index2.xml" output="/ParaNumber/index3.xml" Input="True"/>
+                        <Steps Process="Index" XsltFile="/ParaNumber/3_index.xsl" XmlFile="/ParaNumber/index3.xml" output="/ParaNumber/index4.xml" Input="True"/>
+                        <Steps Process="Index" XsltFile="/ParaNumber/2_sorting_Chapter.xsl" XmlFile="/ParaNumber/index4.xml" output="/ParaNumber/index.xhtml" Input="True"/>
+                        
+                  <!-- TOC Title Extract  -->
+      
+		  <TocTitle  XsltFile="/ParaNumber/01-RawMap.xslt" XmlFile="/ParaNumber/designmap.xml"
+		            output="/ParaNumber/1.xml" Input="True"/>
+		  <TocTitle  XsltFile="/ParaNumber/02-LinkingStyles.xslt" XmlFile="/ParaNumber/Styles.xml"
+		            output="/ParaNumber/linked.xml" Input="True"/>
+		  <TocTitle  XsltFile="/ParaNumber/03-MergeStory.xslt" XmlFile="/ParaNumber/StoryCleanedmap.xml"
+		            output="/ParaNumber/Manifest.xml" Input="True"/>        
+		  <TocTitle  XsltFile="/ParaNumber/04-ParaNumbering.xslt" XmlFile="/ParaNumber/Manifest.xml"
+		            output="/ParaNumber/PnoManifest.xml" Input="True"/>
+		        
+		  <TocTitle  XsltFile="/ParaNumber/05-SplitStory.xslt" XmlFile="/ParaNumber/PnoManifest.xml"
+		            output="/ParaNumber/splitStory.xml" Input="True"/>    
+		  <TocTitle  XsltFile="/ParaNumber/06-ReplacingStory.xslt" XmlFile="/ParaNumber/splitStory.xml"
+		            output="/ParaNumber/ReplacingStory.xml" Input="True"/>  
+		 <TocTitle  XsltFile="/ParaNumber/07-ReplacingStoryTab.xslt" XmlFile="/ParaNumber/ReplacingStory.xml"
+		            output="/ParaNumber/ReplacingStoryTab.xml" Input="True"/>
+		 <TocTitle  XsltFile="/ParaNumber/08-Table.xslt" XmlFile="/ParaNumber/ReplacingStoryTab.xml"
+		            output="/ParaNumber/Table.xml" Input="True"/>
+		<!-- Added on 18-sep -->
+		 <TocTitle  XsltFile="/ParaNumber/09-nestedChar.xslt" XmlFile="/ParaNumber/Table.xml"
+		            output="/ParaNumber/nestedChar.xml" Input="custom"/>
+        
+        <TocTitle  XsltFile="/ParaNumber/10-SpreadImageLink.xslt" XmlFile="/ParaNumber/SpreadCleanedmap.xml"
+            output="/ParaNumber/SpreadImageLink.xml" Input="True"/>
+        <TocTitle  XsltFile="/ParaNumber/11-ReplacingSpread.xslt" XmlFile="/ParaNumber/SpreadImageLink.xml"
+            output="/ParaNumber/ReplacingSpread.xml" Input="True"/>
+        <TocTitle  XsltFile="/ParaNumber/12-textInp.xslt" XmlFile="/ParaNumber/ReplacingSpread.xml"
+            output="/ParaNumber/textInp.xml" Input="True"/>
+        
+        <!--        08-11-2023 below 13-Styles.xslt is commneted for unwanted -->
+        <!--<TocTitle  XsltFile="/ParaNumber/13-Styles.xslt" XmlFile="/ParaNumber/linked.xml"
+            output="/ParaNumber/styles.xml" Input="True"/>-->
+        
+        <!-- blowe Added on 13-Mar-2020 -->
+        <!--<TocTitle  XsltFile="/ParaNumber/TocTitle_StylesCollection.xslt" XmlFile="/ParaNumber/StylesCollection.xml"
+            output="/ParaNumber/TocTitle_StylesCollection.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/StyleColl_Group.xslt" XmlFile="/ParaNumber/StylesCollection.xml"
+            output="/ParaNumber/StyleCollGroup.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/FinalStyleCollGroup.xslt" XmlFile="/ParaNumber/StyleCollGroup.xml"
+            output="/ParaNumber/FinalStyleCollGroup.xml" Input="custom"/>-->
+        
+        <!--02-01-2024 commented for ignore StylesInScripts.xslt because we need to use toc="true" attribute from stylescollection.xml  -->
+        <!-- blowe Added on 04-Aug-2020 -->
+        <!--<TocTitle  XsltFile="/ParaNumber/StylesInScripts.xslt" XmlFile="/ParaNumber/StylesCollection.xml"
+            output="/ParaNumber/StylesInScripts.xml" Input="custom"/>--> 
+        
+        <TocTitle  XsltFile="/ParaNumber/PC_styles_Group.xslt" XmlFile="/ParaNumber/StylesCollection.xml"
+            output="/ParaNumber/PC_styles_Group.xml" Input="custom"/>   
+        <TocTitle  XsltFile="/ParaNumber/separate_PC_style_Group.xslt" XmlFile="/ParaNumber/PC_styles_Group.xml"
+            output="/ParaNumber/separate_PC_style_Group.xml" Input="custom"/>   
+        <TocTitle  XsltFile="/ParaNumber/StyleColl_Group.xslt" XmlFile="/ParaNumber/separate_PC_style_Group.xml"
+            output="/ParaNumber/StyleCollGroup.xml" Input="custom"/>    
+        
+        <!--02-01-2024 commented for ignore StylesInScripts.xslt because we need to use toc="true" attribute from stylescollection.xml  -->
+        <!--<TocTitle  XsltFile="/ParaNumber/FinalStyleCollGroup.xslt" XmlFile="/ParaNumber/StyleColl_Group.xml"
+            output="/ParaNumber/FinalStyleCollGroup.xml" Input="custom"/>-->
+        
+               
+        <TocTitle  XsltFile="/ParaNumber/StyleCollMap.xslt" XmlFile="/ParaNumber/nestedChar.xml"
+            output="/ParaNumber/StyleCollMap.xml" Input="custom"/>
+        
+        <!-- 07-11-2023 below commented for ignore xhtml structure for toc creation process   -->
+        <!--<TocTitle  XsltFile="/ParaNumber/14-epub-genxhtml.xslt" XmlFile="/ParaNumber/StyleCollMap.xml"
+            output="/ParaNumber/Inp1.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/15-epub-genxhtml15.xslt" XmlFile="/ParaNumber/Inp1.xml"
+            output="/ParaNumber/Inp.xml" Input="custom"/>-->
+        
+        <TocTitle  XsltFile="/ParaNumber/18-textFrmAdjust.xslt" XmlFile="/ParaNumber/textInp.xml"
+            output="/ParaNumber/textFrmAdjust.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/18-textInpSorting.xslt" XmlFile="/ParaNumber/textFrmAdjust.xml"
+            output="/ParaNumber/textFrmAdjust-1.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/18-textFrameSorting.xslt" XmlFile="/ParaNumber/textFrmAdjust-1.xml"
+            output="/ParaNumber/textInpSorting.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/19-textInpPlacement.xslt" XmlFile="/ParaNumber/textInpSorting.xml"
+            output="/ParaNumber/20-txtFrmPlacement.xslt" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/20-txtFrmPlacement.xslt" XmlFile="/ParaNumber/textInpSorting.xml"
+            output="/ParaNumber/txtFrmPlacement.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/21-WordTB.xslt" XmlFile="/ParaNumber/txtFrmPlacement.xml"
+            output="/ParaNumber/WordTB.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/22-MergeSpread.xslt" XmlFile="/ParaNumber/WordTB.xml"
+            output="/ParaNumber/MergedSpreads.xml" Input="custom"/>
+        <TocTitle  XsltFile="/ParaNumber/23-SortBy.xslt" XmlFile="/ParaNumber/MergedSpreads.xml"
+            output="/ParaNumber/SortBy.xml" Input="custom"/>       
+        <TocTitle  XsltFile="/ParaNumber/removeEmptyTags.xslt" XmlFile="/ParaNumber/SortBy.xml"
+            output="/ParaNumber/OutPut.xml" Input="custom"/>      		    	
+        <TocTitle  XsltFile="/ParaNumber/bk_Binder.xslt" XmlFile="/ParaNumber/OutPut.xml"
+		    		output="/ParaNumber/bookInfo_dummy.xml" Input="custom"/>      
+        <TocTitle  XsltFile="/ParaNumber/bk_Bindermatch.xslt" XmlFile="/ParaNumber/output1.cf"
+		    		output="/ParaNumber/output.cf" Input="custom"/>
+
+<!-- TOC Merge Xhtml  -->
+
+
+<MergeTOCSteps Process="Parser" XsltFile="/1_RemoveNameSpace.xsl" XmlFile="/input.xml" output="/out.xml" Input="True"/>
+<!--stye collection-->
+<MergeTOCSteps Process="Parser" XsltFile="/StylesInScripts.xslt" XmlFile="/StylesCollection.xml" output="/StylesInScripts.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/PC_styles_Group.xslt" XmlFile="/StylesCollection.xml" output="/PC_style_Group.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/separate_PC_style_Group.xslt" XmlFile="/PC_style_Group.xml" output="/separate_PC_style_Group.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/StyleColl_Group.xslt" XmlFile="/separate_PC_style_Group.xml" output="/StyleCollGroup.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/FinalStyleCollGroup.xslt" XmlFile="/StyleCollGroup.xml" output="/FinalStyleCollGroup.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/StyleCollMap.xslt" XmlFile="/out.xml" output="/StyleCollMap.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/2_0_Chapmerge.xsl" XmlFile="/StyleCollMap.xml" output="/input.xhtml" Input="True"/>
+<!--End-->
+<MergeTOCSteps Process="Parser" XsltFile="/2_1_Chapmerge.xsl" XmlFile="/input.xhtml" output="/out1.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/2_2_MergeXhtml.xsl" XmlFile="/out1.xml" output="/out2.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/1_RemoveNameSpace.xsl" XmlFile="/out2.xml" output="/out3.xml" Input="True"/>
+<!--<MergeTOCSteps Process="Parser" XsltFile="/2_3_MergeXhtml.xsl" XmlFile="/out3.xml" output="/out4.xml" Input="True"/>-->
+<MergeTOCSteps Process="Parser" XsltFile="/3_sorting_Book.xsl" XmlFile="/out3.xml" output="/out5.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/1_RemoveNameSpace.xsl" XmlFile="/out5.xml" output="/out6.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/1_StyleCollMap.xslt" XmlFile="/out6.xml" output="/out7.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/StyleCollRevert.xslt" XmlFile="/out7.xml" output="/out8.xml" Input="True"/>
+<MergeTOCSteps Process="Parser" XsltFile="/4_cleanup.xsl" XmlFile="/out8.xml" output="/output.xhtml" Input="True"/>
+<Move Index="Support" />
+   <!-- 
+<Temp Delete="true"/>
+-->  
+    </Type>
+
+</idmltoword>

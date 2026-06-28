@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wordtoidml>
+<Type Name="XHTML" DocumentType="2010">
+<Steps XsltFile="1_RemoveNameSpace.xsl" XmlFile="filename.xml" output="/1_RemoveNameSpace_out.xml" Input="True"/>
+<Steps XsltFile="2_Table_New.xsl" XmlFile="/1_RemoveNameSpace_out.xml" output="/2_Table_out.xml" Input="True"/>
+<!--<Steps XsltFile="Cellnumber.xsl" XmlFile="/2_Table_out.xml" output="/Cellnumber.xml" Input="True"/>
+<Steps XsltFile="Cellnumber1.xsl" XmlFile="/Cellnumber.xml" output="/Cellnumber1.xml" Input="True"/>
+<Steps XsltFile="2_0_1_Table_New.xsl" XmlFile="/Cellnumber1.xml" output="/2_0_1_Table_out.xml" Input="True"/>
+<Steps XsltFile="sorting.xsl" XmlFile="/2_0_1_Table_out.xml" output="/sorting.xml" Input="True"/>
+<Steps XsltFile="2_1_Table_New.xsl" XmlFile="/sorting.xml" output="/2_1_Table_out.xml" Input="True"/>-->
+<Steps XsltFile="xhtmltoXML.xsl" XmlFile="/2_Table_out.xml" output="/xhtmltoXML_out" Input="True"/>
+<Steps XsltFile="Xhtml_To_IDML_v10.xsl" XmlFile="/xhtmltoXML_out" output="/document_out4.xml" Input="True"/>
+<Steps XsltFile="Idml3.xsl" XmlFile="/document_out4.xml" output="/document_out5.xml" Input="True"/>
+<Steps XsltFile="Idml4.xsl" XmlFile="/document_out5.xml" output="/document_out6.xml" Input="True"/>
+<Steps XsltFile="Idml4-1.xsl" XmlFile="/document_out6.xml" output="/document_out7.xml" Input="True"/>
+<Steps XsltFile="Idml4-2.xsl" XmlFile="/document_out7.xml" output="/document_out8.xml" Input="True"/>
+<Steps XsltFile="Idml4-2_1.xsl" XmlFile="/document_out8.xml" output="/document_out9.xml" Input="True"/>
+<Steps XsltFile="Idml4-2_2.xsl" XmlFile="/document_out9.xml" output="/document_out10.xml" Input="True"/>
+<Steps XsltFile="Idml4-3.xsl" XmlFile="/document_out10.xml" output="/document_out11.xml" Input="True"/>
+<Steps XsltFile="manualtochar.xsl" XmlFile="/document_out11.xml" output="/Converted_Story/Story_S4C.xml" Input="True"/>
+<Steps XsltFile="StylAttrAdd.xsl" XmlFile="/Converted_Story/StyleInp.xml" output="/Converted_Story/Styles.xml" Input="True"/>
+<Steps XsltFile="StylChg.xsl" XmlFile="/Converted_Story/Story_S4C.xml" output="/Converted_Story/Story_S4C1.xml" Input="True"/>
+<Steps XsltFile="addnocharstyle.xsl" XmlFile="/Converted_Story/Story_S4C1.xml" output="/Converted_Story/Last1.xml" Input="True"/>
+<Steps XsltFile="xmlselfid.xsl" XmlFile="/Converted_Story/Last1.xml" output="/Converted_Story/Last2.xml" Input="True"/>
+<!-- Style Missing -->
+<Steps XsltFile="RemovingText.xsl" XmlFile="/Converted_Story/Styles.xml" output="/Converted_Story/Styles1.xml" Input="True"/>
+<Steps XsltFile="RemovingText.xsl" XmlFile="/Converted_Story/Story_S4C1.xml" output="/Converted_Story/Story_S4C2.xml" Input="True"/>
+<Steps XsltFile="RmvDupStyl.xsl" XmlFile="/Converted_Story/Styles1.xml" output="/Converted_Story/Styles2.xml" Input="True"/>
+<Steps XsltFile="RmvDupStyl.xsl" XmlFile="/Converted_Story/Story_S4C2.xml" output="/Converted_Story/Story_S4C3.xml" Input="True"/>
+<Steps XsltFile="StyleMatch.xsl" XmlFile="/Converted_Story/Story_S4C3.xml" output="/Converted_Story/errorlog.xml" Input="True"/>
+<Steps XsltFile="Addmismatchstyles.xsl" XmlFile="/Converted_Story/StyleInp.xml" output="/Converted_Story/StylesManual.xml" Input="True"/>
+<Steps XsltFile="ProcessStatus1.xsl" XmlFile="/Converted_Story/errorlog.xml" output="/Converted_Story/errorlog1.xml" Input="True"/>
+<Steps XsltFile="Addmismatchstylesmanual.xsl" XmlFile="/Converted_Story/StylesManual.xml" output="/Converted_Story/StylesManual1.xml" Input="True"/>
+<Steps XsltFile="otherattr.xsl" XmlFile="/Converted_Story/StylesManual1.xml" output="/Converted_Story/StylesManual2.xml" Input="True"/>
+<Steps XsltFile="Style_Apply_Ma.xsl" XmlFile="/Converted_Story/StylesManual2.xml" output="/Converted_Story/stylesout1.xml" Input="True"/>
+<Steps XsltFile="ProcessStatus2.xsl" XmlFile="/Converted_Story/errorlog1.xml" output="/Converted_Story/errorlog2.xml" Input="True"/>
+<Steps XsltFile="ProcessStatus.xsl" XmlFile="/Converted_Story/errorlog2.xml" output="/Converted_Story/MissingStyles.txt" Input="True"/>
+
+<!-- Art Missing -->
+<Steps XsltFile="Art1.xsl" XmlFile="/Converted_Story/Story_S4C1.xml" output="/Converted_Story/Artreport.txt" Input="True"/>
+<Steps XsltFile="FigureCaption.xsl" XmlFile="/Converted_Story/Story_S4C1.xml" output="/Converted_Story/Artreport.xml" Input="True"/>
+<Steps XsltFile="XML_Tag.xslt" XmlFile="/Converted_Story/Story_S4C1.xml" output="/xml_tag.xml"  Input="True"/>
+<Steps XsltFile="XML_Tag1.xslt" XmlFile="/xml_tag.xml" output="/Tags.xml" Input="True"/>
+<Steps XsltFile="Graphic.xsl" XmlFile="/Graphic.xml" output="/Grapout.xml" Input="True"/>
+<!--<Steps XsltFile="1_index.xsl" XmlFile="/document_out4.xml" output="/index.xml" Input="True"/>-->
+<Steps XsltFile="designmp.xsl" XmlFile="/designmap.xml" output="/designmapout.xml" Input="True"/>
+<Steps XsltFile="BckingStry.xsl" XmlFile="/Converted_Story/Last2.xml" output="/out1.xml" Input="True"/>
+<!--MisMatch File Update-->
+<Steps XsltFile="Addnewstyle.xsl" XmlFile="/Converted_Story/stylesout1.xml" output="/Converted_Story/stylesout.xml" Input="True"/>
+<Steps XsltFile="paracondtiontext.xsl" XmlFile="/out1.xml" output="/out.xml" Input="True"/>
+</Type>
+</wordtoidml>
