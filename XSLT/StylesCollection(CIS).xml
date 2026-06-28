@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stylesList>
+<style name="DZC_MultiAppendixCitation" replacement="AppendixCitation"/>
+<style name="DZC_MultiBoxCitation" replacement="BoxCitation"/>
+<style name="DZC_MultiExhibitCitation" replacement="ExhibitCitation"/>
+<style name="DZC_MultiFigureCitation" replacement="FigureCitation"/>
+<style name="DZC_MultiImageCitation" replacement="ImageCitation"/>
+<style name="DZC_MultiPhotoCitation" replacement="PhotoCitation"/>
+<style name="DZC_MultiSchemeCitation" replacement="SchemeCitation"/>
+<style name="DZC_MultiStructureCitation" replacement="StructureCitation"/>
+<style name="DZC_MultiTableCitation" replacement="TableCitation"/>
+<style name="DZP_ManyTableCaption" replacement="TableCaption"/>
+<style name="DZP_ManyBoxTitle" replacement="BoxTitle"/>
+<style name="DZP_ManyFigureCaption" replacement="FigureCaption"/>
+<style name="DZP_ManySchemeLegend" replacement="SchemeLegend"/>
+<style name="DZP_ManyImageCaption" replacement="ImageCaption"/>
+<style name="DZP_ManyExhibitCaption" replacement="ExhibitCaption"/>
+<style name="DZP_ManyPhotoCaption" replacement="PhotoCaption"/>
+<style name="DZP_ManyMapCaption" replacement="MapCaption"/>
+<style name="DZP_ManyMultiStructureLegend" replacement="StructureLegend"/>
+<style name="DZP_ManySuppTableCaption" replacement="SupplementTableCaption"/>
+<style name="DZP_ManySuppFigureCaption" replacement="SupplementFigureCaption"/>
+<style name="DZP_ManySuppBoxCaption" replacement="SupplementBoxCaption"/>
+<style name="DZC_SupplMultiFigureCitation" replacement="SupplementFigureCitation"/>
+<style name="DZC_SupplMultiTableCitation" replacement="SupplementTableCitation"/>
+
+
+<style name="CAA_BOXInfo" replacement="BOX-Info"/>
+<style name="CAA_BOXIntro" replacement="BOX-Intro"/>
+<style name="CCC_BODYSidebar" replacement="BODY-Sidebar"/>
+
+<style name="DZP_Advert" replacement="Advert"/>
+<style name="DZP_APPENDIX Biblio" replacement="APPENDIX-Biblio"/>
+<style name="DZP_APPENDIX Bullets" replacement="APPENDIX-Bullets"/>
+<style name="DZP_APPENDIX Dictionary" replacement="APPENDIX-Dictionary"/>
+<style name="DZP_APPENDIX First para" replacement="APPENDIX-First-para"/>
+<style name="DZP_APPENDIX Glossary" replacement="APPENDIX-Glossary"/>
+<style name="DZP_APPENDIX Head B" replacement="APPENDIX-Head-B"/>
+<style name="DZP_APPENDIX Head C" replacement="APPENDIX-Head-C"/>
+<style name="DZP_APPENDIX Head D" replacement="APPENDIX-Head-D"/>
+<style name="DZP_APPENDIX Head letter" replacement="APPENDIX-Head-letter"/>
+<style name="DZP_APPENDIX Head title" replacement="APPENDIX-Head-title"/>
+<style name="DZP_APPENDIX Listings" replacement="APPENDIX-Listings"/>
+<style name="DZP_APPENDIX Next para" replacement="APPENDIX-Next-para"/>
+<style name="DZP_APPENDIX Listings bullets" replacement="APPENDIX-Listings-bullets"/>
+<style name="DZP_authorpic" replacement="authorpic"/>
+<style name="DZP_BODY Bullet" replacement="BODY-Long-bullet"/>
+<style name="DZC_BODY Emphasis bold" replacement="BODY-Emphasis-bold"/>
+<style name="DZC_BODY Emphasis italic" replacement="BODY-Emphasis-italic"/>
+<style name="DZC_BODY Euro symbol alt 2" replacement="DZC-BODY-Euro-symbol (alt 2)"/>
+<style name="DZC_BODY Facilities text" replacement="BODY-Facilities-text"/>
+<style name="DZC_BODY Facilities" replacement="BODY-Facilities-text"/>
+<style name="DZP_BODY First para" replacement="BODY-First-para"/>
+<style name="DZP_BODY First para (end B text)" replacement="BODY-First-para"/>
+<style name="DZC_BODY Foreign word" replacement="BODY-Foreign-word"/>
+<style name="DZP_BODY LPOI head" replacement="BODY-LPOI-head"/>
+<style name="DZP_BODY LPOI para 1" replacement="BODY-LPOI-para1"/>
+<style name="DZP_BODY LPOI para 2" replacement="BODY-LPOI-para2"/>
+<style name="DZP_BODY LPOI subhead" replacement="BODY-LPOI-subhead"/>
+<style name="DZP_BODY Next para" replacement="BODY-Next-para"/>
+<style name="DZP_BODY Next para (end B text)" replacement="BODY-Next-para"/>
+<style name="DZP_BODY Note head" replacement="BODY-Note-head"/>
+<style name="DZP_BODY Note para 1" replacement="BODY-Note-para1"/>
+<style name="DZP_BODY Note para 2" replacement="BODY-Note-para2"/>
+<style name="DZP_BODY Numbered bullet" replacement="BODY-Numbered-bullet"/>
+<style name="DZC_BODY Pub title" replacement="BODY-Pub-title"/>
+<style name="DZP_BODY Quote" replacement="BODY-Quote"/>
+<style name="DZP_BODY Quote source" replacement="BODY-Quote-source"/>
+<style name="DZC_BODYRoutehighlight" replacement="BODY-Route-highlight"/>
+<style name="DZC_BODYSidebar" replacement="BODY-Sidebar"/>
+<style name="DZC_BODY Small caps" replacement="BODY-Small-caps"/>
+<style name="DZP_BODY SPOI para1" replacement="BODY-SPOI-para1"/>
+<style name="DZP_BODY SPOI para2" replacement="BODY-SPOI-para2"/>
+<style name="DZC_BODY Stage timing" replacement="BODY-Stage-timing"/>
+<style name="DZP_BODY Sub bullet" replacement="BODY-Sub-bullet"/>
+<style name="DZC_BODY Subscript" replacement="BODY-Subscript"/>
+<style name="DZC_BODY Superscript" replacement="BODY-Superscript"/>
+<style name="DZC_BODY Topic" replacement="BODY-Topic"/>
+<style name="DZC_BODY Website" replacement="BODY-Website"/>
+
+<style name="DZP_BOX Anecdote head" replacement="BOX-Anecdote-head"/>
+<style name="DZP_BOX Anecdote intro" replacement="BOX-Anecdote-intro"/>
+<style name="DZP_BOX Anecdote source" replacement="BOX-Anecdote-source"/>
+<style name="DZP_BOX Bullet" replacement="BOX-Bullet"/>
+<style name="DZP_BOXBullet" replacement="BOX-Bullet"/>
+<style name="DZP_BODY Facilities para 1" replacement="BODY-Facilities-para1"/>
+<style name="DZP_BODY Facilities para 2" replacement="BODY-Facilities-para2"/>
+<style name="DZP_BOX First para" replacement="BOX-First-para"/>
+<style name="DZP_BOX Info" replacement="BOX-Info"/>
+<style name="DZP_BOX Intro para 1" replacement="BOX-Intro-para1"/>
+<style name="DZP_BOX Intro para 2" replacement="BOX-Intro-para2"/>
+<style name="DZP_BOX Next para" replacement="BOX-Next-para"/>
+<style name="DZP_BOX Quote" replacement="BOX-Quote"/>
+<style name="DZP_BOX Quote source" replacement="BOX-Quote-source"/>
+<style name="DZP_BOX Tip head" replacement="BOX-Tip-head"/>
+<style name="DZP_CAPTION Blue" replacement="Caption"/>
+<style name="DZP_CAPTION Within box" replacement="Caption"/>
+<style name="DZC_CHAPTER Number" replacement="CHAPTER-Number"/>
+<style name="DZC_DICTIONARY Definition" replacement="DICTIONARY-Definition"/>
+<style name="DZC_DICTIONARY Term" replacement="DICTIONARY-Term"/>
+<style name="DZC_Direction number" replacement="Direction-number"/>
+<style name="DZP_Facilities para 1" replacement="BODY-Facilities-para"/>
+<style name="DZP_Facilities para 2" replacement="BODY-Facilities-para"/>
+<style name="DZC_GLOSSARY Definition" replacement="GLOSSARY-Definition"/>
+<style name="DZC_GLOSSARY Term" replacement="GLOSSARY-Term"/>
+<style name="DZP_HEAD A" replacement="HEAD-A"/>
+<style name="DZP_HEAD Chapter title" replacement="HEAD-Chapter-title"/>
+<style name="DZP_HEAD Part subtitle" replacement="HEAD-Part-subtitle"/>
+<style name="DZP_HEAD Part title" replacement="HEAD-Part-title"/>
+<style name="DZP_HEAD Route number" replacement="HEAD-Route-number"/>
+<style name="DZP_HEAD Route title" replacement="HEAD-Route-title"/>
+<style name="DZP_HEAD Route subtitle" replacement="HEAD-Route-subtitle"/>
+<style name="DZP_HEAD Section title" replacement="HEAD-Section-title"/>
+<style name="DZP_HEAD Stage number" replacement="HEAD-Stage-number"/>
+<style name="DZP_HEAD Stage title" replacement="HEAD-Stage-title"/>
+<style name="DZP_HEAD Supplement title" replacement="HEAD-Supplement-title"/>
+<style name="DZP_Icon" replacement="Icon"/>
+<style name="DZP_INDEX Letter" replacement="INDEX-Letter"/>
+<style name="DZP_INDEX Level 1" replacement="INDEX-Level1"/>
+<style name="DZP_INDEX Level 2" replacement="INDEX-Level2"/>
+<style name="DZP_INTRO Box head" replacement="INTRO-Box-head"/>
+<style name="DZP_INTRO Box subhead" replacement="INTRO-Box-subhead"/>
+<style name="DZP_INTRO Head A" replacement="INTRO-Head-A"/>
+<style name="DZP_INTRO HEAD B" replacement="INTRO-Head-B"/>
+<style name="DZP_INTRO Head C" replacement="INTRO-Head-C"/>
+<style name="DZP_INTRO HEAD D" replacement="INTRO-Head-D"/>
+<style name="DZP_Logo" replacement="Logo"/>
+<style name="DZP_Map" replacement="Map"/>
+<style name="DZP_Map caption" replacement="Map-caption"/>
+<style name="DZP_Map caption within box" replacement="Map-caption-within-box"/>
+<style name="DZP_Photo" replacement="Photo"/>
+<style name="DZP_Photo within box" replacement="Photo-within-box"/>
+<style name="DZP_PLACEBOX Facilities para" replacement="PLACEBOX-Facilities-para"/>
+<style name="DZP_PLACEBOX Facilities subhead" replacement="PLACEBOX-Facilities-subhead"/>
+<style name="DZP_PLACEBOX Head" replacement="PLACEBOX-Head"/>
+<style name="DZP_PLACEBOX POI para 1" replacement="PLACEBOX-POI-para1"/>
+<style name="DZP_PLACEBOX POI para 2" replacement="PLACEBOX-POI-para2"/>
+<style name="DZP_PLACEBOX POI subhead" replacement="PLACEBOX-POI-subhead"/>
+<style name="DZP_PRELIM Author byline" replacement="PRELIM-Author-byline"/>
+<style name="DZP_PRELIM Author guides" replacement="PRELIM-Author-guides"/>
+<style name="DZP_PRELIM Author name" replacement="PRELIM-Author-name"/>
+<style name="DZP_PRELIM Biblio info" replacement="PRELIM-Biblio-info"/>
+<style name="DZP_PRELIM Book maintitle" replacement="PRELIM-Book-maintitle"/>
+<style name="DZP_PRELIM Book subtitle" replacement="PRELIM-Book-subtitle"/>
+<style name="DZP_PRELIM Box head" replacement="PRELIM-Box-head"/>
+<style name="DZP_PRELIM Box subhead" replacement="PRELIM-Box-subhead"/>
+<style name="DZP_PRELIM Dedication" replacement="PRELIM-Dedication"/>
+<style name="DZP_PRELIM Subhead" replacement="PRELIM-Subhead"/>
+<style name="DZP_ROUTE Head A" replacement="ROUTE-Head-A"/>
+<style name="DZP_ROUTE Head B" replacement="ROUTE-Head-B"/>
+<style name="DZP_ROUTE Head C" replacement="ROUTE-Head-C"/>
+<style name="DZP_ROUTE Head D" replacement="ROUTE-Head-D"/>
+<style name="DZP_TABLE Head" replacement="TABLE-Head"/>
+<style name="DZP_TABLE Text" replacement="TABLE-Text"/>
+<style name="DZP_TOC 1 Head" replacement="TOC1-Head"/>
+<style name="DZP_TOC 1a Subhead" replacement="TOC1a-Subhead"/>
+<style name="DZP_TOC 1b Subhead" replacement="TOC1b-Subhead"/>
+<style name="DZP_TOC 2 Introduction" replacement="TOC2-Introduction"/>
+<style name="DZP_TOC 3 Walks" replacement="TOC3-Walks"/>
+<style name="DZP_TOC 3 Routes" replacement="TOC3-Routes"/>
+<style name="DZP_TOC 4 Appendices" replacement="TOC4-Appendices"/>
+<style name="DZP_TOC 5 Prelims" replacement="TOC5-Prelims"/>
+<style name="DZC_CAPTION Foreign word" replacement="CAPTION-Foreign-word"/>
+<style name="DZC_HEAD Altitude" replacement="HEAD-Altitude"/>
+<style name="DZC_HEAD Population" replacement="HEAD-Population"/>
+
+<style name="DZP_ROUTE Head B non hierarchical"  replacement="ROUTE-Head-B"/>
+<style name="DZP_Profile"  replacement="Map"/>
+
+
+<!--***********-->
+<style name="DZP_BODY Facilities para" replacement="BODY-Facilities-para"/>
+<style name="DZP_BODY Facilities para1" replacement="BODY-Facilities-para"/>
+<style name="DZP_BODY Long bullet" replacement="BODY-Long-bullet"/>
+<style name="DZP_BODY Short bullet" replacement="BODY-Short-bullet"/>
+<style name="DZP_BODY Sidebar" replacement="BODY-Sidebar"/>
+<style name="DZP_BODY SPOI para1 nospace" replacement="BODY-SPOI-para1-nospace"/>
+<style name="DZP_BODY SPOI para2 nospace" replacement="BODY-SPOI-para2-nospace"/>
+<style name="DZP_Caption" replacement="Caption"/>
+<style name="DZP_Caption1" replacement="Caption"/>
+<style name="DZP_Caption black" replacement="Caption-black"/>
+<style name="DZP_Caption white" replacement="Caption-white"/>
+<style name="DZP_folio" replacement="folio"/>
+<style name="DZP_HEAD B" replacement="HEAD-B"/>
+<style name="DZP_HEAD B line2" replacement="HEAD-B-line2"/>
+<style name="DZP_HEAD C" replacement="HEAD-C"/>
+<style name="DZP_HEAD D" replacement="HEAD-D"/>
+<style name="DZP_image" replacement="image"/>
+<style name="DZP_InlineSpan" replacement="InlineSpan"/>
+<style name="DZP_LISTING Book title" replacement="LISTING-Book-title"/>
+<style name="DZP_LISTING Category" replacement="LISTING-Category"/>
+<style name="DZP_LISTING Website ref" replacement="LISTING-Website-ref"/>
+<style name="DZP_map" replacement="Map"/>
+<style name="DZP_MAP Continues text" replacement="MAP-Continues-text"/>
+<style name="DZP_MAP Place Holder" replacement="Map-Place-Holder"/>
+<style name="DZP_Photo Place Holder" replacement="Photo"/>
+<style name="DZP_PRELIM Author preface" replacement="PRELIM-Author-preface"/>
+<style name="DZP_running head" replacement="running-head"/>
+<style name="DZP_STYLE Needed" replacement="STYLE-Needed"/>
+<style name="DZP_BODY Bullet" replacement="BODY-Bullet"/>
+<style name="DZP_BODY First para (end B text)" replacement="BODY-First-para"/>
+<style name="DZP_BODY Next para (end B text)" replacement="BODY-Next-para"/>
+<style name="DZP_BODY SPOI para 2" replacement="BODY-SPOI-para2"/>
+<style name="DZP_BODY SPOI para 1" replacement="BODY-SPOI-para1"/>
+<style name="DZP_BOX Intro para 1" replacement="BOX-Intro-para1"/>
+<style name="DZP_Head1" replacement="ROUTE-Head-B"/>
+<style name="DZP_INTRO Head C" replacement="INTRO-Head-C"/>
+<style name="DZP_ParaFirstLineInd" replacement="BODY-Next-para"/>
+<style name="DZP_Photo" replacement="Photo"/>
+<style name="DZP_Sidebar" replacement="BODY-Sidebar"/>
+<style name="DZP_TableBody" replacement="BOX-Info"/>
+<style name="DZP_TableColumnHead" replacement="BOX-Info"/>
+<style name="DZC_Altitude" replacement="Altitude"/>
+<style name="DZC_BODY Summit gloss" replacement="BODY-Summit-gloss"/>
+<style name="DZC_BODY Sidebar" replacement="BODY-Sidebar"/>
+<style name="DZC_BOX Info heads" replacement="BOX-Info-heads"/>
+<style name="DZC_DISTANCE From start" replacement="DISTANCE-From-start"/>
+<style name="DZC_ICON Graphic" replacement="ICON-Graphic"/>
+<style name="DZC_NAVIGATION Point" replacement="NAVIGATION-Point"/>
+<style name="DZC_Population" replacement="Population"/>
+<style name="DZC_SIDEBAR arrow (3or4)" replacement="SIDEBAR-arrow-(3or4)"/>
+<style name="DZC_TOC Title colour" replacement="TOC-Title-colour"/>
+<style name="DZC_BODY Route highlight" replacement="BODY-Route-highlight"/>
+
+
+</stylesList>
