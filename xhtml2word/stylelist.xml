@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Stylelist>
+<!--Character extra style-->
+<Stylename id="1">Affiliation_Indicator</Stylename>
+<!--<Stylename id="2">Correspondingauthor_Indicator</Stylename>-->
+<!--<Stylename id="3">DA_Correspondingauthor_Indicator</Stylename>-->
+<!--<Stylename id="4">Currentaddress_Indicator</Stylename>-->
+<!--<Stylename id="5">DA_Currentaddress_Indicator</Stylename>-->
+<!--<Stylename id="6">Deceasedauthor_Indicator</Stylename>-->
+<!--<Stylename id="7">DA_Deceasedauthor_Indicator</Stylename>-->
+<!--<Stylename id="8">Equalauthorship_Indicator</Stylename>-->
+<!--<Stylename id="9">DA_Equalauthorship_Indicator</Stylename>-->
+<!--<Stylename id="10">Equalcontribution_Indicator</Stylename>-->
+<!--<Stylename id="11">DA_Equalcontribution_Indicator</Stylename>-->
+<!--<Stylename id="12">Groupauthorship_Collab_Indicator</Stylename>-->
+<!--<Stylename id="13">DA_Groupauthorship_Collab_Indicator</Stylename>-->
+<Stylename id="14">SupplementaryMaterial_Citation</Stylename>
+<Stylename id="15">TrialRegistration</Stylename>
+<Stylename id="16">Document_Author_Suffix</Stylename>
+<Stylename id="17">abblist_item</Stylename>
+<Stylename id="18">abblist_item_expansion</Stylename>
+<Stylename id="19">AbstractRunOnSubHead</Stylename>
+<Stylename id="20">AuthorSummary</Stylename>
+<Stylename id="21">Abbreviation</Stylename>
+<Stylename id="22">AbbreviationExpansion</Stylename>
+<Stylename id="23">AbstractHeading</Stylename>
+<Stylename id="24">Acknowledgements</Stylename>
+<Stylename id="25">AcronymHead</Stylename>
+<Stylename id="26">allcaps</Stylename>
+<Stylename id="27">ArabicCharacters</Stylename>
+<Stylename id="28">bold</Stylename>
+<Stylename id="29">boldallcaps</Stylename>
+<Stylename id="30">boldHLC</Stylename>
+<Stylename id="31">bolditalicHLC</Stylename>
+<Stylename id="32">bolditalics</Stylename>
+<Stylename id="33">bolditalicunderlineHLC</Stylename>
+<Stylename id="34">boldsmallcaps</Stylename>
+<Stylename id="35">boldstrikethrough</Stylename>
+<Stylename id="36">boldsubscript</Stylename>
+<Stylename id="37">boldsuperscript</Stylename>
+<Stylename id="38">BoxPMI</Stylename>
+<Stylename id="39">ChapterNumber</Stylename>
+<Stylename id="40">ChapterWord</Stylename>
+<Stylename id="41">CherokeeCharacters</Stylename>
+<Stylename id="42">Cited</Stylename>
+<Stylename id="43">CJK_Characters</Stylename>
+<Stylename id="44">DocumentAuthor</Stylename>
+<Stylename id="45">Editor</Stylename>
+<Stylename id="46">EgyptianCopticCharacters</Stylename>
+<Stylename id="47">EquationName</Stylename>
+<Stylename id="48">EthicalApproval</Stylename>
+<Stylename id="49">ExhibitCitation</Stylename>
+<Stylename id="50">ExhibitNumber</Stylename>
+<Stylename id="51">ExhibitPMI</Stylename>
+<Stylename id="52">ExternalBoxCitation</Stylename>
+<Stylename id="53">ExternalExhibitCitation</Stylename>
+<Stylename id="54">ExternalFigCitation</Stylename>
+<Stylename id="55">ExternalImageCitation</Stylename>
+<Stylename id="56">ExternalMultiBoxCitation</Stylename>
+<Stylename id="57">ExternalMultiExhibitCitation</Stylename>
+<Stylename id="58">ExternalMultiFigureCitation</Stylename>
+<Stylename id="59">ExternalMultiImageCitation</Stylename>
+<Stylename id="60">ExternalMultiPhotoCitation</Stylename>
+<Stylename id="61">ExternalMultiSchemeCitation</Stylename>
+<Stylename id="62">ExternalMultiStructureCitation</Stylename>
+<Stylename id="63">ExternalMultiTableCitation</Stylename>
+<Stylename id="64">ExternalPhotoCitation</Stylename>
+<Stylename id="65">ExternalSchemeCitation</Stylename>
+<Stylename id="66">ExternalStructureCitation</Stylename>
+<Stylename id="67">ExternalSupplFigureCitation</Stylename>
+<Stylename id="68">ExternalSupplMultiFigureCitation</Stylename>
+<Stylename id="69">ExternalSupplMultiTableCitation</Stylename>
+<Stylename id="70">ExternalSupplTableCitation</Stylename>
+<Stylename id="71">ExternalTableCitation</Stylename>
+<Stylename id="72">Fax_Format</Stylename>
+<Stylename id="73">FigurePMI</Stylename>
+<Stylename id="74">GreekCharacters</Stylename>
+<Stylename id="75">HeadingNumber</Stylename>
+<Stylename id="76">HebrewCharacters</Stylename>
+<Stylename id="77">Ibid</Stylename>
+<Stylename id="78">IllustrationCitation</Stylename>
+<Stylename id="79">IllustrationNumber</Stylename>
+<Stylename id="80">Illustration_PMI</Stylename>
+<Stylename id="81">ImageCitation</Stylename>
+<Stylename id="82">ImageNumber</Stylename>
+<Stylename id="83">ImagePMI</Stylename>
+<Stylename id="84">InPress</Stylename>
+<Stylename id="85">InternetResource</Stylename>
+<Stylename id="86">italic</Stylename>
+<Stylename id="87">italicallcaps</Stylename>
+<Stylename id="88">italicHLC</Stylename>
+<Stylename id="89">italicsmallcaps</Stylename>
+<Stylename id="90">italicstrikethrough</Stylename>
+<Stylename id="91">italicsubscript</Stylename>
+<Stylename id="92">italicsuperscript</Stylename>
+<Stylename id="93">italicunderlineHLC</Stylename>
+<Stylename id="94">KeyTermHead</Stylename>
+<Stylename id="95">LearnObjHeading</Stylename>
+<Stylename id="96">LongDash</Stylename>
+<Stylename id="97">Malayalam_Characters</Stylename>
+<Stylename id="98">ManualBodyList</Stylename>
+<Stylename id="99">MapCitation</Stylename>
+<Stylename id="100">MapNumber</Stylename>
+<Stylename id="101">MapPMI</Stylename>
+<Stylename id="102">Math</Stylename>
+<Stylename id="103">MathB</Stylename>
+<Stylename id="104">MathBI</Stylename>
+<Stylename id="105">MathBISub</Stylename>
+<Stylename id="106">MathBISup</Stylename>
+<Stylename id="107">MathBSub</Stylename>
+<Stylename id="108">MathBSup</Stylename>
+<Stylename id="109">MathI</Stylename>
+<Stylename id="110">MathISub</Stylename>
+<Stylename id="111">MathISup</Stylename>
+<Stylename id="112">MathSub</Stylename>
+<Stylename id="113">MathSup</Stylename>
+<Stylename id="114">MN</Stylename>
+<Stylename id="115">MovieCitation</Stylename>
+<Stylename id="116">MovieNumber</Stylename>
+<Stylename id="117">MoviePMI</Stylename>
+<Stylename id="118">OthersTitle</Stylename>
+<Stylename id="119">PartNumber</Stylename>
+<Stylename id="120">PartWord</Stylename>
+<Stylename id="121">PhotoCitation</Stylename>
+<Stylename id="122">PhotoNumber</Stylename>
+<Stylename id="123">PhotoPMI</Stylename>
+<Stylename id="124">PresentationTitle</Stylename>
+<Stylename id="125">Publication_Number</Stylename>
+<Stylename id="126">QuestionNumber</Stylename>
+<Stylename id="127">Retraction</Stylename>
+<Stylename id="128">Retrieved_Date</Stylename>
+<Stylename id="129">RunningHead</Stylename>
+<Stylename id="130">SchemeCitation</Stylename>
+<Stylename id="131">SchemeNumber</Stylename>
+<Stylename id="132">SchemePMI</Stylename>
+<Stylename id="133">SectionNumber</Stylename>
+<Stylename id="134">SectionWord</Stylename>
+<Stylename id="135">ShortTitleHead</Stylename>
+<Stylename id="136">singleunderline</Stylename>
+<Stylename id="137">smallcaps</Stylename>
+<Stylename id="138">SocialMediaReferenceTitle</Stylename>
+<Stylename id="139">strikethrough</Stylename>
+<Stylename id="140">StructureCitation</Stylename>
+<Stylename id="141">StructureNumber</Stylename>
+<Stylename id="142">StructurePMI</Stylename>
+<Stylename id="143">sub</Stylename>
+<Stylename id="144">sup</Stylename>
+<Stylename id="145">SupplBoxCitation</Stylename>
+<Stylename id="146">SupplBoxNumber</Stylename>
+<Stylename id="147">SupplExhibitCitation</Stylename>
+<Stylename id="148">SupplExhibitNumber</Stylename>
+<Stylename id="149">SupplIllustrationCitation</Stylename>
+<Stylename id="150">SupplIllustrationNumber</Stylename>
+<Stylename id="151">SupplImageCitation</Stylename>
+<Stylename id="152">SupplImageNumber</Stylename>
+<Stylename id="153">SupplMovieNumber</Stylename>
+<Stylename id="154">SupplMultiBoxCitation</Stylename>
+<Stylename id="155">SupplMultiExhibitCitation</Stylename>
+<Stylename id="156">SupplMultiFigureCitation</Stylename>
+<Stylename id="157">SupplMultiIllustrationCitation</Stylename>
+<Stylename id="158">SupplMultiImageCitation</Stylename>
+<Stylename id="159">SupplMultiMovieCitation</Stylename>
+<Stylename id="160">SupplMultiPhotoCitation</Stylename>
+<Stylename id="161">SupplMultiSchemeCitation</Stylename>
+<Stylename id="162">SupplMultiStructureCitation</Stylename>
+<Stylename id="163">SupplMultiTableCitation</Stylename>
+<Stylename id="164">SupplPhotoCitation</Stylename>
+<Stylename id="165">SupplPhotoNumber</Stylename>
+<Stylename id="166">SupplSchemeCitation</Stylename>
+<Stylename id="167">SupplSchemeNumber</Stylename>
+<Stylename id="168">SupplStructureCitation</Stylename>
+<Stylename id="169">SupplStructureNumber</Stylename>
+<Stylename id="170">Symbol</Stylename>
+<Stylename id="171">SymbolB</Stylename>
+<Stylename id="172">SymbolBI</Stylename>
+<Stylename id="173">SymbolBISub</Stylename>
+<Stylename id="174">SymbolBISup</Stylename>
+<Stylename id="175">SymbolBSub</Stylename>
+<Stylename id="176">SymbolBSup</Stylename>
+<Stylename id="177">SymbolI</Stylename>
+<Stylename id="178">SymbolISub</Stylename>
+<Stylename id="179">SymbolISup</Stylename>
+<Stylename id="180">SymbolSub</Stylename>
+<Stylename id="181">SymbolSup</Stylename>
+<Stylename id="182">TablePMI</Stylename>
+<Stylename id="183">Tag</Stylename>
+<Stylename id="184">Time</Stylename>
+<Stylename id="185">TitleHead</Stylename>
+<Stylename id="186">underlineboldHLC</Stylename>
+<Stylename id="187">underlineHLC</Stylename>
+<Stylename id="188">UnfigCaption</Stylename>
+<Stylename id="189">UnFigurePMI</Stylename>
+<Stylename id="190">UnitNumber</Stylename>
+<Stylename id="191">UnitWord</Stylename>
+<Stylename id="192">Untag</Stylename>
+<Stylename id="193">Updated</Stylename>
+<Stylename id="194">abblist_item</Stylename>
+<Stylename id="195">abblist_item_expansion</Stylename>
+<Stylename id="196">Affiliation_Indicator</Stylename>
+<Stylename id="197">SupplementaryMaterial_Citation</Stylename>
+<Stylename id="198">AbstractRunOnSubHead</Stylename>
+<Stylename id="199">AllCaps</Stylename>
+<!--Para extra style-->
+<Pstylename>AbbreviationHead</Pstylename>
+<Pstylename>Academic</Pstylename>
+<Pstylename>Academic_Editor</Pstylename>
+<Pstylename>AcronymHead</Pstylename>
+<Pstylename>AcronymText</Pstylename>
+<Pstylename>AffiliationHead</Pstylename>
+<Pstylename>AppendixCaption</Pstylename>
+<Pstylename>AppendixCaptions</Pstylename>
+<Pstylename>AppendixSource</Pstylename>
+<Pstylename>AuthorDeclaration</Pstylename>
+<Pstylename>AuthorHeading</Pstylename>
+<Pstylename>BoxSubHead</Pstylename>
+<Pstylename>Box_Place_Holder</Pstylename>
+<Pstylename>BulletPara</Pstylename>
+<Pstylename>Capsule</Pstylename>
+<Pstylename>CapsulePara</Pstylename>
+<Pstylename>Caption</Pstylename>
+<Pstylename>Case_report</Pstylename>
+<Pstylename>ChapOut</Pstylename>
+<Pstylename>ChapOutText</Pstylename>
+<Pstylename>ChapterNumber</Pstylename>
+<Pstylename>ChapterTitle</Pstylename>
+<Pstylename>ChapterWord</Pstylename>
+<Pstylename>Choice</Pstylename>
+<Pstylename>CoreObjective</Pstylename>
+<Pstylename>CoreObjectiveText</Pstylename>
+<Pstylename>Correct_Choice</Pstylename>
+<Pstylename>Count</Pstylename>
+<Pstylename>DedicationHeading</Pstylename>
+<Pstylename>DisplayHeading</Pstylename>
+<Pstylename>DisplayHeadings</Pstylename>
+<Pstylename>DOI</Pstylename>
+<Pstylename>EMailAddress</Pstylename>
+<Pstylename>EMailAddressHead</Pstylename>
+<Pstylename>EthicalApproval</Pstylename>
+<Pstylename>Ethical_Approval</Pstylename>
+<Pstylename>ExhibitCaption</Pstylename>
+<Pstylename>ExhibitCaptions</Pstylename>
+<Pstylename>ExhibitSource</Pstylename>
+<Pstylename>Exhibit_Place_Holder</Pstylename>
+<Pstylename>ExtraTitle</Pstylename>
+<Pstylename>FB_PeerReview</Pstylename>
+<Pstylename>FB_StyleEditor</Pstylename>
+<Pstylename>FE_01_NAME</Pstylename>
+<Pstylename>Figure_Place_Holder</Pstylename>
+<Pstylename>FirstAuthor</Pstylename>
+<Pstylename>HeaderText</Pstylename>
+<Pstylename>Highlight</Pstylename>
+<Pstylename>HighlightText</Pstylename>
+<Pstylename>HomeWorkAssignment</Pstylename>
+<Pstylename>HomeWorkAssignmentList</Pstylename>
+<Pstylename>HomeWorkAssignmentText</Pstylename>
+<Pstylename>IllustrationLegend</Pstylename>
+<Pstylename>IllustrationSource</Pstylename>
+<Pstylename>Illustration_Place_Holder</Pstylename>
+<Pstylename>Image</Pstylename>
+<Pstylename>ImageCaption</Pstylename>
+<Pstylename>ImageCaptions</Pstylename>
+<Pstylename>ImageSource</Pstylename>
+<Pstylename>Image_Place_Holder</Pstylename>
+<Pstylename>Instruction</Pstylename>
+<Pstylename>IntroQuoteName</Pstylename>
+<Pstylename>JournalName</Pstylename>
+<Pstylename>KeyConcepts</Pstylename>
+<Pstylename>KeyConceptsHeading</Pstylename>
+<Pstylename>KeyTermHead</Pstylename>
+<Pstylename>LearnObjHeading</Pstylename>
+<Pstylename>LearnObjList</Pstylename>
+<Pstylename>LearnObjStatement</Pstylename>
+<Pstylename>ListHead</Pstylename>
+<Pstylename>ManySupplBoxTitle</Pstylename>
+<Pstylename>ManySupplIllustrationCaption</Pstylename>
+<Pstylename>ManySupplMovieLegend</Pstylename>
+<Pstylename>ManySupplTableCaption</Pstylename>
+<Pstylename>MapLegend</Pstylename>
+<Pstylename>MapSource</Pstylename>
+<Pstylename>Map_Place_Holder</Pstylename>
+<Pstylename>MovieLegend</Pstylename>
+<Pstylename>MovieSource</Pstylename>
+<Pstylename>Movie_Place_Holder</Pstylename>
+<Pstylename>MSReceivedDate</Pstylename>
+<Pstylename>PartNumber</Pstylename>
+<Pstylename>PartTitle</Pstylename>
+<Pstylename>PartWord</Pstylename>
+<Pstylename>PhotoCaption</Pstylename>
+<Pstylename>PhotoCaptions</Pstylename>
+<Pstylename>PhotoSource</Pstylename>
+<Pstylename>PhotoTitle</Pstylename>
+<Pstylename>Photo_Place_Holder</Pstylename>
+<Pstylename>QuestionNumber</Pstylename>
+<Pstylename>Review_Instruction</Pstylename>
+<Pstylename>Review_QuestionsH1</Pstylename>
+<Pstylename>Review_QuestionsH2</Pstylename>
+<Pstylename>RevisedDate</Pstylename>
+<Pstylename>RunningHeadText</Pstylename>
+<Pstylename>SchemeLegend</Pstylename>
+<Pstylename>SchemeLegends</Pstylename>
+<Pstylename>SchemeSource</Pstylename>
+<Pstylename>Scheme_Place_Holder</Pstylename>
+<Pstylename>SectionNumber</Pstylename>
+<Pstylename>SectionTitle</Pstylename>
+<Pstylename>SectionWord</Pstylename>
+<Pstylename>SeriesHeading</Pstylename>
+<Pstylename>SeriesHeadings</Pstylename>
+<Pstylename>ShortTitle</Pstylename>
+<Pstylename>ShortTitleHead</Pstylename>
+<Pstylename>Source</Pstylename>
+<Pstylename>StructureLegend</Pstylename>
+<Pstylename>StructureLegends</Pstylename>
+<Pstylename>StructureSource</Pstylename>
+<Pstylename>Structure_Place_Holder</Pstylename>
+<Pstylename>StudyPresentation</Pstylename>
+<Pstylename>StudyPresentationHead</Pstylename>
+<Pstylename>Submitted</Pstylename>
+<Pstylename>SubmittedDate</Pstylename>
+<Pstylename>SupplBoxCaption</Pstylename>
+<Pstylename>SupplBoxSource</Pstylename>
+<Pstylename>SupplIllustrationCaption</Pstylename>
+<Pstylename>SupportInfoHead</Pstylename>
+<Pstylename>TableBulletList</Pstylename>
+<Pstylename>TableFirstBulletList</Pstylename>
+<Pstylename>TableFirstLc_AlphaList</Pstylename>
+<Pstylename>TableFirstLc_RomanList</Pstylename>
+<Pstylename>TableFirstNumberedList</Pstylename>
+<Pstylename>TableFirstUc_AlphaList</Pstylename>
+<Pstylename>TableFirstUc_RomanList</Pstylename>
+<Pstylename>TableFirstUnNumberedList</Pstylename>
+<Pstylename>TableLastBulletList</Pstylename>
+<Pstylename>TableLastColumnHead</Pstylename>
+<Pstylename>TableLastLc_AlphaList</Pstylename>
+<Pstylename>TableLastLc_RomanList</Pstylename>
+<Pstylename>TableLastNumberedList</Pstylename>
+<Pstylename>TableLastUc_AlphaList</Pstylename>
+<Pstylename>TableLastUc_RomanList</Pstylename>
+<Pstylename>TableLastUnNumberedList</Pstylename>
+<Pstylename>TableLc_AlphaList</Pstylename>
+<Pstylename>TableLc_RomanList</Pstylename>
+<Pstylename>TableList</Pstylename>
+<Pstylename>TableNumberdList</Pstylename>
+<Pstylename>TableUc_AlphaList</Pstylename>
+<Pstylename>TableUc_RomanList</Pstylename>
+<Pstylename>TableUnNumberedList</Pstylename>
+<Pstylename>Table_Place_Holder</Pstylename>
+<Pstylename>TitleHead</Pstylename>
+<Pstylename>UnFigureCaption</Pstylename>
+<Pstylename>UnFig_Place_Holder</Pstylename>
+<Pstylename>UnitNumber</Pstylename>
+<Pstylename>UnitTitle</Pstylename>
+<Pstylename>UnitWord</Pstylename>
+<Pstylename>URL</Pstylename>
+<Pstylename>Vltext</Pstylename>
+<Pstylename>WordCount</Pstylename>
+<Pstylename>WordCountHead</Pstylename>
+</Stylelist>
