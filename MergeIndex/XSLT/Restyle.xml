@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
+    <xsl:template match="@* | node()">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <!--***Character Style***-->
+    <xsl:template match="//CharacterStyle">
+        <xsl:variable name="name" select="@Name"/>
+        <xsl:variable name="befself" select="@Self"/>
+        <xsl:variable name="pointsize" select="@PointSize"/>
+        <xsl:variable name="self" select="substring-after($befself, 'CharacterStyle/')"/>
+        <!-- English-->
+        <xsl:choose>
+            <xsl:when test="not(matches($self, 'No character style'))">
+<!--                <xsl:element name="CharacterStyle">
+                    <xsl:apply-templates select="@*"/>
+                    <xsl:attribute name="Self">
+                        <xsl:value-of select="'CharacterStyle/'"/>
+                        <xsl:value-of select="'ENG_'"/>
+                        <xsl:value-of select="$self"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="Name">
+                        <xsl:value-of select="'ENG_'"/>
+                        <xsl:value-of select="$name"/>
+                    </xsl:attribute>-->
+                <xsl:copy>    
+                    <xsl:apply-templates select="@*|node()"/>
+                </xsl:copy>
+<!--                </xsl:element>-->
+                <!-- Mongolian-->
+                <xsl:element name="CharacterStyle">
+                    <xsl:apply-templates select="@*"/>
+                    <xsl:attribute name="Self">
+                        <xsl:value-of select="'CharacterStyle/'"/>
+                        <xsl:value-of select="'MON_'"/>
+                        <xsl:value-of select="$self"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="Name">
+                        <xsl:value-of select="'MON_'"/>
+                        <xsl:value-of select="$name"/>
+                    </xsl:attribute>
+                    <xsl:if test="@PointSize">
+                    <xsl:attribute name="PointSize">
+                        <xsl:value-of select="$pointsize - 2"/>
+                    </xsl:attribute>
+                    </xsl:if>                        
+                    <xsl:apply-templates select="node()"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:copy>
+                    <xsl:apply-templates select="@* | node()"/>
+                </xsl:copy>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!--***paragraph Style***-->
+    <xsl:template match="//ParagraphStyle">
+        <xsl:variable name="pname" select="@Name"/>
+        <xsl:variable name="pointsize" select="@PointSize"/>
+        <xsl:variable name="pbefself" select="@Self"/>
+        <xsl:variable name="pself" select="substring-after($pbefself, 'ParagraphStyle/')"/>
+        <!-- English-->
+        <xsl:choose>
+            <xsl:when test="not(matches($pname, 'NormalParagraphStyle') or matches($pname, 'No paragraph style'))">
+<!--                <xsl:element name="ParagraphStyle">
+                    <xsl:apply-templates select="@*"/>
+                    <xsl:attribute name="Self">
+                        <xsl:value-of select="'ParagraphStyle/'"/>
+                        <xsl:value-of select="'ENG_'"/>
+                        <xsl:value-of select="$pself"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="Name">
+                        <xsl:value-of select="'ENG_'"/>
+                        <xsl:value-of select="$pname"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="NextStyle">
+                        <xsl:value-of select="'ParagraphStyle/'"/>
+                        <xsl:value-of select="'ENG_'"/>
+                        <xsl:value-of select="$pself"/>
+                    </xsl:attribute>-->
+                    <xsl:copy>    
+                        <xsl:apply-templates select="@*|node()"/>
+                    </xsl:copy>
+<!--                </xsl:element>-->
+                <!-- Mongolian-->
+                <xsl:element name="ParagraphStyle">
+                    <xsl:apply-templates select="@*"/>
+                    <xsl:attribute name="Self">
+                        <xsl:value-of select="'ParagraphStyle/'"/>
+                        <xsl:value-of select="'MON_'"/>
+                        <xsl:value-of select="$pname"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="Name">
+                        <xsl:value-of select="'MON_'"/>
+                        <xsl:value-of select="$pname"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="NextStyle">
+                        <xsl:value-of select="'ParagraphStyle/'"/>
+                        <xsl:value-of select="'MON_'"/>
+                        <xsl:value-of select="$pself"/>
+                    </xsl:attribute>
+                    <xsl:if test="@PointSize">
+                        <xsl:attribute name="PointSize">
+                            <xsl:value-of select="$pointsize - 2"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates select="node()"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:copy>
+                    <xsl:apply-templates select="@* | node()"/>
+                </xsl:copy>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+</xsl:stylesheet>

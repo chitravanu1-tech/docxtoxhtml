@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="simple" page-height="297mm" page-width="210mm">
+            <fo:region-body margin="20mm"/>
+                <fo:region-before extent="20mm"/>
+                    <fo:region-after extent="20mm"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="simple">
+        <fo:flow flow-name="xsl-region-body">
+            <!-- Header Section -->
+            <fo:block font-size="14pt" font-weight="bold" text-align="center">
+                INVOICE
+            </fo:block>
+            <fo:block font-size="12pt" text-align="center">
+                Date: 24 MAR 2025
+            </fo:block>
+            <fo:block font-size="12pt" margin-top="10mm">
+                <fo:inline font-weight="bold">INVOICE NO.:</fo:inline> PM2025-03–02019
+            </fo:block>
+            <!-- Sender and Receiver Information -->
+            <fo:block font-size="12pt" margin-top="10mm">
+                <fo:inline font-weight="bold">INVOICE TO:</fo:inline>
+                    Ben Riezouw
+                    Boekenmakers
+                    Prinsenlaan 2, 3732 GN De Bilt,
+                    Netherlands
+            </fo:block>
+            <fo:block font-size="12pt" margin-top="10mm">
+                <fo:inline font-weight="bold">From:</fo:inline>
+                    PageMajik Inc.
+                    459 N. Gilbert Road, Suite A-110, Gilbert, AZ 85234
+                    FEIN: 83-3725199
+            </fo:block>
+            <!-- Invoice Items -->
+            <fo:block font-size="12pt" margin-top="15mm">
+                <fo:inline font-weight="bold">DESCRIPTION</fo:inline>
+                    <fo:inline font-weight="bold" margin-left="50mm">QUANTITY</fo:inline>
+                        <fo:inline font-weight="bold" margin-left="50mm">RATE</fo:inline>
+                            <fo:inline font-weight="bold" margin-left="50mm">TOTAL</fo:inline>
+            </fo:block>
+            <fo:block font-size="12pt">
+                PageMajik pilot (one-time fee): Setup and configuration of production platform (maximum of 10 titles over 2 months)
+                <fo:inline font-weight="bold" margin-left="50mm">1</fo:inline>
+                    <fo:inline font-weight="bold" margin-left="50mm">€ 2,000.00</fo:inline>
+                        <fo:inline font-weight="bold" margin-left="50mm">€ 2,000.00</fo:inline>
+            </fo:block>
+            <!-- Grand Total -->
+            <fo:block font-size="12pt" margin-top="10mm">
+                <fo:inline font-weight="bold">GRAND TOTAL: </fo:inline>
+                    <fo:inline font-weight="bold">€ 2,000.00</fo:inline>
+            </fo:block>
+            <!-- Payment Details -->
+            <fo:block font-size="12pt" margin-top="10mm">
+                <fo:inline font-weight="bold">PAYMENT DETAILS:</fo:inline>
+                    Bank of America
+                    95, Pierce St, Malden, MA 02148-2959. USA
+                    Routing #: 011000138
+                    Swift ID #: BOFAUS3N
+                    Account #: 0046 4650 1956
+            </fo:block>
+            <!-- Terms & Conditions -->
+            <fo:block font-size="12pt" margin-top="15mm">
+                <fo:inline font-weight="bold">Terms &amp; Conditions</fo:inline>
+                    Immediate payment required.
+            </fo:block>
+            <!-- Contact Info -->
+            <fo:block font-size="12pt" margin-top="10mm">
+                Questions? Email: billing@pagemajik.com
+            </fo:block>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

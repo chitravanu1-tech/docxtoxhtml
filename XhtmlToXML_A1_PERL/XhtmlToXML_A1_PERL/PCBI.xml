@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JournalBE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<JournalName>PCBI</JournalName>
+<PublisherCode>PCBI</PublisherCode>
+<JournalTitle>PLOS Computational Biology</JournalTitle>
+<JournalTitleAbbreviation>PLOS Computational Biology</JournalTitleAbbreviation>
+<ISSNPpub>1553-734X</ISSNPpub>
+<ISSNEpub>1553-7358</ISSNEpub>
+<PublisherName>Public Library of Science</PublisherName>
+<PublisherLocation>San Francisco, CA USA</PublisherLocation>
+<CopyRightStatement></CopyRightStatement>
+<CopyRightYear>2026</CopyRightYear>
+<CopyRightHolder></CopyRightHolder>
+<Publisher-ID>plos</Publisher-ID>
+<PMC>ploscomp</PMC>
+<NLM>PLoS Comput Biol</NLM>
+<DOI>10.1371/journal.pcbi</DOI>
+<Volume>22</Volume>
+<ext-link Journal="PCBI" xlink:href="http://journals.plos.org/ploscompbiol/article/asset?unique&amp;id=info:doi/10.1371/journal."/>
+
+<history jcode="PCBI" msc="Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PCBI" msc="Methods" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PCBI" msc="Software" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PCBI" msc="Benchmarking" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PCBI" msc="Formal Comment" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+
+<history jcode="PCBI" msc="Education" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Review" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Correction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Expression of Concern" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Retraction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Editorial" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Editorial Note" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Perspective" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Message from ISCB" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCBI" msc="Topic Page" hopt="no" received="no" rev-recd="no" accepted="no"/>
+</JournalBE>

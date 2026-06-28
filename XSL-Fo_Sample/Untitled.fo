@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <!-- Page Layout -->
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="simple" page-height="297mm" page-width="210mm">
+            <fo:region-body margin="20mm"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="simple">
+    <fo:flow flow-name="xsl-region-body">
+        <!-- Title Section -->
+        <fo:block font-size="14pt" font-weight="bold" text-align="center" space-after="10mm">
+            Lorem Ipsum
+        </fo:block>
+        <!-- Introduction Paragraph -->
+        <fo:block font-size="10pt" line-height="1.5" space-after="5mm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus fringilla ligula, in malesuada erat tempor ac. Quisque dapibus posuere turpis, vel aliquam massa vehicula non.
+        </fo:block>
+        <!-- Image Section: Inserting a TIFF Image -->
+        <fo:block text-align="center" space-before="10mm">
+            <!-- Reference to TIFF image -->
+            <fo:external-graphic src="url('9781284240108_CH06_SKDSD04_07.tif')" content-width="50%" />
+        </fo:block>
+        <!-- Image Caption -->
+        <fo:block font-size="9pt" text-align="center" space-after="10mm">
+            This is a preview of your figure rendered on a simulated PLOS journal page.
+        </fo:block>
+        <!-- Body Paragraphs -->
+        <fo:block font-size="10pt" line-height="1.5" space-after="5mm">
+            Maecenas ac est sit amet odio sollicitudin euismod. In risus odio, convallis a neque ac, varius ultricies arcu. Vestibulum et quam iaculis, ultricies odio et, molestie magna. Suspendisse vehicula purus id turpis eleifend, et convallis dui dignissim.
+        </fo:block>
+        <fo:block font-size="10pt" line-height="1.5" space-after="5mm">
+            Phasellus vitae congue est. Duis rutrum iaculis nunc, sed sollicitudin neque eleifend nec. Pellentesque ac nisi eget tortor imperdiet sagittis ut in orci. Mauris porta convallis euismod. Donec in ultricies urna, nec interdum lectus.
+        </fo:block>
+        <!-- Footer Text -->
+        <fo:block font-size="8pt" text-align="center" space-before="10mm" space-after="5mm">
+            www.princexml.com - Prince - Non-commercial License
+        </fo:block>
+        <!-- Final Note -->
+        <fo:block font-size="10pt" text-align="center" space-before="10mm" font-style="italic">
+            This document was created with Prince, a great way of getting web content onto paper.
+        </fo:block>
+    </fo:flow>
+    </fo:page-sequence>
+</fo:root>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JournalBE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<JournalName>PBIO</JournalName>
+<PublisherCode>PBIO</PublisherCode>
+<JournalTitle>PLOS Biology</JournalTitle>
+<JournalTitleAbbreviation>PLOS Biology</JournalTitleAbbreviation>
+<ISSNPpub>1544-9173</ISSNPpub>
+<ISSNEpub>1545-7885</ISSNEpub>
+<PublisherName>Public Library of Science</PublisherName>
+<PublisherLocation>San Francisco, CA USA</PublisherLocation>
+<CopyRightStatement></CopyRightStatement>
+<CopyRightYear>2026</CopyRightYear>
+<CopyRightHolder></CopyRightHolder>
+<Publisher-ID>plos</Publisher-ID>
+<PMC>plosbiol</PMC>
+<NLM>PLoS Biol</NLM>
+<DOI>10.1371/journal.pbio</DOI>
+<Volume>24</Volume>
+<ext-link Journal="PBIO" xlink:href="http://journals.plos.org/plosbiology/article/asset?unique&amp;id=info:doi/10.1371/journal."/>
+<history jcode="PBIO" msc="Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PBIO" msc="Meta-Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PBIO" msc="Short Reports" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PBIO" msc="Methods and Resources" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PBIO" msc="Discovery Report" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PBIO" msc="Update Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PBIO" msc="Preregistered Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PBIO" msc="Formal Comment" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+
+
+<history jcode="PBIO" msc="Essay" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Unsolved Mystery" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Consensus View" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Correction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Expression of Concern" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Retraction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Primer" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Editorial" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Editorial Note" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Perspective" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Community Page" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PBIO" msc="Research Matters" hopt="no" received="no" rev-recd="no" accepted="no"/>
+</JournalBE>

@@ -1,0 +1,196 @@
+{
+    "ID": "1",
+    "severity": "ERROR",
+    "message": "Unwanted style DACorrespondingauthorIndicator found in fmauthors",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 115,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "1",
+    "severity": "ERROR",
+    "message": "Unwanted style DACorrespondingauthorIndicator found in fmauthors",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 115,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "1",
+    "severity": "ERROR",
+    "message": "Unwanted style DACorrespondingauthorIndicator found in fmauthors",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 115,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "1",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 0,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "2",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 32,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "3",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 183,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "4",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 183,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "5",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 333,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "6",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 333,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "7",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 414,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "8",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 414,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "9",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 493,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "10",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 493,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "11",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 576,
+            "context": "Word"
+        }
+    ]
+}{
+    "ID": "12",
+    "severity": "ERROR",
+    "message": "Free text found para_nopara10001_31895682101para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100001 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100002 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100003 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100004 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100005 para_noMS_DocumentAuthor100006 para_noMS_DocumentAuthor100006para_nopara10001_31895682101",
+    "additionalLocations": 0,
+    "locations": [
+        {
+            "path": "para10001_31895682101",
+            "line": 1,
+            "column": 0,
+            "context": "Word"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JournalBE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<JournalName>PPAT</JournalName>
+<PublisherCode>PPAT</PublisherCode>
+<JournalTitle>PLOS Pathogens</JournalTitle>
+<JournalTitleAbbreviation>PLOS Pathogens</JournalTitleAbbreviation>
+<ISSNPpub>1553-7366</ISSNPpub>
+<ISSNEpub>1553-7374</ISSNEpub>
+<PublisherName>Public Library of Science</PublisherName>
+<PublisherLocation>San Francisco, CA USA</PublisherLocation>
+<CopyRightStatement></CopyRightStatement>
+<CopyRightYear>2026</CopyRightYear>
+<CopyRightHolder></CopyRightHolder>
+<Publisher-ID>plos</Publisher-ID>
+<PMC>plospath</PMC>
+<NLM>PLoS Pathog</NLM>
+<DOI>10.1371/journal.ppat</DOI>
+<Volume>22</Volume>
+
+<ext-link Journal="PPAT" xlink:href="http://journals.plos.org/plospathogens/article/asset?unique&amp;id=info:doi/10.1371/journal."/>
+
+<history jcode="PPAT" msc="Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PPAT" msc="Short Reports" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PPAT" msc="Formal Comment" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+
+<history jcode="PPAT" msc="Review" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PPAT" msc="Pearls" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PPAT" msc="Correction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PPAT" msc="Expression of Concern" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PPAT" msc="Retraction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PPAT" msc="Editorial" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PPAT" msc="Editorial Note" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PPAT" msc="Opinion" hopt="no" received="no" rev-recd="no" accepted="no"/>
+</JournalBE>

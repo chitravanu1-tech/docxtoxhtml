@@ -1,0 +1,16714 @@
+ current pending items:
+1. Transferring manual formatting based on paragraph style property(additional two)
+2. table html5
+3.stylecollection updation
+4. bookmark id  to uuid in idml(completed given testing)
+5. Revised xhtml to html5 format(img completed given testing)
+6.span inside span in oneshot(feedback)
+7.del inside in docx to xhtml - after update mariappan we want to do
+8. Re: Rowman EPUB stock details(endnotes captiduplicate style)
+9. Re: under the soft-enter correction issue in wyciwyg(internal issue)
+10.XHTML to IDML - Track changes transferred as en-dash12. Floating Element Common Structure (add moveto - pending)
+13.FW: DeJong Paternalism to Partners
+14. Fwd: Glanzer problems
+15. Re: Westberry proofreader queries(Resolved once need to check with mariappan)
+16. FW: Scribe tagging feedback for Pagemajik
+17. UMP (scribe tag completed)
+18. Grupo Planeta - File Prep(genereate failed issue)
+19. RE: FW: Endnotes error: But Tab & Space before endnote issue not solved(Only tab is removed, space not removed. Kindly Check) - Testing
+20. hyperlink information retained
+21. citation wrong content control(Re: FW: Ziyanak: Understanding Deviance, chapter 7) for tableref
+22. more than one insert image(last img only retained)
+23. Ruta(Discretionary line break)
+24.FW: Casler--issues in PageMajik(springer)
+25.Fwd: FW: Stanger: Incarcerated Resistance(parainserted for both li and p tag, need check the empty para)
+26.Fwd: Missing Chinese Characters(RUTA - need to update for xhtml to idml)
+27. R&L - PageMajik Plus Titles Issues(TOC issue)
+28. FW: Ortega C05c--issues with extra spaces(while insert notes inside tab)
+
+
+
+
+1. bold carried out
+2. indesign to bold in toc
+
+
+
+Today my plan:
+1. generate revises issue mail
+2. double space identification tag
+3. Remove the unwanted tab
+
+
+
+mari:
+double space
+start, type
+float elements
+wycywyg xhtml- note  author
+double space
+ruta thing
+idml double endnotenumber
+
+
+
+
+
+1. mariappan mail
+
+
+
+
+To Test:
+1. endnote multiple para
+2. authorproof current version
+
+
+1. blank page
+2. tab xhtml to xhtml
+3. br
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.40)
+
+
+Authorproof:
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.29)
+
+
+Endnote reference/C02/05-Economy-1.xhtml
+
+cnaps-siddu
+
+
+<style id="100082" name="DZP_ChapterTitle" replacement="ct_with_cn"/>
+
+
+
+<style id="100082" name="DZP_ChapterNumber" replacement="cn_with_ct"/>
+
+
+
+
+
+
+
+
+
+
+
+softenter in heading 
+
+
+
+When we insert a new notes two empty paragraphs is creating ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.41)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/TocTitleExtract.zip(1.36)
+
+
+
+bk_Binder.xslt
+
+
+
+bk_Bindermatch.xslt
+
+
+
+Depencencies:
+
+
+
+Home/Config Project/Input/IdmlToWord.xml(1.4)
+
+
+
+Home/Config Project/Transformation/XHTML5/MergeTOC.zip(1.23)
+
+
+
+2_0_Chapmerge.xsl
+
+
+
+3_cleanup.xsl
+
+
+
+saravanan portlet update
+
+
+
+
+
+
+
+Ryan
+
+
+
+Auto Production TOC Test
+
+
+
+
+
+
+
+WKH PRODUCTION
+
+
+
+Fwd: Riaz: Unfolding Islamophobic Racism
+
+
+
+
+
+
+
+
+
+
+
+1\. After removing the heading (Dedication) from the actual file, it is not reflected in the auto-TOC
+
+
+
+2\. Chapter 7 details has not been transferred to auto-TOC
+
+
+
+Book: Macht
+
+
+
+3\. Chapter 11 - after removing the formatting of chapter number in the actual chapter, it is not reflected in auto-TOC
+
+
+
+4\. properties merged with about the author
+
+
+
+
+
+
+
+Testcase:
+
+
+
+1\. if remove chapter number, chaptertitle,partnumber, parttitle, unitnumber,unittitle,sectiontitle,sectionnumber, it will be reflect in Toc
+
+
+
+2\. If remove full tile also it will reflect
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Today my task:
+
+
+
+1\. wyciwyg smallcaps - editor
+
+
+
+2\. fontstyle removed
+
+
+
+3\. small tag remove
+
+
+
+4\. list type
+
+
+
+5\. footnote formate retain in review xhtml
+
+
+
+6\. html 5
+
+
+
+7\. bookmark id(hold)
+
+
+
+8\. floating element pending
+
+
+
+9.Formatting questions and Korean characters for Shin (North Korean Defectors in Diaspora)
+
+
+
+10.deleting instruction
+
+
+
+11.Images duplicating in PDF (Van Young - Stormy Passage) 
+
+
+
+12.Table column resize values need to be retain in pdf
+
+
+
+13\. docx to xhtml endnotecaption with Macht: The Better Elementary School(C12)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.44)
+
+
+
+genxhtml.xslt
+
+
+
+
+
+
+
+29-1-2022:
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+xhmtlrowSpan.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.18)
+
+
+
+01-W2H-CK.xslt
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.16)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1/29/2022	xhmtlrowSpan.xslt	notes not carried out by the tab space between li and p
+
+
+
+1/29/2022	xhmtlrowSpan.xslt	xhtml2word.zip(1.1)		notes not carried out by the tab space between li and p
+
+
+
+
+
+
+
+
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Added to control unwanted strike through on 31-1-2022 -->
+
+
+
+
+
+
+
+<xsl:if test="w:rPr/w:strike\\\\\\\\[not(@w:val='false')]">
+
+
+
+
+
+
+
+
+
+
+
+\\\\\\\\[not(@w:val='false')]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+general:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.19)
+
+
+
+ump:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+
+
+
+
+
+
+
+
+
+
+
+https://test.pagemajik.online/04-02-Master file/Master File 1 (2)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.46)
+
+
+
+ParaNumbering.xslt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.48)
+
+
+
+ParaNumbering.xslt
+
+
+
+genxhtml.xslt
+
+
+
+03-Final-IDML.xslt
+
+
+
+04-Final-IDML.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.49)
+
+
+
+genxhtml.xslt
+
+
+
+04-Final-IDML.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.50)
+
+
+
+04-Final-IDML.xslt
+
+
+
+tablenotconvertedissue/bib_bibliography/C06emptyspace.xhtml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.51)
+
+
+
+04-Final-IDML.xslt
+
+
+
+
+
+
+
+pagebreak
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.52)
+
+
+
+04-Final-IDML.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.31)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.18)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.23)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.53)
+
+
+
+
+
+
+
+docx to xhtml - json field code
+
+
+
+wyciwy pagebreak
+
+
+
+discreationary hyphen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.53)
+
+
+
+03-Final-IDML.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.31)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.54)
+
+
+
+03-Final-IDML.xslt
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.24)
+
+
+
+01-W2H-CK.xslt
+
+
+
+
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.7)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.55)
+
+
+
+04-Final-IDML.xslt
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.19)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.56)
+
+
+
+04-Final-IDML.xslt
+
+
+
+
+
+
+
+
+
+
+
+xhtml + Template
+
+
+
+
+
+
+
+Bold + Semibold = Semibold								
+
+
+
+Italic + Semibold = Semibold Italic
+
+
+
+Bold + Semibold Italic = Semibold Italic							
+
+
+
+Italic + Semibold Italic = Semibold Italic
+
+
+
+Bold + Italic = Bold Italic
+
+
+
+Italic + Bold = Bold Italic
+
+
+
+Bold + Bold Italic = Bold Italic
+
+
+
+Italic + Bold Italic = Bold Italic
+
+
+
+Bold Italic + Italic = Bold Italic								Bold Italic + Bold = Bold Italic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<st1:country-region w:st="on">
+
+
+
+<st1:place w:st="on">
+
+
+
+<st1:placename w:st="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/StylChg.xsl(1.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.25)
+
+
+
+
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.8)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.26)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.27)
+
+
+
+
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.10)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.27)
+
+
+
+
+
+
+
+
+
+
+
+Home/Rowman - Epub December 2020/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.28)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.11)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.29)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.12)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.30)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.13)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1\. figure and table list toc - Azure - 1551
+
+
+
+2\. Map caption change tags (docx to xhtml, xhtml to idml) - Azure - 701
+
+
+
+3\. number list type and start with (editor xhtml to idml) - Azure - 1552
+
+
+
+
+
+
+
+
+
+
+
+Home/Test/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1) - mapgroup
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.32)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.57)
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.31)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.14)
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.28)
+
+
+
+designmp.xsl(1.2)
+
+
+
+
+
+
+
+
+
+
+
+1747
+
+
+
+and parent::w:bookmarkStart\\\\\\\\[not(descendant::w:rPr/w:rStyle\\\\\\\\[@w:val='Website'])]
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.33)
+
+
+
+class instruction-image and comment-image removed 
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.32)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.15)
+
+
+
+
+
+
+
+
+
+
+
+thro ch03
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.57)
+
+
+
+00-MergeIDML.xslt
+
+
+
+03-Final-IDML.xslt
+
+
+
+04-Final-IDML.xslt
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.33)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.16)
+
+
+
+03-Final.xslt
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.33)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.57)
+
+
+
+03-Final-IDML.xslt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.17)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i,b,u,italic,bold,underline, boldHLC, italicHLC,bolditalicunderlineHLC,italicunderlineHLC,underlineboldHLC,underlineHLC,bolditalicunderlineHLC
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.20)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.59)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.60)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/TocTitleExtract.zip(1.38)
+
+
+
+Home/Config Project/Transformation/IDML to Word/TocTitleExtract.zip(1.39)
+
+
+
+Home/Config Project/Transformation/XHTML5/MergeTOC.zip(1.24)
+
+
+
+
+
+
+
+Insert Endnotes testing
+
+
+
+2081
+
+
+
+2013
+
+
+
+2055 - dedication toc issue
+
+
+
+2035
+
+
+
+
+
+
+
+1822 - toc
+
+
+
+1988
+
+
+
+2138
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/TocTitleExtract.zip(1.40)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.61)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Footnote structure
+
+
+
+Docx to xhtml:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.18)
+
+
+
+xhtnl to idml:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.12)
+
+
+
+Idml to xhtml:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.61)
+
+
+
+
+
+
+
+mapcaption:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.34)
+
+
+
+
+
+
+
+Home/Test/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Footnote:
+
+
+
+docx to xhtml:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.35)
+
+
+
+01-W2H-CK.xslt
+
+
+
+1-LIST.xslt
+
+
+
+03-Final.xslt
+
+
+
+xhtml to idml:
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.29)
+
+
+
+oneshot:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.62)
+
+
+
+03-Final-IDML.xslt
+
+
+
+genxhtml2.xslt
+
+
+
+&nbsp;2344
+
+
+
+
+
+
+
+xtml to word:
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.3)
+
+
+
+2_1_Table_New.xslt
+
+
+
+xhtmlcomments.xslt
+
+
+
+xhtmlendnote.xslt
+
+
+
+xhtmltoXML.xslt
+
+
+
+xhtmlfootnote.xslt
+
+
+
+Xhtml_To_Word.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.34)
+
+
+
+2_1_Table_New.xslt
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.35)
+
+
+
+
+
+
+
+EoB renumbering:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.64)
+
+
+
+hi in single li
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.65)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.66)
+
+
+
+
+
+
+
+gramar:
+
+
+
+Home/Config Project/Transformation/Word to IDML/xhtmltoXML.xsl(1.6)
+
+
+
+2379 - released
+
+
+
+
+
+
+
+
+
+
+
+2667 - issue finding fontfamily
+
+
+
+
+
+
+
+1759
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EOB Renumbering:
+
+
+
+https://stylefinder.pagemajik.info/
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.0)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.0)
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EOB Renumbering:
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.36)
+
+
+
+03-Final.xslt
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.30)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.68)
+
+
+
+04-Final-IDML.xslt
+
+
+
+03-Final-IDML.xslt
+
+
+
+genxhtml.xslt	
+
+
+
+genxhtml15.xslt
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.37)
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.38)
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+Home/Config Project/Input/IdmlToWord.xml(1.5)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.69)
+
+
+
+04-Final-IDML.xslt
+
+
+
+Footnote.xslt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+index:
+
+
+
+First Release:
+
+
+
+MergeIndex.zip:​
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.57)
+
+
+
+
+
+
+
+chapter Index:
+
+
+
+Home/Config Project/Transformation/XHTML5/Index.zip(1.23) - Final
+
+
+
+Home/Config Project/Transformation/XHTML5/Index.zip(1.24)  - empty file creation 3569
+
+
+
+Book Index:
+
+
+
+Home/Config Project/Transformation/XHTML5/
+
+
+
+1_RemoveNameSpace.xsl(1.0)
+
+
+
+2_1_Chapmerge.xsl(1.2)
+
+
+
+2_2_MergeXhtml.xsl(1.9)
+
+
+
+2_sorting_Book.xsl(1.5)​
+
+
+
+3_sorting_Book.xsl(1.4)
+
+
+
+4_CleanUp.xsl(1.0)
+
+
+
+Saravanan Dependency:
+
+
+
+stylecollection
+
+
+
+
+
+
+
+Input:
+
+
+
+Home/Config Project/Input/IdmlToWord.xml(1.8)
+
+
+
+Home/Config Project/Input/IndexAndToc.xml(1.3)
+
+
+
+
+
+
+
+
+
+
+
+Prepositions List:
+
+
+
+About, Above, Across, After, Ago, At, Below, By, Down,During, For, From, In, Into, Off, On, Over, Past, Since, Through, To, Under, Until, Up, With
+
+
+
+
+
+
+
+Article:
+
+
+
+a,an, the
+
+
+
+3569 - Index -Script Details
+
+
+
+3490
+
+
+
+
+
+
+
+Index second release:
+
+
+
+Notes and preposition:
+
+
+
+Home/Config Project/Transformation/XHTML5/Index.zip(1.24) - removed
+
+
+
+Book Index:
+
+
+
+5_Display.xsl Newly added for display
+
+
+
+Home/Config Project/Transformation/XHTML5/5_Display.xsl(1.0)
+
+
+
+Input:
+
+
+
+Home/Config Project/Input/IndexAndToc.xml(1.4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.70)
+
+
+
+Footnote.xslt
+
+
+
+
+
+
+
+Footnote hotfix:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.71)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.4)
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+Home/Config Project/Transformation/XHTML5/2_sorting_Book.xsl(1.1)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/XHTML5/Index.zip(1.5)
+
+
+
+
+
+
+
+Home/Config Project/Input/IndexAndToc.xml(1.2)
+
+
+
+
+
+
+
+
+
+
+
+mapcaption:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.37)
+
+
+
+01-W2H-CK.xslt
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.19)
+
+
+
+
+
+
+
+
+
+
+
+Endnote with comments :
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.72)
+
+
+
+03-Final-IDML.xslt
+
+
+
+
+
+
+
+3982
+
+
+
+4120
+
+
+
+
+
+
+
+
+
+
+
+Endnote endnotereference style missing:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.41)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.19)
+
+
+
+01-W2H-CK.xslt
+
+
+
+1-LIST.xslt
+
+
+
+2-LIST.xslt
+
+
+
+02-Remove-xmlns.xslt
+
+
+
+https://test.pagemajik.in/
+
+
+
+4232 - 
+
+
+
+4543 - RUTA
+
+
+
+
+
+
+
+ms 
+
+
+
+epub
+
+
+
+
+
+
+
+Ojo.xlsx
+
+
+
+Falola.xlsx
+
+
+
+Gurtov.xlsx
+
+
+
+Dietl.xlsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.40)
+
+
+
+OneShot.zip
+
+
+
+4694
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1\. testing running head issue
+
+
+
+2\. bhaskar review xhtm to idml not running issue
+
+
+
+3\. saradha generate idml not run
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4711
+
+
+
+
+
+
+
+
+
+
+
+Notes data-change:
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.31)
+
+
+
+enotesandbrissue
+
+
+
+https://test.pagemajik.in/
+
+
+
+4760
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Toc Formatting:uppercas,lowercase:
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/IDML to Word/TocTitleExtract.zip(1.44)
+
+
+
+Home/Config Project/Transformation/XHTML5/MergeTOC.zip(1.27)
+
+
+
+AUTO PRODUCTION TOC NEW
+
+
+
+4761
+
+
+
+
+
+
+
+formatting Toc: 2280,2157,1796
+
+
+
+3522,3296, subtitle duplcate
+
+
+
+Toc: 4761,4774
+
+
+
+
+
+
+
+UMp: 13-10-2022
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+xhtmlendnote.xslt
+
+
+
+Xhtml_To_Word.xslt
+
+
+
+xhmtlrowSpan.xslt
+
+
+
+Ump:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.5)
+
+
+
+4857
+
+
+
+
+
+
+
+
+
+
+
+sri noom noom nasi masi
+
+
+
+am athithiye namaga
+
+
+
+
+
+
+
+
+
+
+
+4166 - MS
+
+
+
+
+
+
+
+4888
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docx to xhtml: issue finding
+
+
+
+1\. ennote parent p contain data-change="changestyle" style
+
+
+
+2\. when Notes citation compare with caption, if not match we have printed the value
+
+
+
+3\. when Notes caption with citation, if not match we have printed the value
+
+
+
+4\. when Notes citation compare with caption, if not match we have checked the id values and printed the value
+
+
+
+5\. when Notes caption compare with citation, if not match we have checked the id values and printed the value
+
+
+
+6\. li id compare with notes citation
+
+
+
+7\. endnotecitation without endnote reference style
+
+
+
+8\. li tag contains multiple a\\\\\\\\[@class='crossref'] tag
+
+
+
+9\. li contains no a\\\\\\\\[@class='crossref']
+
+
+
+10.endnotecaption number followed by manual format numbering(Ex: <a>1</a> 1)
+
+
+
+11.multiple br in same note caption li in 09:47 20-10-2022review xhtml
+
+
+
+4977 - xhtml to idml
+
+
+
+4992 - review xhtml
+
+
+
+
+
+
+
+
+
+
+
+EmptyparaDelimiter:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.73)
+
+
+
+Table.xslt
+
+
+
+04-Final-IDML.xslt
+
+
+
+emptyparadelimit
+
+
+
+4953
+
+
+
+
+
+
+
+startlevel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4694
+
+
+
+
+
+
+
+Notes:
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.42)
+
+
+
+OneShot.zip
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.74)
+
+
+
+03-Final-IDML.xslt
+
+
+
+4771
+
+
+
+4962
+
+
+
+4607
+
+
+
+5088
+
+
+
+4975
+
+
+
+4578
+
+
+
+4583 - soft enter
+
+
+
+4349 - seperate but notes issue
+
+
+
+4476 - insert new para but two para selected
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notes:
+
+
+
+5085
+
+
+
+5138
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.22)
+
+
+
+01-W2H-CK.xslt
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.42)
+
+
+
+ENOTES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4349
+
+
+
+4533 - entity and showing entity different
+
+
+
+4166
+
+
+
+5220
+
+
+
+5234
+
+
+
+5197
+
+
+
+5193
+
+
+
+5190
+
+
+
+5170
+
+
+
+
+
+
+
+
+
+
+
+5008 line spacing
+
+
+
+
+
+
+
+Running head
+
+
+
+4952
+
+
+
+
+
+
+
+
+
+
+
+4952 - list nesting levels
+
+
+
+
+
+
+
+
+
+
+
+4591 -start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/XHTML5/MergeTOC.zip(1.28)
+
+
+
+5441
+
+
+
+
+
+
+
+
+
+
+
+LR63 jar Test
+
+
+
+https://s4carlisle.pagemajik.ai/web/s4carlisle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Master File 4 (7).docx
+
+
+
+
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.22)
+
+
+
+enotes
+
+
+
+Z2-APPENDIX I-1
+
+
+
+Z2-APPENDIX I (1)
+
+
+
+MASTER FILE 1
+
+
+
+MASTER FILE 2
+
+
+
+MASTER FILE 3
+
+
+
+MASTER FILE 4NEW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+school book:
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.43)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<XMLTag Self="XMLTag/cst" Name="cst">
+
+
+
+&nbsp;		<Properties>
+
+
+
+&nbsp;			<TagColor type="enumeration">LightBlue</TagColor>
+
+
+
+&nbsp;		</Properties>
+
+
+
+&nbsp;	</XMLTag>
+
+
+
+<XMLTag Self="XMLTag/H1" Name="H1">
+
+
+
+&nbsp;		<Properties>
+
+
+
+&nbsp;			<TagColor type="enumeration">LightBlue</TagColor>
+
+
+
+&nbsp;		</Properties>
+
+
+
+&nbsp;	</XMLTag>
+
+
+
+<XMLTag Self="XMLTag/H2" Name="H2">
+
+
+
+&nbsp;		<Properties>
+
+
+
+&nbsp;			<TagColor type="enumeration">LightBlue</TagColor>
+
+
+
+&nbsp;		</Properties>
+
+
+
+&nbsp;	</XMLTag>
+
+
+
+<XMLTag Self="XMLTag/ct_with_cn_cst" Name="ct_with_cn_cst">
+
+
+
+&nbsp;		<Properties>
+
+
+
+&nbsp;			<TagColor type="enumeration">LightBlue</TagColor>
+
+
+
+&nbsp;		</Properties>
+
+
+
+&nbsp;	</XMLTag>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gavs technology
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Azure 5607
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.23)
+
+
+
+xhtmltoXML.xsl(1.7)
+
+
+
+Holt-Moro: Counseling Individuals With Co-Occurring Addictive and Mental Disorders
+
+
+
+
+
+
+
+
+
+
+
+Azure 5758
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.43)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.23)
+
+
+
+
+
+
+
+Notes scenarios, imgsource, imgsource
+
+
+
+
+
+
+
+
+
+
+
+multipleimage
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.32)
+
+
+
+Xhtml_To_IDML_v10.xsl(1.35)
+
+
+
+5808
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5779
+
+
+
+
+
+
+
+
+
+
+
+schoolbook: version first
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.24)
+
+
+
+Xhtml_To_IDML_v10.xsl(1.33)
+
+
+
+
+
+
+
+5902
+
+
+
+part,section, unit subtitle
+
+
+
+Home/Config Project/Transformation/IDML to Word/TocTitleExtract.zip(1.45)
+
+
+
+
+
+
+
+
+
+
+
+5255
+
+
+
+Content control:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.44)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.24)
+
+
+
+&nbsp;       
+
+
+
+
+
+
+
+Azure 5912
+
+
+
+Home/Config Project/Transformation/Word to IDML/xmlselfid.xsl(1.1)
+
+
+
+LISTISSUEIN INDESIGN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Azure 5779
+
+
+
+empty para missing in  Review xhtml
+
+
+
+Azure 6050
+
+
+
+endnote number duplicate by formatting
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.75)
+
+
+
+genxhtml.xslt
+
+
+
+ParaNumbering.xslt
+
+
+
+emptyparainwiciwyg
+
+
+
+Re-release
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.76)
+
+
+
+03-Final-IDML.xslt
+
+
+
+
+
+
+
+
+
+
+
+6142
+
+
+
+pdf space issue
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.45)
+
+
+
+OneShot.zip
+
+
+
+
+
+
+
+6165
+
+
+
+6082
+
+
+
+2365
+
+
+
+Lowercase
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.46)
+
+
+
+OneShot.zip
+
+
+
+emptyparainwiciwyg/C08
+
+
+
+
+
+
+
+6099
+
+
+
+content control
+
+
+
+https://rutatest.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+cc Test
+
+
+
+
+
+
+
+leading issue
+
+
+
+5769
+
+
+
+5313
+
+
+
+4388
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.47)
+
+
+
+OneShot.zip
+
+
+
+Change of Leading Testing/C02_AUTOPAGINATED1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6224 issue finding script for leading
+
+
+
+
+
+
+
+
+
+
+
+schoolbook:
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.25)
+
+
+
+Xhtml_To_IDML_v10.xsl(1.36)
+
+
+
+
+
+
+
+endnote duplicate
+
+
+
+6285
+
+
+
+6393
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.45)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.25)
+
+
+
+endnotestest
+
+
+
+Notes scenarios
+
+
+
+Note:
+
+
+
+
+
+
+
+Torchia: Plotinus and Augustine on the Mid-Rank of Soul
+
+
+
+blitz
+
+
+
+
+
+
+
+
+
+
+
+ENDNOTES OF BOOK_don't del
+
+
+
+
+
+
+
+
+
+
+
+index:
+
+
+
+
+
+
+
+1\. stylefinder terminated, unable to find the bookmark
+
+
+
+2\. styles merged so its gone in xhtml
+
+
+
+3\. couldnot identify the index marking text in some places
+
+
+
+
+
+
+
+
+
+
+
+Azure 6375 - parasplit by br page
+
+
+
+Azure 5516 - badbreak
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.46)
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.47)
+
+
+
+03-Final.xslt
+
+
+
+01-W2H-CK.xslt
+
+
+
+02-Remove-xmlns.xslt
+
+
+
+
+
+
+
+6638
+
+
+
+Manuscript to index extraction:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.47)
+
+
+
+Home/Config Project/Input/WordtoXHTML.xml(1.4)
+
+
+
+
+
+
+
+1\. create missed log
+
+
+
+2\. bookmark mismatch
+
+
+
+3\. formatting
+
+
+
+
+
+
+
+
+
+
+
+Notes closed item:`
+
+
+
+3142
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SIDVARU2127
+
+
+
+Siddhesh@27
+
+
+
+100126165373
+
+
+
+170200
+
+
+
+CHITRA MATHIAZHAGAN
+
+
+
+100126165373
+
+
+
+6089915058
+
+
+
+idib000S015
+
+
+
+
+
+
+
+Toc: Bold Removed
+
+
+
+Home/Config Project/Transformation/IDML to Word/TocTitleExtract.zip(1.51)
+
+
+
+5056
+
+
+
+6546
+
+
+
+5087
+
+
+
+3296
+
+
+
+AUTO PRODUCTION TOC TEST
+
+
+
+TOCBOLDREMOVE
+
+
+
+
+
+
+
+
+
+
+
+comment:
+
+
+
+6873
+
+
+
+Sandbox:
+
+
+
+Home/Production/Rowman - Epub December 2020/Config Project/Transformation/IDML to Word/OneShot.zip(1.1)
+
+
+
+Testserver:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.77)
+
+
+
+genxhtml15.xslt
+
+
+
+
+
+
+
+2/9/23 2:40 AM - docx(1.8)-correct
+
+
+
+7002
+
+
+
+
+
+
+
+6841
+
+
+
+Figure extra entermark, line box - 6957,7002
+
+
+
+7021- Table correction extra entermark
+
+
+
+6565
+
+
+
+
+
+
+
+
+
+
+
+6972:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.48)
+
+
+
+R\&L:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.26)
+
+
+
+Bookmark.xslt
+
+
+
+https://test.pagemajik.in/
+
+
+
+Notes scenarios
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+comment - MaterFiles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6736
+
+
+
+6732
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.6)
+
+
+
+2_Table_New.xslt
+
+
+
+Xhtml_To_Word.xslt
+
+
+
+xhtmlcomments.xslt
+
+
+
+xhmtlrowSpan.xslt
+
+
+
+Ump:
+
+
+
+
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.7)
+
+
+
+
+
+
+
+noetic and temporal orders of being
+
+
+
+
+
+
+
+
+
+
+
+Testserver:Azure 7128
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.78)
+
+
+
+03-Final-IDML.xslt
+
+
+
+Headingsort
+
+
+
+NOTES SCENARIOS
+
+
+
+
+
+
+
+Azure 7521
+
+
+
+Home/Config Project/Transformation/IDML to Word/TocTitleExtract.zip(1.52)
+
+
+
+removeEmptyTags.xslt
+
+
+
+StyleCollMap.xslt
+
+
+
+
+
+
+
+INSTRUCTION TEXT TRANSFERS TO AUTO TOC?
+
+
+
+Auto Production TOC Test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UU-Old-ID
+
+
+
+ReplacingStoryTab.xslt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Azure 7535 and 6375
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.49)
+
+
+
+03-Final.xslt
+
+
+
+R\&l
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.27)
+
+
+
+5772
+
+
+
+emptypara
+
+
+
+Home/Rowman - Epub December 2020/emptyparadocxtoxhtml/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0) -Rerelease on 31-3-2023 in W2XScript.zip(1.49)
+
+
+
+emptydivfootend
+
+
+
+Headingsort- MasterFiles
+
+
+
+
+
+
+
+
+
+
+
+7424
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.49)
+
+
+
+OneShot.zip
+
+
+
+Authorproofformatting
+
+
+
+issue checking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7684
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.50)
+
+
+
+01-W2H-CK.xslt
+
+
+
+R\&l
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.28)
+
+
+
+https://test.pagemajik.in/
+
+
+
+
+
+
+
+
+
+
+
+Azure 7788
+
+
+
+<CharacterStyleRange AppliedCharacterStyle="CharacterStyle/endnote reference">
+
+
+
+&nbsp;							<Content>3</Content>
+
+
+
+&nbsp;							<Content>2</Content>
+
+
+
+&nbsp;						</CharacterStyleRange>
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.79)
+
+
+
+03-Final-IDML.xslt
+
+
+
+04-Final-IDML.xslt
+
+
+
+LINETHROGH
+
+
+
+NOTES SCENARIOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Azure 7810
+
+
+
+Home/Config Project/Transformation/Word to IDML/Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.50)
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+LINETHROGH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7571 : added unwanted tags in stylelist.xml - not yet released
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.8)
+
+
+
+
+
+
+
+Azure 7937
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.7)
+
+
+
+7937 - single endnote issue
+
+
+
+2_Table_New.xslt
+
+
+
+xhtmlStyles.xslt
+
+
+
+xhtmlcomments.xslt
+
+
+
+xhtmlendnote.xslt
+
+
+
+ump:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.9)
+
+
+
+Book: comments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7002-p/div
+
+
+
+6699-p/span/ul
+
+
+
+7867
+
+
+
+7168 - 
+
+
+
+6560-empty para retained in review xhtml
+
+
+
+6414 - empty para
+
+
+
+6426
+
+
+
+5315
+
+
+
+Need to check
+
+
+
+5315-couldnnot add the column
+
+
+
+5164 - 
+
+
+
+6426
+
+
+
+ParaNumbering.xslt-no
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.80)
+
+
+
+03-Final-IDML.xslt
+
+
+
+04-Final-IDML.xslt
+
+
+
+ENTERMARKISSUE
+
+
+
+RERELEASE FOR 
+
+
+
+
+
+
+
+douple charcterstyle - span inside span
+
+
+
+notes citation two href
+
+
+
+figurecaption
+
+
+
+
+
+
+
+
+
+
+
+<!--25-4-2023-->
+
+
+
+8073
+
+
+
+8082
+
+
+
+8080
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.51)
+
+
+
+01-W2H-CK.xslt
+
+
+
+R\&l
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.29)
+
+
+
+
+
+
+
+8013
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.37)
+
+
+
+<!--end-->
+
+
+
+
+
+
+
+7867
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8132
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.8)
+
+
+
+
+
+
+
+7325
+
+
+
+7876
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7168
+
+
+
+8269
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.81)
+
+
+
+03-Final-IDML.xslt
+
+
+
+genxhtml.xslt
+
+
+
+Entermarkissue_dont del
+
+
+
+NOTES SCENARIOS-DONT DELETE
+
+
+
+linethrogh_dont del
+
+
+
+https://test.pagemajik.in/
+
+
+
+
+
+
+
+ReplacingStoryTab.xslt-uuid-old-need to ignore
+
+
+
+
+
+
+
+Another cluster of institutions that promote 
+
+
+
+
+
+
+
+8329
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.82)
+
+
+
+Hyperlink:
+
+
+
+ParaNumbering.xslt
+
+
+
+02-Remove-xmlns-IDML.xslt
+
+
+
+03-Final-IDML.xslt
+
+
+
+Comments.xslt
+
+
+
+Footnote.xslt
+
+
+
+genxhtml.xslt
+
+
+
+genxhtml15.xslt
+
+
+
+Inp.xslt
+
+
+
+MergeStory.xslt
+
+
+
+ReplacingStoryTab.xslt
+
+
+
+Table.xslt
+
+
+
+Hyperlink
+
+
+
+linethrogh_dont del
+
+
+
+
+
+
+
+https://test.pagemajik.in/
+
+
+
+8453
+
+
+
+8495 - attribute for Toc
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.38)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8543 - additional other language text, indesign side issue checked and informed
+
+
+
+8508- Notes style removed, indesign side issue check and informed
+
+
+
+8555 -  support idml and xhtml, all backend has separate para, please check and let know , its  has issue in pdf only ,paneer need to check
+
+
+
+
+
+
+
+8518, 8589 and 6560
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.51)
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+OneShot.zip
+
+
+
+
+
+
+
+insert image entermark
+
+
+
+
+
+
+
+
+
+
+
+I have updated the script to remove the empty entermark, that was created by if p comes without class name and data-name along with image, so when create the empty paragraph,  i have added one attribute, finally removed that paragraph using some conditions like if it has zero content, No content element, No Notes. please  check and let me know
+
+
+
+updated xslt:
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.51)
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+OneShot.zip
+
+
+
+Tested site:
+
+
+
+https://test.pagemajik.in/
+
+
+
+Tested book
+
+
+
+
+
+
+
+8622
+
+
+
+word to xhtml:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.56)
+
+
+
+02-Remove-xmlns.xslt
+
+
+
+03-Final.xslt
+
+
+
+R\&L:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.30)
+
+
+
+idml to xhtml:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.83)
+
+
+
+image_empty
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7534
+
+
+
+6716
+
+
+
+2685
+
+
+
+4042
+
+
+
+919
+
+
+
+4318
+
+
+
+
+
+
+
+
+
+
+
+897 781 741 847
+
+
+
+5757
+
+
+
+6564
+
+
+
+8348
+
+
+
+
+
+
+
+
+
+
+
+checked:
+
+
+
+7421
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7-6-2023:
+
+
+
+7326
+
+
+
+1692
+
+
+
+8908
+
+
+
+2325
+
+
+
+1908
+
+
+
+
+
+
+
+
+
+
+
+786
+
+
+
+
+
+
+
+
+
+
+
+3908
+
+
+
+5110
+
+
+
+2396
+
+
+
+698 
+
+
+
+
+
+
+
+
+
+
+
+08-06-2023
+
+
+
+5495 - s4c closed
+
+
+
+8948 and 8963- Generate xhtml failed -given file to anitha, script updated i need to test
+
+
+
+8962 - editor issue, mariappan need to check assigned to him
+
+
+
+8706 - indesign not generated inprogress
+
+
+
+
+
+
+
+xhtml to word:
+
+
+
+compared the scripts,Taken the difference what are the changes made only for ump, i will done soon 
+
+
+
+
+
+
+
+
+
+
+
+compare:
+
+
+
+
+
+
+
+2_Table_New.xslt:
+
+
+
+
+
+
+
+<xsl:template match="//span\\\\\\\\[@class = 'Tag']"/>
+
+
+
+&nbsp;	<xsl:template match="//span\\\\\\\\[@data-name]/@data-name\\\\\\\\[. =parent::p\\\\\\\\[@data-change]/@data-name]"/>
+
+
+
+&nbsp;	<xsl:template match="//span\\\\\\\\[@class]/@class\\\\\\\\[. =parent::p\\\\\\\\[@data-change]/@data-name]/@class"/>
+
+
+
+
+
+
+
+xhmtlrowSpan.xslt:
+
+
+
+stylecollection
+
+
+
+Stylelist - scribe tag removed
+
+
+
+changed the dzp pagemajik style
+
+
+
+
+
+
+
+xhtmlcomments.xslt
+
+
+
+
+
+
+
+&nbsp;<xsl:if test="ancestor-or-self::span\\\\\\\\[contains(@style, 'font-family:')]\\\\\\\\[not(contains(@style, 'mso-fareast-font-family:'))]">
+
+
+
+&nbsp;      <!--Uncomment to retain other lanuage Fonts 03-06-2021-->
+
+
+
+&nbsp;      <xsl:attribute name="w:hAnsi">
+
+
+
+&nbsp;       <xsl:value-of select="$font"/>
+
+
+
+&nbsp;      </xsl:attribute>
+
+
+
+&nbsp;      <!-- End -->
+
+
+
+&nbsp;      <!--Added for font missing on 11-08-2021-->
+
+
+
+&nbsp;      
+
+
+
+&nbsp;      <xsl:attribute name="w:eastAsia">
+
+
+
+&nbsp;       <xsl:value-of select="$font"/>
+
+
+
+&nbsp;      </xsl:attribute>
+
+
+
+&nbsp;      
+
+
+
+&nbsp;      <xsl:attribute name="w:ascii">
+
+
+
+&nbsp;       <xsl:value-of select="$font"/>
+
+
+
+&nbsp;      </xsl:attribute>
+
+
+
+&nbsp;     </xsl:if>
+
+
+
+&nbsp;     
+
+
+
+&nbsp;    </xsl:element>
+
+
+
+&nbsp;   </xsl:when>
+
+
+
+&nbsp;  </xsl:choose>
+
+
+
+&nbsp; </xsl:if>
+
+
+
+
+
+
+
+commented background colors in ump
+
+
+
+xhtmlendnote.xslt
+
+
+
+w:sz values commented
+
+
+
+
+
+
+
+xhtmlfootnote.xslt
+
+
+
+w:shd commented
+
+
+
+
+
+
+
+xhtmlStyles.xslt
+
+
+
+
+
+
+
+w:sz
+
+
+
+w:spacing: <xsl:element name="w:spacing">
+
+
+
+&nbsp;                           <!--<xsl:attribute name="w:after" select="'200'"/>
+
+
+
+&nbsp;                           <xsl:attribute name="w:line" select="'276'"/>-->
+
+
+
+&nbsp;                           <!--<xsl:attribute name="w:after" select="'160'"/>-->
+
+
+
+&nbsp;                           <xsl:attribute name="w:line" select="'480'"/>
+
+
+
+&nbsp;                           <xsl:attribute name="w:lineRule" select="'auto'"/>
+
+
+
+&nbsp;                       </xsl:element>
+
+
+
+
+
+
+
+&nbsp;<!-- Added for editor edit styles retained on 2-5-2023 -->
+
+
+
+&nbsp;                            <xsl:element name="w:basedOn">
+
+
+
+&nbsp;                                <xsl:attribute name="w:val" select="$style1"/>
+
+
+
+&nbsp;                            </xsl:element>
+
+
+
+&nbsp;                             <w:rPr>
+
+
+
+&nbsp;                                <!--<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>-->
+
+
+
+&nbsp;                                <w:sz w:val="24"/>
+
+
+
+&nbsp;                            </w:rPr>
+
+
+
+
+
+
+
+
+
+
+
+<xsl:variable name="sz">
+
+
+
+&nbsp;               <xsl:choose>
+
+
+
+&nbsp;                   <xsl:when test="starts-with(lower-case(@val),'nan')">
+
+
+
+&nbsp;                       <xsl:value-of select="'12'"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<xsl:element name="w:color">
+
+
+
+&nbsp;               <xsl:attribute name="w:val">
+
+
+
+&nbsp;                   <!--<xsl:value-of select="$FC"/>-->
+
+
+
+&nbsp;                   <xsl:value-of select="'000000'"/>
+
+
+
+&nbsp;               </xsl:attribute>
+
+
+
+
+
+
+
+<xsl:value-of select="'000000'"/>   - only using here
+
+
+
+
+
+
+
+
+
+
+
+<!-- <w:pgMar w:top="1417" w:right="1417" w:bottom="1417" w:left="1417" w:header="708"
+
+
+
+&nbsp;				w:footer="708" w:gutter="0"/> -->
+
+
+
+&nbsp;			<!--<w:pgSz w:w="12240" w:h="15840"/>-->
+
+
+
+&nbsp;			<w:pgSz w:w="12240" w:h="15840" w:code="1"/>
+
+
+
+&nbsp;			<w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="2160" w:header="720"
+
+
+
+&nbsp;				w:footer="720" w:gutter="0"/>
+
+
+
+&nbsp;			<w:cols w:space="720"/>
+
+
+
+&nbsp;			<!--<w:docGrid w:line-pitch="360"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+w:shd
+
+
+
+
+
+
+
+<w:tblBorders>
+
+
+
+&nbsp;    <w:top w:val="single"/>
+
+
+
+&nbsp;    <w:start w:val="single"/>
+
+
+
+&nbsp;    <!--<w:left w:val="single"/>-->
+
+
+
+&nbsp;    <w:bottom w:val="single"/>
+
+
+
+&nbsp;    <w:end w:val="single"/>
+
+
+
+&nbsp;    <!--<w:right w:val="single"/>-->
+
+
+
+&nbsp;    <w:insideH w:val="single"/>
+
+
+
+&nbsp;    <w:insideV w:val="single"/>
+
+
+
+&nbsp;   		
+
+
+
+&nbsp;   </w:tblBorders>
+
+
+
+
+
+
+
+<xsl:value-of select="'000000'"/>
+
+
+
+
+
+
+
+
+
+
+
+<xsl:if test="self::\\\\\\\\*\\\\\\\\[contains(@data-pmstyle , 'ExtractText')]">
+
+
+
+&nbsp;		<xsl:element name="w:ind">	
+
+
+
+&nbsp;			<xsl:attribute name="w:left" select="'720'"/>
+
+
+
+&nbsp;			</xsl:element>
+
+
+
+&nbsp;		</xsl:if>
+
+
+
+
+
+
+
+
+
+
+
+<xsl:element name="w:ind">
+
+
+
+&nbsp;					<!--<xsl:if test="string-length($firstLine) > 0 and matches($firstLine, '\\\\\\\\[0-9]+')">
+
+
+
+&nbsp;						<xsl:variable name="tempVal" select="replace($firstLine, 'pt', '')"/>
+
+
+
+&nbsp;						<xsl:attribute name="w:firstLine" select="number($tempVal) \\\\\\\\* 20"/>
+
+
+
+&nbsp;					</xsl:if>-->
+
+
+
+&nbsp;					<xsl:attribute name="w:firstLine" select="'720'"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+parasplit
+
+
+
+
+
+
+
+8963
+
+
+
+8948 - 9043
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.58)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.31)
+
+
+
+https://test.pagemajik.in/
+
+
+
+emptydivfootend
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13-6-2023
+
+
+
+6227 and 7365  - two hyperlink
+
+
+
+9050 - checked and manually corrected file 
+
+
+
+
+
+
+
+
+
+
+
+checked:
+
+
+
+
+
+
+
+6957 - comment
+
+
+
+
+
+
+
+14-06-2023
+
+
+
+
+
+
+
+8810
+
+
+
+698
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8812 - assigned balaji GENERATE FAILED ISSUE
+
+
+
+8766 - assigned balaji GENERATE FAILED ISSUE
+
+
+
+
+
+
+
+8817
+
+
+
+8630
+
+
+
+9088
+
+
+
+9117 - assigned to balaji(<u1:p> </u1:p>)
+
+
+
+8682
+
+
+
+
+
+
+
+7876
+
+
+
+https://test.pagemajik.in/
+
+
+
+Idml to xhtml:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.84)
+
+
+
+04-Final-IDML.xslt
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.52)
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+SplitStory.xslt
+
+
+
+insert image entermark/C04 illinois
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4141
+
+
+
+3926
+
+
+
+3894
+
+
+
+971
+
+
+
+2433
+
+
+
+5535
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6414
+
+
+
+724
+
+
+
+1988- checked and assign to sangar
+
+
+
+8381-check and closed
+
+
+
+2171-check and closed
+
+
+
+collected all unicode issue Azure. collecting more entities like emoji, apart from what we have
+
+
+
+
+
+
+
+
+
+
+
+5062 - 
+
+
+
+2375 - checked and closed
+
+
+
+2317 - checked and closed
+
+
+
+9191 - checked given files to karthick and assign to prakash its badbreak issue
+
+
+
+4289 - New para space view in wiciwyg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+spacing modifier letter
+
+
+
+general punctuation
+
+
+
+
+
+
+
+
+
+
+
+demo file generate failed issue given to karthick
+
+
+
+4476 - cheked and closed
+
+
+
+1013 - checked and assigned to paneer
+
+
+
+9209 - link issue manually resolved file given to saradha
+
+
+
+9212 - manually corrected file given to sangar, issue need to check by suguna assigned to her
+
+
+
+Demo file checked for suguna, found issue, discussion and checked with suguna, prakash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4719 - checked and closed
+
+
+
+9227 - footnote issue
+
+
+
+
+
+
+
+https://test.pagemajik.in/   
+
+
+
+7868 and 9227
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.26)
+
+
+
+&nbsp;                                           Xhtml_To_IDML_v10.xsl(1.39)
+
+
+
+
+
+
+
+idml to xhtml
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.85)
+
+
+
+Tested book:
+
+
+
+footnoteproprty
+
+
+
+IMAGE_EMPTY -old master files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7868 - check and given to lokesh
+
+
+
+9382 - badbreak issue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.11)
+
+
+
+9441
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9443 - luster issue checked, made some changes manually
+
+
+
+9467 - checked in test server its fine assiged to sangar
+
+
+
+9441 - discussed with saradha, need to confirm about stylecollection update
+
+
+
+9366 - line break in progress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+xhtml 1.60
+
+
+
+xml 1.22
+
+
+
+
+
+
+
+1\. Generate revises not working checked for bharathwaj and addressed to saravanan
+
+
+
+2\. discussed with saradha about character style removed, she said, we cant remove all because there are expecting some styles to retain for glossary 
+
+
+
+9366 - checked Two paragraph deleted but empty para retained without text, given to mariappan to check
+
+
+
+1.60
+
+
+
+1.21 xml
+
+
+
+1.21 xhtml
+
+
+
+3\. 9406 - para position changed by two bookmark addressed to paneer also,checked and assigned anitha 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9449 - 12-7-2023 11.10 Am
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.53)
+
+
+
+SplitStory.xslt
+
+
+
+Authorproofformatting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9315 - need to implement
+
+
+
+
+
+
+
+8630 - mismatch issue
+
+
+
+9441 - ump issue - given to saradha -Released
+
+
+
+
+
+
+
+&nbsp;    - 100% bold resolved
+
+
+
+7938 - hyperlink Removed
+
+
+
+8149 - hyperlink resolved
+
+
+
+7151 - style issue resolved in 9441 formatting issue pending
+
+
+
+7937 - Ms Feedback checking
+
+
+
+&nbsp;    - if class  style has Normal but data-name changed other style,  now changed data-name style to normal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9586 -Empty characterstyleRange missing , it take time to found the issue today, informed to bhaskar and mariappan, we will discuss in morning
+
+
+
+9457 - file for karthick -inprogress
+
+
+
+9609 - Pagemajik Academic Catalogue - done given to padmapriya
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9457 - footnote not retained issue, manually given to karthik
+
+
+
+9644 - 
+
+
+
+9624 - Text not shows in editor by CommentReference style
+
+
+
+
+
+
+
+
+
+
+
+1\. 100% bold resolved
+
+
+
+2\. hyperlink removed
+
+
+
+3\. comment not retained by comment inside p tag missing(mayo)
+
+
+
+4\. Editor comment author name retained
+
+
+
+5\. Single endnote not retained issue
+
+
+
+
+
+
+
+
+
+
+
+Released by prakash - baddbreak
+
+
+
+5516
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.59)
+
+
+
+R\&L
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mail 279
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9644 - issue checked and update to sangar
+
+
+
+9624 - generate failed issue by insert table, file  given to  ankur
+
+
+
+&nbsp;    - Text not visible issue fixed once confirm with mariappan will release it tomorrow
+
+
+
+Helped for prkash to release the script(merge, update)
+
+
+
+9647 -Mariappan gives tolowercase or touppercase data-name when changed to idml we applied nocharacterstyle, here span/span we finding text  parent span, taking little bit time to resolve sir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9624 - <xsl:if test="$a = 'CommentReference'">
+
+
+
+&nbsp;     <xsl:text>\&#x000A;</xsl:text>
+
+
+
+&nbsp;     <xsl:text>color: transparent;</xsl:text>
+
+
+
+&nbsp;   </xsl:if>
+
+
+
+&nbsp;   <xsl:if test="$a = 'CommentText'">
+
+
+
+&nbsp;     <xsl:text>\&#x000A;</xsl:text>
+
+
+
+&nbsp;     <xsl:text>color: transparent;</xsl:text>
+
+
+
+&nbsp;   </xsl:if> - waiting for approval
+
+
+
+9647 - uppercase
+
+
+
+9680 -
+
+
+
+9662 -
+
+
+
+
+
+
+
+
+
+
+
+9647
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.55)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.56)
+
+
+
+Xhtml_To_IDML.xslt
+
+
+
+https://test.pagemajik.in/
+
+
+
+aproofformatting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1\. italic
+
+
+
+2\. bold
+
+
+
+3\. underline
+
+
+
+4.sub
+
+
+
+5.sup
+
+
+
+characterstyle
+
+
+
+6\. italic
+
+
+
+7 italicHLC no changes in wiciwyg
+
+
+
+8\. bold
+
+
+
+9.boldHLC
+
+
+
+10.toupper
+
+
+
+11.tosmall
+
+
+
+12.tolower
+
+
+
+13\. no superscript
+
+
+
+14\. <i data-change="changestyle"><span class="touppercase" data-change="changestyle" data-name="touppercase">
+
+
+
+15\. <u data-change="changestyle"><span class="tosmallcaps" data-change="changestyle" data-name="tosmallcaps">
+
+
+
+16 .<span class="Bold" data-change="changestyle" data-name="Bold"><span class="touppercase" data-change="changestyle" data-name="touppercase">
+
+
+
+17\. <span class="touppercase" data-change="changestyle" data-name="touppercase"><i data-change="changestyle">
+
+
+
+18\. <span class="tolowercase" data-change="changestyle" data-name="tolowercase"><span class="Italic" data-change="changestyle" data-name="Italic">
+
+
+
+19.<i><span class="touppercase" data-change="changestyle" data-name="touppercase">
+
+
+
+20.<b><span class="iatlic"><span class="uppercase"
+
+
+
+21 .<span class="iatlic"><b><span class="uppercase"
+
+
+
+
+
+
+
+
+
+
+
+9691 - file given to ankur
+
+
+
+9647 - script updated online test going , will release it tomorrow
+
+
+
+9662 - line space checking
+
+
+
+
+
+
+
+
+
+
+
+9691 - indd not generated issue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+txtFrmPlacement.xml 
+
+
+
+
+
+
+
+<Oval data-pageitem="yes" pageNo="2" pageNo_rowman_2_int="2" txFrameY="189" txFrameX="511" width="34" height="34" column="1" id="u3a3c3" libraryFillColor="FFFFFF" page="verso" previous="" next="" pre-sib="1" fol-sib="6"><Txorigin>323.27560000000005</Txorigin><Tyorigin>405.89300000000003</Tyorigin><width>34.77470000000005</width></Oval><Oval data-pageitem="yes" pageNo="2" pageNo_rowman_2_int="2" txFrameY="189" txFrameX="511" width="34" height="34" column="1" id="u3a3c6" page="verso" previous="" next="" pre-sib="2" fol-sib="5"><Txorigin>305.27560000000005</Txorigin><Tyorigin>423.2803</Tyorigin><height>34.7747</height></Oval><Oval data-pageitem="yes" pageNo="2" pageNo_rowman_2_int="2" txFrameY="198" txFrameX="520" width="16" height="16" column="1" id="u3a3c7" page="verso" previous="" next="" pre-sib="3" fol-sib="4"><Txorigin>305.27560000000005</Txorigin><Tyorigin>414.326</Tyorigin><height>16.866100000000003</height></Oval>
+
+
+
+
+
+
+
+java -cp %CP% net.sf.saxon.Transform -o:"%~dp0\\ParaNumber\\WordTB.xml" "%~dp0\\ParaNumber\\txtFrmPlacement.xml" "%~dp0\\ParaNumber\\WordTB.xslt"
+
+
+
+39.1475395900000123
+
+
+
+
+
+
+
+
+
+
+
+ReplacingSpread.xml
+
+
+
+
+
+
+
+WordTB.xslt
+
+
+
+
+
+
+
+need to do:
+
+
+
+9680 - endnote issue
+
+
+
+9677 - tt button feedback
+
+
+
+oval
+
+
+
+9784
+
+
+
+
+
+
+
+
+
+
+
+5516
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.40)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5516 - badbreak idml portion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6681
+
+
+
+
+
+
+
+
+
+
+
+9904 - Trump: The Architecture of Survival
+
+
+
+
+
+
+
+
+
+
+
+9794
+
+
+
+
+
+
+
+9457 - file given to karthick
+
+
+
+
+
+
+
+
+
+
+
+9957 - Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.86)
+
+
+
+WordTB.xslt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10071 -  entity issue given to sangar
+
+
+
+10003 - given to padma priya
+
+
+
+10030 - enenote with properties script updated tomorrow will release it
+
+
+
+10069 - checking
+
+
+
+
+
+
+
+
+
+
+
+need to check for Toc ----9995
+
+
+
+
+
+
+
+
+
+
+
+10135 - Files given to sangar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Git -->
+
+
+
+
+
+
+
+git 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git clone --branch  LR49 https://pagemajik@dev.azure.com/pagemajik/Pagemajik/_git/ruta
+
+
+
+git status
+
+
+
+git add .
+
+
+
+git status
+
+
+
+git commit -m "25-03-2022 - 08.45 PM (LR49) Occurrence issue - Quotes and sflog file updation when exception occurs during first three jars."
+
+
+
+git push
+
+
+
+git reset --hard 18ae20185d7927b89c6014f7a9d29dc8feae9b31
+
+
+
+git push origin testrelease --force
+
+
+
+<!--End-->
+
+
+
+
+
+
+
+
+
+
+
+stylchg.xsl
+
+
+
+addnocharacterstyle
+
+
+
+manualtochar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Struture change
+
+
+
+
+
+
+
+Xhtml_To_IDML_v10.xsl
+
+
+
+addnocharstyle.xsl
+
+
+
+
+
+
+
+
+
+
+
+9586
+
+
+
+
+
+
+
+
+
+
+
+9176116110 Bsnl complaint- shafi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5206 - 5378 Mail tracker send item paste in clean list
+
+
+
+
+
+
+
+
+
+
+
+schoolbook:
+
+
+
+Home/Config Project/Transformation/Word to IDML/2_Table_New.xsl(1.27)
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.42)
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script (1.2).zip
+
+
+
+
+
+
+
+10069 - Feature certified
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.61)
+
+
+
+R\&L Monograph:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.34)
+
+
+
+
+
+
+
+NOTES SCENARIOS-DONT DELETE
+
+
+
+Master files: XMLELEDMENT
+
+
+
+Azure 10069 endnote inside table
+
+
+
+
+
+
+
+Master certified
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.32)
+
+
+
+R\&L:
+
+
+
+Home/Production/Sample/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+
+
+
+
+Tested Book: 23-08-2023 docx to xhtml
+
+
+
+
+
+
+
+
+
+
+
+10169, 10216, 10392 10196,10183,9887,9926
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.58)
+
+
+
+Rerelease
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.59)
+
+
+
+COMMENT SPACE
+
+
+
+Mastermerge:
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.14)
+
+
+
+30-8-2023 Authoorproofcommment
+
+
+
+
+
+
+
+
+
+
+
+10030
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.90)
+
+
+
+NOTES SCENARIOS-DONT DELETE
+
+
+
+Mater files: XMLELEDMENT
+
+
+
+https://test.pagemajik.in/
+
+
+
+folder:
+
+
+
+Home/Rowman - Epub December 2020/Config Project/Transformation/IDML to Word/OneShot.zip(1.0)
+
+
+
+
+
+
+
+Mastermerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.18)
+
+
+
+oneshot 4-9-2023
+
+
+
+
+
+
+
+
+
+
+
+10612 - paneer
+
+
+
+
+
+
+
+
+
+
+
+7908 - 10674
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.60)
+
+
+
+
+
+
+
+Re-release
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.61)
+
+
+
+https://test.pagemajik.in/
+
+
+
+DONT DELETE WYCIWYG BUG
+
+
+
+
+
+
+
+sandbox:
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.15)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+comment space
+
+
+
+coment text tab
+
+
+
+text tab comment
+
+
+
+comment text tab
+
+
+
+Tab comment
+
+
+
+comment Tab
+
+
+
+omment tab text
+
+
+
+comment tab comment
+
+
+
+Tab comment tab
+
+
+
+"existing text applied bold" comment tab
+
+
+
+tab comment "existing text applied italic"
+
+
+
+
+
+
+
+copy paste the new paragraph checked above all scenarions
+
+
+
+
+
+
+
+Note: Tab txt comment -tab missing in pdf
+
+
+
+10674
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10763
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.63)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.64)
+
+
+
+https://test.pagemajik.in/
+
+
+
+
+
+
+
+11005
+
+
+
+
+
+
+
+
+
+
+
+bold italic style not in template
+
+
+
+word style need to apply
+
+
+
+y icone tagged as characterstyle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+merged script:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.91)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11194
+
+
+
+11188
+
+
+
+11227bb
+
+
+
+
+
+
+
+
+
+
+
+1552
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.44)
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.5)
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.6)
+
+
+
+ListType
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bullet: 31-10-2023
+
+
+
+11646-Extract spacing
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.7)
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.8)
+
+
+
+Home/Production/InDesign - Special/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+
+
+
+
+
+
+Home/Production/InDesign - Test Cases/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11337 - Table content control issue
+
+
+
+11322 - entity issue given file to sangar
+
+
+
+instrction comes with comment text for panner, checked this is node changes issue
+
+
+
+hidden character issue in progress
+
+
+
+
+
+
+
+
+
+
+
+need to check
+
+
+
+11210
+
+
+
+11250-file pending
+
+
+
+11227
+
+
+
+11266
+
+
+
+11353
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11344 - text missing, available in 1.0, missed in next version, checked and assign to sangar
+
+
+
+11250 - did inside div issue
+
+
+
+11382 - table content control issue
+
+
+
+
+
+
+
+
+
+
+
+9995 - checked its resolved already
+
+
+
+11382 - table column missing
+
+
+
+1552 - list released
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IAM user
+
+
+
+pagemajik
+
+
+
+viewuser
+
+
+
+
+
+
+
+10272
+
+
+
+Home/Asha/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+NAMESPACETEST
+
+
+
+
+
+
+
+https://lambda.pagemajik.info/
+
+
+
+Home/Production/Suguna/LR89 Jar Unit Testing with NameSpace XSLT/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+
+
+Zoom
+
+
+
+id 973 7477 9989
+
+
+
+pwd : 087311
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;8817,4031,4533
+
+
+
+
+
+
+
+R\&L -diff
+
+
+
+designmap.xml
+
+
+
+Idml4-2_2.xsl
+
+
+
+Idml4-3.xsl
+
+
+
+xhtmltoXML
+
+
+
+
+
+
+
+
+
+
+
+Luster - old images with Artlog
+
+
+
+2_Table_New.xsl
+
+
+
+StylChg.xsl
+
+
+
+xhtmltoXML.xsl
+
+
+
+Xhtml_To_IDML_v10.xsl
+
+
+
+
+
+
+
+
+
+
+
+11593   11874 - opener image entermark
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.9)
+
+
+
+Double entermark
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+
+
+Double entermark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--start-->
+
+
+
+list
+
+
+
+1552
+
+
+
+Home/Config Project/Transformation/Word to IDML/Xhtml_To_IDML_v10.xsl(1.44)
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.5)
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.6)
+
+
+
+ListType
+
+
+
+Don't Del List Item
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.10)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.11)
+
+
+
+
+
+
+
+Double entermark - masterfiles
+
+
+
+Git:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?path=%2F\&version=GBListType
+
+
+
+
+
+
+
+MasterMerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.3) holded for mariappan module
+
+
+
+ListType
+
+
+
+
+
+
+
+oneshot:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.94)
+
+
+
+04-Final-IDML.xslt
+
+
+
+genxhtml.xslt
+
+
+
+genxhtml2.xslt
+
+
+
+17-11-2023 List
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.20)
+
+
+
+ListType
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+<!--End-->
+
+
+
+
+
+
+
+anydesk:
+
+
+
+1948293655
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11937 - Table content control
+
+
+
+11977
+
+
+
+11978
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11928 - Footnote space
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.63)
+
+
+
+R\&L - Monograph:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.35)
+
+
+
+Git:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=/01-W2H-CK.xslt\&version=GBtesting
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?path=%2F\&version=GBTesting\&_a=contents
+
+
+
+7-12-2023 - Re-release
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.65)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.36)
+
+
+
+Bookmark.xslt
+
+
+
+02-Remove-xmlns.xslt
+
+
+
+FooteNoteBeforespace
+
+
+
+14-11-2023 WORD TO XHTML
+
+
+
+Git General: https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F\&version=GBtesting\&_a=contents
+
+
+
+R\&L Monograph: https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?version=GBTesting
+
+
+
+11928  - feom lokesh
+
+
+
+MasterMerge: 11-12-2023
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.33)
+
+
+
+R\&L:https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/Sample2/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+FOOTENOTEBEFORESPACE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- XmlElement start -->
+
+
+
+12141, 12175,13177
+
+
+
+Home/IDSTesting/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+
+
+
+Xhtml_To_IDML_v10.xsl
+
+
+
+Git:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBXMLStructure
+
+
+
+
+
+
+
+Feedback: Home/IDSTesting/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+
+
+
+
+
+
+New:Final
+
+
+
+Home/Chitra/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.7)
+
+
+
+Xhtml_To_IDML_v10.xsl
+
+
+
+Idml4-3.xsl
+
+
+
+Idml4-2_1.xsl
+
+
+
+Idml4-2_2.xsl
+
+
+
+Idml3.xsl
+
+
+
+
+
+
+
+
+
+
+
+aRCTRUS:
+
+
+
+Idml4-2_1.xsl
+
+
+
+Idml4.xsl
+
+
+
+Idml4-3.xsl
+
+
+
+
+
+
+
+https://test.pagemajik.in/
+
+
+
+Home/IDSTesting/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.3)
+
+
+
+XMLELEDMENT
+
+
+
+
+
+
+
+
+
+
+
+Paneer feedback:
+
+
+
+Home/Chitra/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.8)
+
+
+
+
+
+
+
+
+
+
+
+OneShot.zip:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.96)
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?path=%2FParaNumber\&version=GBTesting
+
+
+
+
+
+
+
+MasterMerge: 
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.5)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.21)
+
+
+
+Tested Book: Idml_Structure
+
+
+
+Git:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?version=GBmaster\&path=/ParaNumber
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?path=%2F\&version=GBmaster\&_a=contents
+
+
+
+<!--End-->
+
+
+
+
+
+
+
+Azure 12086
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.65)
+
+
+
+https://test.pagemajik.in/
+
+
+
+Footnote Numbermissingpdf
+
+
+
+Mastermerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.2)
+
+
+
+Footnotenumber missing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/xhtml2word-General?path=%2F\&version=GBTesting\&_a=contents
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/xhtml2word-Ump?path=%2F\&version=GBmaster\&_a=contents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12123
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.66)
+
+
+
+R\&L: Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.37)
+
+
+
+01-W2H-CK.xslt
+
+
+
+03-Final.xslt
+
+
+
+endnote_table
+
+
+
+General Git: https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBtesting
+
+
+
+R\&L: https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?path=%2F\&version=GBTesting\&_a=contents
+
+
+
+https://test.pagemajik.in/
+
+
+
+Mastermerge:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.34)
+
+
+
+R\&L:
+
+
+
+Home/Production/Sample/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+ENDNOTE_TABLE
+
+
+
+
+
+
+
+
+
+
+
+General: https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript
+
+
+
+R\&L: https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?path=%2F\&version=GBmaster\&_a=contents
+
+
+
+
+
+
+
+wifi password
+
+
+
+P@g$M@j!k0509P1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12457 - empty citation remove
+
+
+
+12438- endnote notes moved
+
+
+
+12435 - override
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+XML STRUTURE
+
+
+
+12537-File not run name space issue for table
+
+
+
+12491 - List not capture in notes section. - Anderl(need to update in endnote)
+
+
+
+12495 - Deleting the tab remove the Reference(Reference tagged as endnote)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12141
+
+
+
+
+
+
+
+
+
+
+
+12630
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.67)
+
+
+
+Home/Chitra/Config Project/Transformation/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12141 - IDML STRUCTURAL CHANGES - 04-1-2023
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12749- hyperlink space
+
+
+
+12659 - endnotespace
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.70)
+
+
+
+Home/Chitra/Config Project/Transformation/Word to HTML/W2XScript.zip(1.42)
+
+
+
+https://test.pagemajik.in/
+
+
+
+FOOTENOTEBEFORESPACE
+
+
+
+EN_dot_space
+
+
+
+Git:
+
+
+
+General:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F\&version=GBtesting\&_a=contents
+
+
+
+R\&L Monograph
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?path=%2F\&version=GBTesting\&_a=contents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10034
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+
+
+
+
+WORD CONVERSION
+
+
+
+
+
+
+
+Mastererge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+CHARCTERSTYLEREMOVED
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/xhtml2word-Ump?path=%2F\&version=GBmaster\&_a=contents
+
+
+
+
+
+
+
+IAM user
+
+
+
+
+
+
+
+pagemajik
+
+
+
+viewuser
+
+
+
+uXA>^V4\\9x\\\\\\\\[D\\\\\\\\[
+
+
+
+https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252FSaxon_TEST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vements of the eyes in the oppo
+
+
+
+
+
+
+
+
+
+
+
+106
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Baier: Earth's Emergency Room
+
+
+
+C07
+
+
+
+Notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&nbsp;and  //following::text()\\\\\\\\[2]\\\\\\\\[normalize-space(.)='.']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ParagraphStyleRange\\\\\\\\[descendant::HyperlinkTextDestination\\\\\\\\[1]/@BookMarkDestination\\\\\\\\[substring-after(.,'UUID_') = $Indexterm//chapter/bookmark/substring-before(.,'Main')]]//CharacterStyleRange\\\\\\\\[descendant::Content/.=$Indexterm//chapter/descendant::title]
+
+
+
+
+
+
+
+//ParagraphStyleRange\\\\\\\\[descendant::HyperlinkTextDestination\\\\\\\\[1]/@BookMarkDestination\\\\\\\\[substring-after(.,'UUID_') = $Indexterm//chapter/bookmark/substring-before(.,'Main')]]\\\\\\\\[//CharacterStyleRange\\\\\\\\[descendant::Content\\\\\\\\[.=$Indexterm//chapter/descendant::title]]]
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.0)
+
+
+
+
+
+
+
+Home/Production/MergeIndex/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13335:endnote dot space
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+R\&LMonograph:
+
+
+
+Home/Production/R\&LMonograph/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Index:
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.1)
+
+
+
+Home/Production/MergeIndex/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.1)
+
+
+
+Home/Production/MergeIndex/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+
+
+
+
+
+
+13534 index script release
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.1)
+
+
+
+Home/Config Project/Transformation/XHTML5/MergeIndex.zip(1.4)
+
+
+
+Home/Config Project/Transformation/XHTML5/Index.zip(1.0)
+
+
+
+13517 index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wiciwyg test:
+
+
+
+Home/Production/Wyciwyg testing/Config Project/Transformation/Word to HTML/W2XScript.zip
+
+
+
+Home/Production/MergeIndex/Config Project/Transformation/Word to HTML/W2XScript.zip(1.5)
+
+
+
+
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/:
+
+
+
+Input:
+
+
+
+Home/Config Project/Input/IndexAndToc.xml(1.2)
+
+
+
+&nbsp;                         WordtoXHTML.xml(1.2)
+
+
+
+&nbsp;                         IdmlToWord.xml(1.2)
+
+
+
+
+
+
+
+Script:
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.2)
+
+
+
+Home/Production/MergeIndex/Config Project/Transformation/Word to HTML/W2XScript.zip(1.6)
+
+
+
+Home/Config Project/Transformation/XHTML5/MergeIndex.zip(1.4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+XHTML-To-IDML_Script_arcturus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sandbox:
+
+
+
+Input:
+
+
+
+Home/Config Project/Input/IndexAndToc.xml(1.5)
+
+
+
+&nbsp;                         WordtoXHTML.xml(1.6)
+
+
+
+&nbsp;                         IdmlToWord.xml(1.12)
+
+
+
+
+
+
+
+Script:
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.2)
+
+
+
+Home/Config Project/Transformation/Word to IDML/W2XScript.zip(1.38)
+
+
+
+Home/Config Project/Transformation/XHTML5/MergeIndex.zip(1.3)
+
+
+
+
+
+
+
+13534      Sub Entries:
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.4)
+
+
+
+Politicians Lie - Index
+
+
+
+
+
+
+
+MasterMerge: https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.3)
+
+
+
+Home/Config Project/Input/WordtoXHTML.xml(1.9)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10034
+
+
+
+Script:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+Tested Book:
+
+
+
+LO-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\DataModel\\Cartridges
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Font Issue:
+
+
+
+13775
+
+
+
+Home/Production/arcturus/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.3)
+
+
+
+Tested Book Name: FONTISSUE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endnote dot issue finding 13363
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13724, 13691,13600
+
+
+
+
+
+
+
+sandbox:
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.0)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.25)
+
+
+
+
+
+
+
+
+
+
+
+Test server
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.5)
+
+
+
+
+
+
+
+Testing:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?path=%2F\&version=GBTesting\&_a=contents
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?path=%2FParaNumber\&version=GBTesting\&_a=contents
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+italic issue
+
+
+
+
+
+
+
+MasterMerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.6)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.25)
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?path=%2FParaNumber\&version=GBmaster\&_a=contents
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBmaster\&_a=contents
+
+
+
+italicMissinginNotes
+
+
+
+
+
+
+
+
+
+
+
+14246
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+backcolor
+
+
+
+Home/Production/R\&LMonograph/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+Git:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F\&version=GBtesting\&_a=contents
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?path=%2F\&version=GBTesting\&_a=contents
+
+
+
+
+
+
+
+sandbox:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.39)
+
+
+
+Home/Production/Monograph/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+backcolor
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F\&version=GBmaster\&_a=contents
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?path=%2F00-Merge.xslt\&version=GBmaster\&_a=contents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14417 - endnotenumber duplicate
+
+
+
+Test server
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.6)
+
+
+
+Endnote_space_Gen/NOTES-1
+
+
+
+MasterMerge: https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.26)
+
+
+
+ITALICMISSINGINNOTES/NOTES-1
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?version=GBmaster\&path=/ParaNumber/04-Final-IDML.xslt
+
+
+
+
+
+
+
+
+
+
+
+<!--start-->
+
+
+
+
+
+
+
+13763,13335,14235
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+
+
+
+Home/Production/chitra1/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=/\&version=GBtesting
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?path=%2F\&version=GBTesting\&_a=contents
+
+
+
+ENDNOTESCENARIOS-1DONT_DELETE
+
+
+
+
+
+
+
+
+
+
+
+feedback:
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.5)
+
+
+
+R\&L
+
+
+
+Home/Production/chitra1/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MasterMerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.41)
+
+
+
+Home/Production/Monograph/Config Project/Transformation/Word to HTML/W2XScript.zip(1.6)
+
+
+
+ENDNOTEDOTSPACENEW
+
+
+
+Master - Word to XHTML
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.6)
+
+
+
+R\&L
+
+
+
+Home/Production/chitra1/Config Project/Transformation/Word to HTML/W2XScript.zip(1.4)
+
+
+
+
+
+
+
+
+
+
+
+General:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F\&version=GBmaster\&_a=contents
+
+
+
+R\&L Monograph;
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?version=GBmaster
+
+
+
+
+
+
+
+<!--End-->
+
+
+
+
+
+
+
+<!--multiple para-->
+
+
+
+MasterMerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.42)
+
+
+
+Home/Production/Monograph/Config Project/Transformation/Word to HTML/W2XScript.zip(1.7)
+
+
+
+Master - Word to XHTML
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.6)
+
+
+
+R\&L
+
+
+
+Home/Production/chitra1/Config Project/Transformation/Word to HTML/W2XScript.zip(1.4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+General:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F\&version=GBmaster\&_a=contents
+
+
+
+R\&L Monograph;
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript%20-%20monograph?version=GBmaster
+
+
+
+<!--End-->
+
+
+
+
+
+
+
+14488
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.7)
+
+
+
+endnotenumberwithformatting
+
+
+
+updated: Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.9)
+
+
+
+
+
+
+
+
+
+
+
+Need to check 14640
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13721, 12778,14110,14643,14486
+
+
+
+
+
+
+
+12778 - Authorproof empty paraword-1
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.4)
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/AuthorProof?path=%2FXSLT\&version=GBTesting\&_a=contents
+
+
+
+Authorproofemtyparagraphwordnumber
+
+
+
+14681
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endnote: 14611
+
+
+
+1\. continuous two notes from manuscript
+
+
+
+2\. can merged in editor 
+
+
+
+3\. fine in xtml to idml
+
+
+
+4\. if client deleted the number in review xhtml
+
+
+
+5\. need to check duplicate number id, need to retain the separate ids
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14681
+
+
+
+cicerone color issue 
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.8)
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?version=GBmaster\&path=/ParaNumber/genxhtml2.xslt
+
+
+
+ciceronecolorissue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14611,    8938,10148,
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.10)
+
+
+
+ENDNOTENUMBERSPLIT
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?path=%2FParaNumber\&version=GBendnotenumbersplit\&_a=contents
+
+
+
+
+
+
+
+Mastermerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.27)
+
+
+
+Endnotesplit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14910
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script(1.3)
+
+
+
+opener_image
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?path=/Idml4-2_2.xsl\&version=GBTesting\&_a=contents
+
+
+
+
+
+
+
+
+
+
+
+Master Merge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script(1.7)
+
+
+
+
+
+
+
+
+
+
+
+opener_image
+
+
+
+2\. footnote superscript gone
+
+
+
+3\. xmlstruture updation in authoorproof (Bhaskar has to confirm)
+
+
+
+4\. property  need to retain when cut paste using wyciwyg
+
+
+
+5\. comment(Notes) displayed as text issue
+
+
+
+6\. override azure 11969
+
+
+
+7.soft/hard return
+
+
+
+8\. xhml to word ciceron conversion
+
+
+
+9\. empty cell correction not retained  in th alone in testing
+
+
+
+10\. endnote footnote structure need to discuss with bhaskar
+
+
+
+11\. xhtml to idml bookmark into  para id
+
+
+
+12\. peterlang list issue 14923 and 14924
+
+
+
+13\. authorproof feedback
+
+
+
+14\. wkh xhtml to word feedback
+
+
+
+15\. 1194 UTG.idml
+
+
+
+16\. <w:br type="page">
+
+
+
+
+
+
+
+
+
+
+
+sub entry testing 
+
+
+
+
+
+
+
+
+
+
+
+Siddhesh@27
+
+
+
+
+
+
+
+13031,13271,13172,14507
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.5)
+
+
+
+Authorproofiinsertimageentermark
+
+
+
+update:
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Paneer: 15087,15257
+
+
+
+
+
+
+
+Site: https://test-production.pagemajik.in/
+
+
+
+Script: Home/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.5)
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.6)
+
+
+
+Final:
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.8)
+
+
+
+
+
+
+
+5-9-2024:15257
+
+
+
+
+
+
+
+Home/Production/InDesign - Test Cases/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+Home/Production/InDesign - Special/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.10)
+
+
+
+
+
+
+
+InDesign Test Cases
+
+
+
+InDesign Specials
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tested Book: inlineref_Test
+
+
+
+2_Table_New.xsl
+
+
+
+Idml4-2_1.xsl
+
+
+
+Idml4-2_2.xsl
+
+
+
+Xhtml_To_IDML_v10.xsl
+
+
+
+xhtmltoXML.xsl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15040 - image wicywyg display -Release to asha
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.1)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.2)
+
+
+
+wiciwygimgnotdisplay
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?path=%2F\&version=GBTesting\&_a=contents
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+
+
+
+
+Mastemerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.28)
+
+
+
+WICIWYGIMGNOTDISPLAY
+
+
+
+
+
+
+
+
+
+
+
+15359 -Index Generation Scripts and Index Extraction Scripts
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/BookIndexscript.zip(1.3)
+
+
+
+Sory:
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.5)
+
+
+
+
+
+
+
+
+
+
+
+12255
+
+
+
+Updated xslt: Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+Tested site: https://test-production.pagemajik.in/
+
+
+
+Tested book: word conversion
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Production/Saradha/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+Home/Production/WKH/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+Home/Config Project/Input/xhtmltoword.xml(1.1)
+
+
+
+
+
+
+
+feedback: 30-4-2024
+
+
+
+&nbsp;Home/Production/WKH/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.3)
+
+
+
+
+
+
+
+Home/Config Project/Input/xhtmltoword.xml(1.1)
+
+
+
+XHTMLTOWORD
+
+
+
+MasterMerge:
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/WKH/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.0)
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/WKH/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+Home/Config Project/Input/xhtmltoword.xml(1.1)
+
+
+
+XHTMLTOWORD-1
+
+
+
+
+
+
+
+
+
+
+
+sandbox:
+
+
+
+Home/Production/WKH/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15447 -field code
+
+
+
+
+
+
+
+
+
+
+
+15552,15256,8817,8858
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to HTML/XSLT.zip(1.2)
+
+
+
+
+
+
+
+sandbox:
+
+
+
+Home/Production/AOne/Config Project/Transformation/Word to HTML/XSLT.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15694
+
+
+
+doc to xhtml
+
+
+
+Home/Production/A1_NG/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+sandbox: https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/A1_Ng/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+A1_EDITOR_TEST
+
+
+
+
+
+
+
+15869
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/AOne/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+Home/Production/AOne/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/AOne/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+Home/Production/AOne/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+
+
+
+
+A1_DOCXTOXHTML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/xhtml2word-General?path=%2F\&version=GBNG\&_a=contents
+
+
+
+AOne Testing_xhtmltoword
+
+
+
+
+
+
+
+
+
+
+
+Testserver:
+
+
+
+Home/Production/NG/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+Home/Production/NG/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+NG_XHTMLTOWORD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create database employee;
+
+
+
+use employee;
+
+
+
+create table employee(
+
+
+
+name varchar(100), age int, gender  varchar(20));
+
+
+
+select \\\\\\\\* from employee;
+
+
+
+insert into employee values("sathya",28,"F")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/AOne/Config Project/Transformation/Word to HTML/W2XScript.zip(1.4)
+
+
+
+Home/Production/AOne/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+
+
+
+
+Test:
+
+
+
+Home/Production/NG/Config Project/Transformation/Word to HTML/W2XScript.zip(1.4)
+
+
+
+Home/Production/NG/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.3)
+
+
+
+Home/Config Project/Input/WordtoXHTML.xml(1.4)
+
+
+
+
+
+
+
+
+
+
+
+<!--start-->
+
+
+
+15694
+
+
+
+image style updated
+
+
+
+Home/Production/NG/Config Project/Transformation/Word to HTML/W2XScript.zip(1.5)
+
+
+
+NG_xhtmltoword
+
+
+
+
+
+
+
+Ng:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.5)
+
+
+
+
+
+
+
+<!--end-->
+
+
+
+
+
+
+
+
+
+
+
+https://ngplosjournals.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/Sample/Test New/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/NG/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+
+
+
+
+
+
+
+
+https://ngplosjournals.pagemajik.ai/
+
+
+
+Input: Home/Config Project/Input/WordtoXHTML.xml(1.1)
+
+
+
+Script: 
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.4)
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+
+
+
+
+Home/Production/Sample/Test New/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.3)
+
+
+
+
+
+
+
+16031
+
+
+
+12060
+
+
+
+13780
+
+
+
+
+
+
+
+ciceron 1194 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5-9-2024:15257
+
+
+
+
+
+
+
+Home/Production/InDesign - Test Cases/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+Home/Production/InDesign - Special/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.10)
+
+
+
+
+
+
+
+InDesign Test Cases
+
+
+
+InDesign Specials
+
+
+
+
+
+
+
+
+
+
+
+Ng:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.6)
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+General:
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.7)
+
+
+
+Monograph:
+
+
+
+
+
+
+
+
+
+
+
+16334
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.7)
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.5)
+
+
+
+Manuscript xhtml:
+
+
+
+Home/Production/A1_NG/Config Project/Transformation/XML/XHTML-TO-XML.zip(1.0)
+
+
+
+
+
+
+
+
+
+
+
+Ng:
+
+
+
+Home/Production/Sample/Sample Journal for Testing and Training/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.7)
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.8)
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.8)
+
+
+
+
+
+
+
+
+
+
+
+15257
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.12)
+
+
+
+InDesign feeback 15-11-2024
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.13)
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.14)
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.15)
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.16)
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.17)
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.18)
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.19)
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.20)
+
+
+
+
+
+
+
+17212 and 17104
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.21)
+
+
+
+
+
+
+
+17269 cicerone
+
+
+
+
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.22)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2-Col IDS Testing
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+&nbsp;inlineref_Test/9781284240108_CH06-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chitram
+
+
+
+commented Friday
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ng:
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.12)
+
+
+
+
+
+
+
+emptypaa in td
+
+
+
+Home/Production/Sample/Sample Journal for Testing/Article Type/Unit Testing/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/Sample/Sample Journal for Testing and Training/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+
+
+Bits:
+
+
+
+Home/Config Project/Transformation/XML/XHTML-TO-XML.zip(1.91)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cice req: html to word
+
+
+
+
+
+
+
+1\. remove box for all elements
+
+
+
+2\. paste the side bartext based on anchor
+
+
+
+3\. object style applied as a content control for box
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/Sample/Sample Journal for Testing and Training/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+Home/Production/Sample/Sample Journal for Testing and Training/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.13)
+
+
+
+
+
+
+
+1\. math
+
+
+
+2\. chapter sub heading and link
+
+
+
+3\. page list
+
+
+
+4\. guide
+
+
+
+5\. list of tables , figures, Boxes
+
+
+
+
+
+
+
+
+
+
+
+Nap:
+
+
+
+Home/Production/NAP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.0)
+
+
+
+
+
+
+
+
+
+
+
+<xsl:if test="string-length($linkend-xmlId) \&gt; 0">
+
+
+
+&nbsp;         <xsl:attribute name="linkend-xmlId"><xsl:value-of select="$linkend-xmlId"/></xsl:attribute>     
+
+
+
+&nbsp;         </xsl:if>
+
+
+
+16945 biref0 to suguna
+
+
+
+
+
+
+
+NG:17069
+
+
+
+empty cell
+
+
+
+deeted characerstyle not removed
+
+
+
+edtior added charaterstyle not retand to word
+
+
+
+
+
+
+
+Home/Production/Sample/Sample Journal for Testing/Article Type/Unit Testing/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+
+
+
+
+Home/Production/Sample/Sample Journal for Testing/Article Type/Unit Testing/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+Home/Production/Sample/Sample Journal for Testing/Article Type/Unit Testing/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.5)
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/Sample/Sample Journal for Testing/Article Type/Unit Testing/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.6)
+
+
+
+
+
+
+
+Unit Testing
+
+
+
+Home/Production/Sample/Sample Journal for Testing/Article Type/Unit Testing/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+List
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+LR122 Unit Testing AOne
+
+
+
+Home/Production/Ruta (Dont Delete)/LR122 Unit Testing AOne/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+https://ngplosjournals.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.11)
+
+
+
+
+
+
+
+
+
+
+
+supplymentary link, master :
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.15)
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.13)
+
+
+
+Namespace:
+
+
+
+
+
+
+
+
+
+
+
+LR123-AONE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Asha       -Jan 24
+
+
+
+ashok sir  -feb 4
+
+
+
+Newton     -Feb 18
+
+
+
+Saravanan  - March 28
+
+
+
+Mariapan  -April 25
+
+
+
+viniba     April 25
+
+
+
+james     -may 9
+
+Arone       -May 14
+
+dharasara -may 14
+
+Balaji    -may 20
+
+
+
+
+
+
+jayasree  -July 2
+
+
+
+prakash  - july 14
+
+
+
+charumam   aug 26
+
+
+
+Bhaskar   -sep 3
+
+
+
+saradha -  sep 14
+
+
+
+sangar  -  oct 3
+
+
+
+paneer  -  10-10
+
+
+
+Lokesh   - 22-10
+
+
+
+Saranya - oct 29
+
+
+
+Karthick and suguna  -Nov 19
+
+
+
+Prasanth       -Nov -24
+
+
+
+Dinesh   - Dec 11
+
+
+
+anitha    -dec 16
+
+
+
+
+
+enrstu
+
+
+
+
+
+
+
+
+
+List link:
+
+
+
+https://learn.microsoft.com/en-us/previous-versions/office/developer/office-2010/ee922775(v=office.14)?redirectedfrom=MSDN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ng feedback
+
+
+
+
+
+
+
+custom xml cleanup - pone.0310205.docx
+
+
+
+double entity - pone.0317715.docx
+
+
+
+table 2 group issue-ppat.1012902.xhtml
+
+
+
+multiple style
+
+
+
+url issue - pone.0318484.docx and ds namspsace
+
+
+
+
+
+
+
+url inside insert
+
+
+
+supplementary id smr
+
+
+
+pone.0319150 html  - image issue, word to xhtml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+table
+
+
+
+page 7 paramoved to previous page input 8
+
+
+
+
+
+
+
+input10 end
+
+
+
+
+
+
+
+extendedcitetag ExpandedCiteTag 
+
+
+
+
+
+
+
+
+
+
+
+cloud watch
+
+
+
+uXA>^V4\\9x\\\\\\\\[D\\\\\\\\[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17069
+
+
+
+Ng feedback:
+
+
+
+
+
+
+
+Test server
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/LR123-Aone/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.3)
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/LR123-Aone/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+
+
+Ng:
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.16)
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.14)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.17)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+suppllink
+
+
+
+Home/Production/Ruta Don't Delete/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Testsever:
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/xhtmltowordwordtoxhtml/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+
+
+
+
+xhtmltowordwordtoxhtml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+26-02-2025 contentcontrol issue
+
+
+
+Home/Production/Ruta Don't Delete/xhtmltowordwordtoxhtml/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+Home/Production/Ruta Don't Delete/xhtmltowordwordtoxhtml/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+
+
+
+
+1\. \\\\\\\\[] for footnote and after ] space -done
+
+
+
+2\. charcterstyleforfootnote and (number and text space) - done
+
+
+
+3\. hyperlinks
+
+
+
+4.boxcitation and caption number  before and after space -done
+
+
+
+5\. box table link missing                                -Done
+
+
+
+6\. if list continues list or number no need to retain and restat list 197
+
+
+
+7\. image scaling size
+
+
+
+8\. page 182, unwanted figure link and 186 table unwanted link -input issue
+
+
+
+9.188 Note appear above table -done
+
+
+
+10 189 end of the figurecaption space - done
+
+
+
+11\. see chapter links
+
+
+
+12.202 space appear before para by comments and instruction -done
+
+
+
+13, p43 additional td in cha02, table border missing and colspan missing,53 source apperar before of table -done
+
+
+
+14\. chapter 2 66 split issue
+
+
+
+15\. box not splited -  done
+
+
+
+16\. 70 table not splitted -done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17559
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.14)
+
+
+
+Home/Config Project/Input/IdmlToSplitXHTML.xml(1.4)
+
+
+
+Updated script:
+
+
+
+
+
+
+
+xhtml-split xslt		 
+
+
+
+1_Split_RemoveNameSpace.xsl	 
+
+
+
+2_Split_Grouping.xsl	 
+
+
+
+3_Split_parabookmarkid.xsl	 
+
+
+
+4_Split_sorting.xsl
+
+
+
+5_Split_sorting.xsl	 	 
+
+
+
+6_Split_Grouping.xsl	 
+
+
+
+7_Split_SplitPage.xsl
+
+
+
+
+
+
+
+Link Xslt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1_Link_RemoveNameSpace.xsl
+
+
+
+2_Link_Citaionmatch.xsl
+
+
+
+
+
+
+
+
+
+
+
+17582
+
+
+
+Feedback:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.16)
+
+
+
+A02118_DISCLOSURE_AVOIDANCE_DEMO
+
+
+
+Figurebotabl link
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.17)
+
+
+
+
+
+
+
+
+
+
+
+Master
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.18)
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.20)
+
+
+
+A02118_DISCLOSURE_AVOIDANCE_DEMO
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.21)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.22)
+
+
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.23)
+
+
+
+
+
+
+
+12.xhtml <span class="No_character_style back-cover-headerâ€“run-in">
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.26)
+
+
+
+
+
+
+
+Split HTML Demo/splitxhtml_feedback
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+
+
+
+
+1\. CSS embedding -done
+
+
+
+2\. Equations are not displayed (page 236) - done 
+
+
+
+3\. Page 16 is missing but page 17 is created instead  - input issue(Already files has 17 after 15)
+
+
+
+4.Continue bullet \& number item is having an additional bullet/number (page 23 \& 24 \& 32) - Pending
+
+
+
+5.Additional td at the end of the table (page 43 \& 70) - Done
+
+
+
+6.Table cell merge is not fine (pages 44 \& 188)        -Done
+
+
+
+7.Unwanted link in figure citation (page 182)          -input issue
+
+
+
+8.Unwanted link in table citation (page 186)           - input issue
+
+
+
+9.Box \& Table links not working                        -Done
+
+
+
+10.Internal links URL, Chapter, References, Recommendation, Conclusion, etc. are not working -Pending
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1\. Ensure that page numbers are displayed correctly and are not skipped when the expected structure is met.
+
+
+
+2\. Resolve the issue of an extra bullet appearing at the start of a paragraph that continues to the next page in a bullet list.
+
+
+
+3\. Correct the issue where, in numbered lists, an additional number appears at the start of a paragraph that continues to the next page.
+
+
+
+4\. Verify that all hyperlinks are functional, not just those for figures, tables, and boxes.
+
+
+
+5\. Ensure that figures appear before/after their captions, even if the expected structure is not met.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nap image not transferred
+
+
+
+17635
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ciceron:17269
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/xhtml2word-General?version=GBcicerone_Review_to_word\&_a=contents
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?path=/ParaNumber/genxhtml.xslt\&version=GBcicerone_sidebar_id_Retained\&_a=compare
+
+
+
+Home/Production/cicerone/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.0)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.3)
+
+
+
+word _conversion
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/cicerone/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.4)
+
+
+
+
+
+
+
+Box group:2
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.8)
+
+
+
+Home/Production/cicerone/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.4)
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.26)
+
+
+
+
+
+
+
+available in following path also
+
+
+
+Home/Production/cicerone/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.3)
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/xhtml2word-General?path=cicerone_Review_to_word
+
+
+
+cicerone_sidebar_id_Retained
+
+
+
+Box title:
+
+
+
+Home/Config Project/Transformation/Word to IDML/xhtml2word.zip(1.7)
+
+
+
+Home/Production/cicerone/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.27)
+
+
+
+word _conversion
+
+
+
+
+
+
+
+17656 - 02-4-2025
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to IDML/xhtml2word.zip(1.8)
+
+
+
+word _conversion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ng:
+
+
+
+pone.0316086 - bold issue
+
+
+
+pone.0319423 - math missing w:drawing
+
+
+
+PLOS: pone.0319423 - table caption issue
+
+
+
+suppl link in editor
+
+
+
+table color-pone.0292984.docx
+
+
+
+0320435 - empty box 
+
+
+
+word not opened issue
+
+
+
+&nbsp;pgph.0003431 - entity issue
+
+
+
+pone.0310939  - comment issue
+
+
+
+pone.0321279 manus
+
+
+
+pone.0310939 (4) - style issue
+
+
+
+pone.0319757.docx - reference12 content control issue
+
+
+
+
+
+
+
+
+
+
+
+common entity
+
+
+
+pone.0321630- display none issue
+
+
+
+
+
+
+
+RUTA fix style (--) pone.0321382.docx
+
+
+
+
+
+
+
+pone.0321064- reference inside pict, content contro application issue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pone.0317081.xhtml-unwanted tag
+
+
+
+pbio.3003014-xlink sent to mariappan
+
+
+
+
+
+
+
+
+
+
+
+17827 -Ruta xhtml
+
+
+
+
+
+
+
+17656 - xhtml to dml NG PLOS Article
+
+
+
+
+
+
+
+
+
+
+
+1\. Ng suppl link fixed and  given to prasnth
+
+
+
+2\. table background color inprogress
+
+
+
+3.Nap: image and caption not grouping in few places checking that feedback 
+
+
+
+
+
+
+
+
+
+
+
+17787
+
+
+
+Home/Production/Ruta Don't Delete/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+Home/Production/Ruta Don't Delete/LR126-Unit Test -HeadingLink/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/LR126-Unit Test -HeadingLink-Master/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+
+
+
+Home/Production/Ruta Don't Delete/LR126-Unit Test -HeadingLink-Master/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+
+
+
+
+LR126-UNIT TEST -HEADINGLINK-MASTER
+
+
+
+xhtmltowordwordtoxhtml
+
+
+
+
+
+
+
+Git path:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBNG_Editor_Final\&_a=contents
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/xhtml2word-General?path=%2FXhtml_To_Word.xslt\&version=GBNG_Server\&_a=contents
+
+
+
+
+
+
+
+comment issue and file name
+
+
+
+Home/Production/Ruta Don't Delete/LR126-Unit Test -HeadingLink-Master/Config Project/Transformation/Word to HTML/W2XScript.zip(1.6)
+
+
+
+
+
+
+
+
+
+
+
+Mastermerge:
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/MaterFilewordtoxhtml/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+MaterFilewordtoxhtml
+
+
+
+
+
+
+
+
+
+
+
+citation data-name
+
+
+
+https://test-journals.pagemajik.in/
+
+
+
+Home/Production/AONE/Testing/Article Type/Testing/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+LR126-Unit Test -HeadingLink-Master
+
+
+
+pone.0310939-1
+
+
+
+
+
+
+
+
+
+
+
+Tablecolor:
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/tablecolor/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/tablecolor/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/books
+
+
+
+TABLECOLOR
+
+
+
+
+
+
+
+Home/Production/Ruta Don't Delete/tablecolor/Config Project/Transformation/Word to HTML/W2XScript.zip(1.4)
+
+
+
+
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/AOne/tablecolor/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+Home/Production/AOne/tablecolor/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+tablecolor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip(1.6)
+
+
+
+
+
+
+
+xsl:fo running method
+
+
+
+
+
+
+
+C:\\apache-fop\\fop-2.10-bin\\fop-2.10\\fop\\fob.bat inputfile.fo output.pdf
+
+
+
+
+
+
+
+
+
+
+
+<xsl:attribute name="data-name" select=""/>
+
+
+
+
+
+
+
+https://test-journals.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/Word to HTML/HtmlToXml.xslt(1.2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Xhtml to word:
+
+
+
+Ng:
+
+
+
+pone.0316086 - bold issue
+
+
+
+pone.0319423 - math missing w:drawing
+
+
+
+PLOS: pone.0319423 - table caption issue
+
+
+
+suppl link in editor
+
+
+
+table color-pone.0292984.docx
+
+
+
+0320435 - empty box 
+
+
+
+word not opened issue
+
+
+
+&nbsp;pgph.0003431 - entity issue
+
+
+
+pone.0310939  - comment issue
+
+
+
+pone.0321279 manus
+
+
+
+pone.0310939 (4) - style issue
+
+
+
+pone.0319757.docx - reference12 content control issue
+
+
+
+
+
+
+
+
+
+
+
+common entity
+
+
+
+pone.0321630- display none issue
+
+
+
+
+
+
+
+RUTA fix style (--) pone.0321382.docx
+
+
+
+
+
+
+
+pone.0321064- reference inside pict, content control application issue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pone.0317081.xhtml-unwanted tag
+
+
+
+pbio.3003014-xlink sent to mariappan
+
+
+
+
+
+
+
+
+
+
+
+17827 -Ruta xhtml
+
+
+
+
+
+
+
+17656 - xhtml to dml NG PLOS Article
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pone.0321971 - entity issue 
+
+
+
+pgph.0004483 -entity issue
+
+
+
+pone.0321453 - entity issue
+
+
+
+
+
+
+
+
+
+
+
+pone.0304918 - not opened
+
+
+
+pone.0320647 -not opened
+
+
+
+pone.0320761.docx  - content control issue
+
+
+
+
+
+
+
+
+
+
+
+pone.0320806 - math not display in Editor given to ashok sir
+
+
+
+pone.0304918  - style followed by no
+
+
+
+
+
+
+
+
+
+
+
+pntd.0013003 - multiple image in single anchor
+
+
+
+
+
+
+
+Pone.0322059- \&quot;Times New Roman\&quot; added in manuscript style
+
+
+
+
+
+
+
+
+
+
+
+pone.0321760 - not save as
+
+
+
+
+
+
+
+pone.0320817  - url issue so not ran
+
+
+
+
+
+
+
+
+
+
+
+RuTA:
+
+
+
+pone.0321382 - RuTA script style --
+
+
+
+pone.0321102 working fine in local
+
+
+
+
+
+
+
+
+
+
+
+ppat.1013130.docx - 3p - sequecnce no splilitted
+
+
+
+
+
+
+
+
+
+
+
+18002
+
+
+
+http://test-production.pagemajik.in/
+
+
+
+Home/Production/Ruta Don't Delete/Content_control issue/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+Home/Production/Ruta Don't Delete/Content_control issue/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+CONTENT_CONTROL ISSUE
+
+
+
+
+
+
+
+Test_journals:
+
+
+
+Home/Production/AONE/Testing/Article Type/Testing/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+
+
+
+
+
+
+
+Mastermerge:
+
+
+
+Home/Production/AOne/contentcontrol/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+contentcontrol
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+
+
+
+
+
+
+
+
+18073
+
+
+
+Home/Production/Ruta Don't Delete/stylefollowedbyno/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+stylefollowedbyno
+
+
+
+http://test-production.pagemajik.in/
+
+
+
+
+
+
+
+Journal:
+
+
+
+Home/Production/AONE/Testing/Article Type/Testing/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Production/Ruta Don't Delete/stylefollowedbyno/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.5)
+
+
+
+STYLEFOLLOWEDBYNO
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/AOne/stylefollowedbyno/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+stylefollowedbyno
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+
+
+2	
+
+
+
+27
+
+
+
+28
+
+
+
+51
+
+
+
+52
+
+
+
+60
+
+
+
+61
+
+
+
+62
+
+
+
+71
+
+
+
+107
+
+
+
+116
+
+
+
+117
+
+
+
+118
+
+
+
+119
+
+
+
+
+
+
+
+&nbsp;	
+
+
+
+
+
+
+
+pone.0320761.docx
+
+
+
+pntd.0013003.docx
+
+
+
+pone.0317339.docx
+
+
+
+
+
+
+
+Nap:16548
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.9)
+
+
+
+rgbcolortesting
+
+
+
+
+
+
+
+
+
+
+
+18258
+
+
+
+xhtml feedback:
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.28)
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.32)
+
+
+
+
+
+
+
+
+
+
+
+18675
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.33)
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/PageSplit?version=GB8_clientfeedback2\&path=/OneShot-SplitXHTML/ParaNumber
+
+
+
+
+
+
+
+
+
+
+
+common-xslt
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/Common-Output-Xslt?version=GBoneshot_update\&_a=history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18564
+
+
+
+Home/Production/AONE/UnitTesting/Article Type/Stylefinder/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+Stylefinder
+
+
+
+
+
+
+
+Home/Production/Ruta (Dont Delete)/Notopeneddata-col/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+
+
+
+
+Mastermerge:
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+Notopeneddata-col
+
+
+
+Home/Production/Ruta (Dont Delete)/Notopeneddata-col/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cloud watch password: Azure 5189
+
+
+
+Saxon_Test   - word to xhml
+
+
+
+LambdaSaxonPaser - For Ng
+
+
+
+https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#logsV2:log-groups/log-group/$252Faw\\\\\\\\[…]034407840446210234407002615351869442
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18728
+
+
+
+Latex:
+
+
+
+https://test-journals.pagemajik.in/
+
+
+
+TESTING/Research Article/pone.0323010.xhtml
+
+
+
+Red color highlighted equations
+
+
+
+Home/Production/AONE/Testing/Article Type/Research Article/Config Project/Transformation/Word to HTML/W2XScript.zip(1.5)
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBlatex\&_a=contents\&path=/00-Merge.xslt
+
+
+
+
+
+
+
+updated version for mi merged  by same element text concept
+
+
+
+Home/Production/AONE/Testing/Article Type/Research Article/Config Project/Transformation/Word to HTML/W2XScript.zip(1.6)
+
+
+
+Home/Production/AONE/Testing/Article Type/Research Article/Config Project/Transformation/Word to HTML/W2XScript.zip(1.7)
+
+
+
+Home/Production/AONE/Testing/Article Type/Research Article/Config Project/Transformation/Word to HTML/W2XScript.zip(1.8)
+
+
+
+
+
+
+
+MASTER:
+
+
+
+https://sandboxjournals.pagemajik.ai/
+
+
+
+For widh
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.4)
+
+
+
+saravan:
+
+
+
+Home/Config Project/Transformation/XML/XhtmlToTEX_Extract.zip(2.2)
+
+
+
+
+
+
+
+Tested book:
+
+
+
+NODE4
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/Sample/09-10-2024 J1/Article Type/NewWorkflow-2/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+Collections: 09-10-2024 J1
+
+
+
+
+
+
+
+
+
+
+
+underlineissue
+
+
+
+https://test-production.pagemajik.in/
+
+
+
+Home/Production/RUTA Don't Delete/seqno1andnestedbb/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+
+
+
+
+
+
+23,28,61
+
+
+
+
+
+
+
+18729,18823
+
+
+
+
+
+
+
+Home/Production/AONE/Testing/Article Type/Underline_Testing/Config Project/Transformation/Word to HTML/XSLT.zip(1.2)
+
+
+
+Home/Production/AONE/Testing/Article Type/Underline_Testing/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/RUTA_XSLT?path=%2F\&version=GBLR133_underlineMissing
+
+
+
+
+
+
+
+https://test-journals.pagemajik.in/books
+
+
+
+old:18-06-2025_underlinetest
+
+
+
+New: Underline_Testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wiciwygentermarkTest entermark
+
+
+
+12778
+
+
+
+14507
+
+
+
+13271
+
+
+
+14919
+
+
+
+14640
+
+
+
+
+
+
+
+cloud watch:
+
+
+
+word to xhtml:link
+
+
+
+/aws/lambda/LambdaSaxonPaser
+
+
+
+
+
+
+
+
+
+
+
+18654- nested bb,18849- singleoject, 18674-seqno1
+
+
+
+
+
+
+
+Home/Production/RUTA Don't Delete/underlineissue/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+Home/Production/RUTA Don't Delete/underlineissue/Config Project/Transformation/Word to HTML/XSLT.zip(1.1)
+
+
+
+Git: https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBLR133_uppercasemissingintable
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBLR133_uppercasemissingintable
+
+
+
+underlineissue
+
+
+
+https://test-production.pagemajik.in/books
+
+
+
+
+
+
+
+For Ruta : Azure 18851
+
+
+
+Home/Production/RUTA Don't Delete/underlineissue/Config Project/Transformation/Word to HTML/XSLT.zip(1.1)
+
+
+
+
+
+
+
+idml sample files
+
+
+
+https://sandbox.pagemajik.ai/books
+
+
+
+Master Files for All type of LIST issues
+
+
+
+Master file - Don't delete
+
+
+
+Dont Delete Master file for Chapter link
+
+
+
+Figure link
+
+
+
+box
+
+
+
+https://test-production.pagemajik.in/books
+
+
+
+Runon Walks Combined file - 1079 Francigena Vol 3 don't delete
+
+
+
+
+
+
+
+
+
+
+
+https://sandbox.pagemajik.ai/
+
+
+
+CK-EDITOR MASTERMERGE:
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F\&version=GBNG_Editor_Final\&_a=contents
+
+
+
+Home/Production/AOne/underline_issue/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+UNDERLINE_ISSUE
+
+
+
+Home/Production/AOne/underline_issue/Config Project/Transformation/Word to HTML/XSLT.zip(1.2)
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/RUTA_XSLT?version=GBNG_RUTA_Master
+
+
+
+
+
+
+
+Table misplaced:
+
+
+
+
+
+
+
+Home/Production/AONE/Testing/Article Type/Tablecoumnmisplaced/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1\. rtl display
+
+
+
+<xsl:if test="self::w:tbl\\\\\\\\[w:tblPr/w:bidiVisual]">
+
+
+
+&nbsp;         <xsl:attribute name="style" select="'direction: ltr;'"/>
+
+
+
+&nbsp;       </xsl:if>
+
+
+
+2\. second table Footnote raise text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18936 -	Superscript in tables changed online
+
+
+
+18931 - Hyperlink removed
+
+
+
+19024  -RTL
+
+
+
+18935 - rowspan 
+
+
+
+
+
+
+
+http://test-production.pagemajik.in/books
+
+
+
+
+
+
+
+Home/Production/A1_NG/hyperlinksuprtlrowspan/Config Project/Transformation/Word to HTML/W2XScript.zip(1.10)
+
+
+
+18935 - rowspan 
+
+
+
+
+
+
+
+rowspan
+
+
+
+Home/Production/A1_NG/hyperlinksuprtlrowspan/Config Project/Transformation/Word to HTML/W2XScript.zip(1.11)
+
+
+
+
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBtd_and_hyperlink_superscript
+
+
+
+hyperlinksuprtlrowspan
+
+
+
+http://test-production.pagemajik.in/
+
+
+
+
+
+
+
+
+
+
+
+Mastermerge
+
+
+
+Home/Production/NG/endnotenumberwithformatting_Mg/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+
+
+endnotenumberwithformatting_Mg
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F\&version=GBNG_Editor_Final\&_a=contents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now we are managing both in nap for capital Box- not working logic, it will not work for general because cicerone already contains box-info, they don't want prefix
+
+
+
+
+
+
+
+18998,19013,19047
+
+
+
+
+
+
+
+General Script:
+
+
+
+Adventurekeen- font
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.31)
+
+
+
+Adventurekeen- font with AppliedTableStyle
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.32)
+
+
+
+adventurekeen_font
+
+
+
+
+
+
+
+Nap script
+
+
+
+Home/Production/NAP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+Nap_lightitalic_AppliedTableStyle
+
+
+
+
+
+
+
+
+
+
+
+MasterMerge:
+
+
+
+
+
+
+
+General script:
+
+
+
+Script: Home/Production/UMP/adventurekeen_font_general/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+
+
+
+coumhead
+
+
+
+&nbsp;       Home/Production/UMP/adventurekeen_font_general/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+
+
+Table withoutcaption has group tag
+
+
+
+Home/Production/UMP/adventurekeen_font_general/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.3)
+
+
+
+coumhead - refix
+
+
+
+Home/Production/UMP/adventurekeen_font_general/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+
+
+
+
+Home/Production/UMP/adventurekeen_font_general/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.5)
+
+
+
+Home/Production/UMP/adventurekeen_font_general/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.6)
+
+
+
+adventurekeen_font_general
+
+
+
+Nap:
+
+
+
+Script: Home/Production/WKH/adventurekeen_font_nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+
+
+
+columhead
+
+
+
+&nbsp;      Home/Production/WKH/adventurekeen_font_nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+
+
+Table withoutcaption has group tag
+
+
+
+&nbsp;      Home/Production/WKH/adventurekeen_font_nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.3)
+
+
+
+Home/Production/WKH/adventurekeen_font_nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+
+
+
+
+
+
+Home/Production/WKH/adventurekeen_font_nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.5)
+
+Home/Production/WKH/adventurekeen_font_nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tested book: ADVENTUREKEEN_FONT_NAP
+
+
+
+
+
+
+
+
+
+
+
+1\. The Kogan catalogue was given to Karthick.
+
+
+
+2\. Karthick feedback:
+
+
+
+I can identify and remove the style formatting if it matches in both the template and the XHTML. If it doesn't match, I retain the formatting information from the XHTML. As discussed with Bhaskar, Paneer needs to check this.
+
+
+
+3\. started list
+
+
+
+
+
+
+
+
+
+
+
+Home/Production/NG/BIS_Sample/Config Project/Transformation/XML/XHTML-TO-XML.zip(1.12)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+latex duplicate in word
+
+
+
+https://sandboxjournals.pagemajik.ai/
+
+
+
+Home/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.1)
+
+
+
+
+
+
+
+
+
+
+
+tablehead
+
+
+
+https://pajeflow.pagemajik.ai/
+
+
+
+Home/Production/NG/BIS - 15 files/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+support:
+
+
+
+
+
+
+
+
+
+
+
+19262 -styefollowed by no
+
+
+
+19261 - allcaps
+
+
+
+19276 - --
+
+
+
+19269 - <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.5)
+
+
+
+
+
+https://test-production.pagemajik.in/
+
+Home/Production/NAP/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+Home/Production/NAP/Config Project/Transformation/Word to HTML/W2XScript.zip(1.2)
+
+
+
+
+
+19317
+
+http://sandbox.pagemajik.ai/books
+
+Home/Production/UMP/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+Nap_Mastermerge
+
+
+
+
+
+
+
+pcbi.1013422.docx - italic false - fixed
+
+2\\\\. Table content missing:        -
+
+Table Content missing in G.pdf and xhtml to word process.
+
+• Article ID: pone 0329260 (Table 2).
+
+Table Content column swap.
+
+• Article ID: pone 0328917. - when comes colspan and rowsapn has issue
+
+\\\&nbsp;pone.0326944.docx - 
+
+
+
+
+
+19398  , 19399
+
+https://test-production.pagemajik.in/books
+
+Home/Production/A1_NG/Rowspanmultipestyleattribute/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+
+ROWSPANMULTIPESTYLEATTRIBUTE
+
+
+
+
+
+Mastermerge
+
+https://sandbox.pagemajik.ai/books
+
+Home/Production/UMP/Rowspanmultipestyleattribute/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+
+ROWSPANMULTIPESTYLEATTRIBUTE
+
+
+
+
+
+
+
+19408 - Rtl
+
+19024  -RTL
+
+
+
+
+
+
+
+
+
+
+
+For NAP_Empathy and Compassion
+
+
+
+
+
+
+
+19421
+
+
+
+General
+
+http://sandbox.pagemajik.ai/books
+
+ADVENTUREKEEN_FONT_GENERAL
+
+Home/Production/UMP/adventurekeen_font_general/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.8)
+
+
+
+Nap:
+
+
+
+Home/Production/WKH/adventurekeen_font_nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.9)
+
+
+
+
+
+
+
+
+
+19350
+
+
+
+https://test-production.pagemajik.in/books
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/ruta-script?version=GB137_figuretextmissing&path=/XSLT
+
+
+
+Home/Production/A1_NG/Rowspanmultipestyleattribute/Config Project/Transformation/Word to HTML/XSLT.zip(1.1)
+
+
+
+
+
+
+
+-----
+
+
+
+
+
+
+
+
+
+<xsl:template match="//ol|//div/ol">
+
+\\\&nbsp;       <xsl:variable name="bkmark"><xsl:value-of select="child::li\\\\\\\[1]/span\\\\\\\[matches(@data-bkmark,'^para')]\\\\\\\[1]/@data-bkmark"/></xsl:variable> 
+
+\\\&nbsp;       <!--<xsl:copy>-->
+
+\\\&nbsp;       <xsl:element name="ol">
+
+\\\&nbsp;           <xsl:apply-templates select="@\\\\\\\*"/>
+
+\\\&nbsp;           <xsl:attribute name="start">
+
+\\\&nbsp;               <xsl:choose>
+
+\\\&nbsp;                   <xsl:when test="string-length($bkmark) &gt; 0">
+
+\\\&nbsp;                       <xsl:value-of select="$listinfo//listRuns//listRun//item\\\\\\\[@bookmark = $bkmark]/@valueAtLevel"/>
+
+\\\&nbsp;                   </xsl:when>
+
+\\\&nbsp;                   <xsl:otherwise>
+
+\\\&nbsp;                       <xsl:value-of select="@start"/>
+
+\\\&nbsp;                   </xsl:otherwise>
+
+\\\&nbsp;               </xsl:choose>
+
+\\\&nbsp;           </xsl:attribute>
+
+\\\&nbsp;           <xsl:attribute name="type">
+
+\\\&nbsp;               <xsl:choose>
+
+\\\&nbsp;                   <xsl:when test="string-length($bkmark) &gt; 0">
+
+\\\&nbsp;                       <xsl:value-of select="$listinfo//listRuns//listRun//item\\\\\\\[@bookmark = $bkmark]/@type"/>
+
+\\\&nbsp;                   </xsl:when>
+
+\\\&nbsp;                   <xsl:otherwise>
+
+\\\&nbsp;                       <xsl:value-of select="@type"/>
+
+\\\&nbsp;                   </xsl:otherwise>
+
+\\\&nbsp;               </xsl:choose>
+
+\\\&nbsp;           </xsl:attribute>
+
+\\\&nbsp;           <xsl:apply-templates select="node()"/>
+
+\\\&nbsp;       <!--</xsl:copy>-->
+
+\\\&nbsp;       </xsl:element>
+
+\\\&nbsp;   </xsl:template>
+
+
+
+
+
+<xsl:attribute name="data-listnumber" select="'yes'"/>
+
+
+
+
+
+https://test-production.pagemajik.in/
+
+Updated Script: Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.35)
+
+Tested Book: A02118_DISCLOSURE_AVOIDANCE_DEMO
+
+
+
+
+
+
+
+
+
+
+
+19482
+
+
+
+math_xhtml to idml
+
+
+
+General:
+
+Git: https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GB138_xhtmltoidml_math_General
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.34)
+
+
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.35)
+
+
+
+Mathequation_xhtm_idml
+
+
+
+Nap: 
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GB138_xhtmltoidml_math_nap
+
+Home/Production/UMP/xhtmltoidml_math_Nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.0)
+
+
+
+
+
+
+
+Home/Production/UMP/xhtmltoidml_math_Nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+
+xhtmltoidml_math_Nap
+
+
+
+
+
+
+
+19492
+
+Masterfile:
+
+https://test-production.pagemajik.in/
+
+Home/Production/UMP/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+Mathequation_xhtm_idml
+
+
+
+https://test-journals.pagemajik.in/
+
+Home/Production/Sample/August 2 journal/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+AUGUST 2 JOURNAL/AUGUST
+
+
+
+bis:
+
+Home/Production/Anitha/Cleanup Journal/Article Type/Bis_Math/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+Collections: CLEANUP JOURNAL/BIS_MATH
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=/1-LIST.xslt&version=GBLR138_Mathstylename_stylecollection&_a=compare
+
+
+
+
+
+
+
+https://sandboxjournals.pagemajik.ai/
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.8)
+
+EQUATION
+
+Home/Production/Sample/Equation/Article Type/NGplos/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+
+
+icici: Sathya@88
+
+epf potol Sathya@88
+
+passbook: Siddhesh@27
+
+
+
+
+
+
+
+
+
+1\\\\. Nap split xtml list issue inprogress
+
+2\\\\. image name using stylecollection in word to xtmlprocess release Friday itself
+
+3\\\\. bis xhtml to idml testing with Karthick if they done feature master merge is there
+
+4\\\\. list word to xhtml
+
+
+
+
+
+
+
+
+
+
+
+
+
+19512
+
+https://test-production.pagemajik.in/
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.38)
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/PageSplit?path=%2FOneShot-SplitXHTML%2FParaNumber&version=GB9_Genratefailedissue
+
+A02118_DISCLOSURE_AVOIDANCE_DEMO
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.39)
+
+
+
+
+
+
+
+
+
+
+
+19528
+
+https://test-production.pagemajik.in/
+
+General:
+
+Home/Production/UMP/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.38)
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?path=%2F&version=GBLR139_hyperlinksurlwebsite_General&_a=contents
+
+URL_WEBSITE_DOI_HYPERLINKTOIDML
+
+
+
+Nap:
+
+Home/Production/UMP/url_website_doi_hyperlinktoidml_Nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBLR139_hyperlinksurlwebsite_Nap
+
+url_website_doi_hyperlinktoidml_Nap
+
+
+
+Msterfile: MATHEQUATION_XHTM_IDML
+
+
+
+Note: word to xhtml doi merge process pending
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pending Task:
+
+
+
+pone.0331030.xhtml - tablenesting table
+
+pone.0328831       - table issue
+
+pone.0329852       - table issue
+
+pone.0331023       - table issue
+
+pone.0332871_R (1).docx table issue xhtml to word
+
+pone.0334087.xhtml  - Table issue(table 1)
+
+
+
+pone.0333187.docx - generate xhtml issue by <xml version single quote issue
+
+
+
+w:b false issue
+
+pone.0333067.docx   
+
+
+
+xhtm to word table issue
+
+bis extra entermark
+
+codemantra math
+
+doi,wbsite,url merge word to xhtml
+
+custom xml attribute new process
+
+uma dont want rowspan emptypara
+
+\\\&nbsp;                        mail: Style discrepancy in XHTML file(As discussed last week regarding the empty <td> tag in colspan tables and the dummy paragraph tag for figure captions, could you please update the status?"  
+
+)
+
+
+
+Ruta-xhtml -----Testing pending 
+
+
+
+hyperlink id matched together(https://pajeflow.pagemajik.ai/tabview?/JUST TABLES/Layout_PIB_Mid-Scale Part 2)
+
+
+
+word to xhtml list
+
+word to xhtml floating element id and href (.) removed 
+
+hperlink isse in xhmlto idml
+
+
+
+
+
+
+
+
+
+19689
+
+BIS_ATTRIBUTE
+
+
+
+word to xhml:
+
+Git: https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F&version=GBLR140_Bis_attribute&_a=contents
+
+Home/Production/RUTA Don't Delete/BIS_Attribute/Config Project/Transformation/Word to HTML/W2XScript.zip(2.3)
+
+
+
+xhtml to idml:
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBLR0140_Bis_attribute_Gen
+
+Home/Production/RUTA Don't Delete/BIS_Attribute/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+
+
+idml to xtml:
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?path=/ParaNumber&version=GBLR140_Bisattribute
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.15)
+
+
+
+http://test-production.pagemajik.in/
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.13)
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.7)
+
+
+
+
+
+Home/Config Project/Transformation/XML/XhtmlToTEX_Extract.zip(1.1)
+
+
+
+
+
+https://test-editorial.pagemajik.in/
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.5)
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.19)
+
+Home/Config Project/Transformation/XML/XhtmlToTEX_Extract.zip(1.2)
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(1.8)
+
+
+
+
+
+Tested book: BIS Sample Book/Chapter-3 bis attribute
+
+BIS Math/Chapter-15 for math
+
+
+
+19708
+
+Mathjax
+
+idml to xtml:
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?version=GBLR140_mathjax&path=/ParaNumber
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.17)
+
+xhtmlto idml General:
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?path=%2F&version=GBLR140_xhtmltoidml_latex&_a=contents
+
+Home/Production/InDesign - Test Cases/Math- Equation font testing/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+Math- Equation font testing
+
+
+
+xhtmlto idml Nap:
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBLR140_bisattributandlatex_nap
+
+Script: Home/Production/InDesign - Test Cases/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.18)
+
+Tested book: Math- Equation font testing_Nap
+
+
+
+Home/Production/InDesign - Test Cases/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.19)
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/XML/
+
+maheshwriicicib : 9710203161
+
+
+
+19708
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBLR141_W2XScript_data-fileName
+
+Home/Production/Anitha/Math Demo/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+https://test-editorial.pagemajik.in/
+
+Math Demo
+
+
+
+sandbox:
+
+Home/Production/Author Proof/Math_Bis_New/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+
+
+
+
+Entermark
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.12)
+
+ParaNumbering.xslt
+
+04-Final-IDML.xslt
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.23)
+
+
+
+Masterfile: Mathequation_xhtm_idml
+
+
+
+
+
+Mastermerge:
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBNG_Editor_Final
+
+
+
+
+
+Matermerge:
+
+https://sandbox.pagemajik.ai/
+
+
+
+Home/Production/Author Proof/BIS Math Master/Config Project/Transformation/Word to HTML/W2XScript(1.0).zip
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F&version=GBNG_Editor_Final&_a=contents
+
+
+
+Home/Config Project/Transformation/XML/XhtmlToTEX_Extract.zip(1.0)
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBXhtmlToTEX_Extract
+
+
+
+Home/Production/Author Proof/BIS Math Master/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.0)
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBmaster
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.29)
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/OneShot?path=/ParaNumber&version=GBmaster
+
+
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(2.3)
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/AuthorProof?path=%2FOneShot&version=GBmaster&_a=contents
+
+
+
+
+
+
+
+
+
+
+
+entrmark  19886
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.25)
+
+entermarkissuein_wicywyg
+
+
+
+https://test-production.pagemajik.in/books
+
+
+
+
+
+20028
+
+List Newlogic:
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?path=%2F&version=GBLR141_ListNewLogic&_a=contents
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBLR141_ListNewLogic - old
+
+
+
+New
+
+https://test-production.pagemajik.in/
+
+Home/Production/UMP/List_Testing/Config Project/Transformation/Word to HTML/W2XScript(1.1).zip
+
+
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GBLR142_Listfinal
+
+List_Testing
+
+
+
+Home/Production/UMP/List_Testing/Config Project/Transformation/Word to HTML/W2XScript(1.2).zip
+
+
+
+Home/Production/UMP/Word to Xhtml list view/Config Project/Transformation/Word to HTML/W2XScript(1.2).zip
+
+Word to Xhtml list view
+
+
+
+python3 docx_list_extractor.py /home/pagemajik/Documents/Lambda_Workspace/DocxList-PYP/15511_2025.docx -o /home/pagemajik/Documents/Lambda_Workspace/DocxList-PYP/Out
+
+
+
+python C:\Pagemajik\PhytonProject\docx_list_extractor.py C:\Pagemajik\PhytonProject\15511_2025.docx -o C:\Pagemajik\PhytonProject\out
+
+python C:\Pagemajik\PhytonProject\docx_list_extractor.py C:\Pagemajik\PhytonProject\New-Master File4.docx -o C:\Pagemajik\PhytonProject\outnemmm
+
+
+
+List issue
+
+insert math
+
+bisreview xhtml(rrun process)
+
+Bis xhm nd idm ot generated(--, document.rels ad footnote.rel)
+
+table shades wordto xhtml 
+
+xhtml to word table
+
+Tab missing in review xhtml
+
+
+
+
+
+isync attribute
+
+New characterstyle
+
+New content control
+
+isversion content control
+
+
+
+
+
+
+
+
+
+
+
+
+
+xhtml to xml feedback
+
+untag
+
+italichl
+
+Heading _suffix
+
+<span data-name><a bibref> like endnotereference
+
+Box inside list/p need prefix box
+
+keywords = keywords heading
+
+equation no 
+
+HeadF
+
+
+
+𝐴𝑠 = 𝑎𝑟𝑒𝑎 𝑜𝑓 𝑖𝑛𝑡𝑒𝑟𝑛𝑎𝑙 𝑠𝑡𝑎𝑛𝑑𝑎𝑟𝑑.
+
+𝑎𝑠 𝑡ℎ𝑒 𝑦
+
+− 𝑎𝑥𝑖𝑠 𝑣𝑒𝑟𝑠𝑢𝑠 𝑡ℎ𝑒 𝑎𝑚𝑜𝑢𝑛𝑡 𝑟𝑎𝑡𝑖𝑜 (𝑎𝑚𝑡𝑖):
+
+
+
+
+
+1The crystal unit is bedded in the centre of the hole in the holder with epoxy resin (equi
+
+
+
+1Shock Parameters — The machine or pendulum shall be adjusted to obtain the following shock parameters \\\\\\\[see Fig. 5a ]:
+
+
+
+1Starting Position of Hammer — The angle Q, giving the starting position of the hammer ( see Fig. 6 ), is derived from the following 
+
+3Linear Shocks — Apply the shocks in the three main axes; the direction is given in Fig. 9
+
+2Tensile Test on Terminations ( Wires or Pins ) — A tensile force is applied to the wire according to Table 1; 30 minutes after the test, the results shall be in accordance with the specification.
+
+3Bending of Wire Leads — The wire leads are bent twice through an angle of 90° in opposite directions by applying a force according to Table 1. The change in frequency shall be in accordance with the specified value. Bending is carried out at least 1 mm from the base ( see Fig. 10 ).
+
+
+
+
+
+METHOD OF FIXING
+
+
+
+formula:
+
+
+
+
+
+
+
+<xsl:attribute name="data-listnumber" select="'yes'"/>
+
+
+
+9843553295
+
+reruCHD 10 - Glass, Glassware and Laboratorywaren
+
+
+
+
+
+
+
+
+
+<enquiries@apha.gov.uk>
+
+<admin@ukfarmcare.com>
+
+</admin@ukfarmcare.com></enquiries@apha.gov.uk>
+
+/
+
+
+
+
+
+20043
+
+Home/Production/Anitha/BIS-XML Advanced/Config Project/Transformation/XML/XHTML-TO-XML.zip(2.4)
+
+http://test-production.pagemajik.in/BIS-XML ADVANCED/4995_2025
+
+https://test-editorial.pagemajik.in/Math Demo/Chapter-19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Azure 20200
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?path=/Xhtml_To_IDML_v10.xsl&version=GBLR142_tabmissingandtrackchanges&_a=compare
+
+Home/Production/UMP/hyperlinks_new/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+
+
+
+
+
+Home/Production/UMP/hyperlinks/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+
+
+
+Home/Production/UMP/hyperlink_trackchanges/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.0)
+
+
+
+
+
+
+
+Master merge:
+
+https://test-production.pagemajik.in/books
+
+HYPERLINK_TRACKCHANGES/MasterMerge
+
+Home/Production/UMP/hyperlink_trackchanges/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+Current-script-no styles and  MasterMerge
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBmaster
+
+
+
+
+
+<style id="200044" name="DZC_DOI" replacement="â€¡ref_URL" editor="true" epub="true" wyciwyg="true" toc="false" permission="false" description="false" source="false" tag="false" assetType=""/>
+
+<style id="200235" name="DZC_Website" replacement="â€¡ref_URL" editor="true" epub="true" wyciwyg="true" toc="false" permission="false" description="false" source="false" tag="false" assetType=""/>
+
+<style id="200483" name="DZC_URL" replacement="â€¡URL" editor="true" epub="true" wyciwyg="true" toc="false" permission="false" description="false" source="false" tag="false" assetType=""/>
+
+
+
+Tested book: 
+
+hyperlink_trackchanges with issue
+
+hyperlinks without issue
+
+
+
+Site: https://test-production.pagemajik.in/books
+
+Tested book: HYPERLINK_TRACKCHANGES
+
+Script: Home/Production/UMP/hyperlink_trackchanges/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+
+
+
+
+
+xhtmlto idml Nap:
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBLR140_bisattributandlatex_nap
+
+Script: Home/Production/InDesign - Test Cases/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.18)
+
+Tested book: Math- Equation font testing_Nap
+
+
+
+updated: 
+
+Home/Production/InDesign - Test Cases/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.19)
+
+MATH- EQUATION FONT TESTING_NAP
+
+
+
+
+
+
+
+
+
+Additional style added in reviewxhtml because in old script if <span class dataname><span></span></span> scenario name added
+
+comment missing in old one its retained
+
+additional chracterstyle removed somewhere <span></span> 
+
+All caps and small caps additional characterstyle
+
+one para deleted in review xhtm because it was deleted in anuscript xhtml
+
+<sup><span style="background-color:yellow"> </span></sup> so <sup></sup> retained
+
+Text missing means they have deleted in masuscript so not retained
+
+
+
+
+
+
+
+
+
+
+
+Rrun
+
+
+
+sandbox:
+
+Home/Production/Ruta (Dont Delete)/LR141-BIS-Rerun/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.2)
+
+LR141-BIS-RERUN
+
+
+
+http://test-journals.pagemajik.in/books?
+
+Home/Production/Sample/BIS/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.0)
+
+MATHTESTING
+
+
+
+
+
+
+
+https://test-journals.pagemajik.in/books
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.2)
+
+
+
+
+
+
+
+20019
+
+Entity issue
+
+Go to that path and run the following temp
+
+java -cp Saxon-HE-12.4.jar;tagsoup-1.2.1.jar;xmlresolver-5.2.2.jar net.sf.saxon.Transform -x:org.ccil.cowan.tagsoup.Parser -xsl:entitize.xsl -s:emoji.xhtml -o:4995_2025-emoji.xhtml
+
+
+
+java -cp Saxon-HE-12.4.jar;xmlresolver-5.2.2.jar net.sf.saxon.Transform -xsl:entitize.xsl -s:emoji.xhtml -o:newemoji.xhtml
+
+
+
+
+
+https://test-production.pagemajik.in/books
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.16)
+
+
+
+
+
+
+
+
+
+
+
+
+
+entity
+
+HYPERLINK_TRACKCHANGES/entity for masterfies
+
+scenaio files: Entity_Test/BW Shelter Final
+
+
+
+
+
+
+
+
+
+word not opened check list
+
+
+
+<br/> tag <p> or <li>
+
+<comment> outsite of <p> or <li>
+
+.<a> outsite of <p> or <li>
+
+<Comment> <a> <br> present directly inside <div>
+
+Space inside <a> tag
+
+0: inch - which is difference css files table copied and pasted from other source.
+
+Rowspan table - removing the table group
+
+table nesting table
+
+
+
+
+
+
+
+
+
+DECLARE DZC_DocType,DZC_BulletManualBodyList,DZC_Edition,DZC_EquationName,DZC_EquationNumber,DZC_EquationCitation,DZC_FigureCitation
+
+,DZC_FigureNumber,DZC_ManualBodyList,DZC_NotesHeading,DZC_RunOnHead5,DZC_RunOnHead4,DZC_RunOnHead3,DZC_RunOnHead2
+
+,DZC_RunOnHead1,DZC_TableCitation,DZC_TableNumber,DZC_Tag,DZC_URL,DZC_CopyRightHolder,DZC_CopyRightYear,DZC_DocPart,DZC_HeadingNumber,DZC_DocNumber,DZC_DocYear;
+
+5:46
+
+AA_CCC_B_ISVersion
+
+5:47
+
+AA_CCB_Heading,AA_CCC_B_HeadingRef (edited) 
+
+
+
+
+
+
+
+BulletManualBodyList
+
+EquationName
+
+EquationNumber
+
+EquationCitation
+
+NotesHeading
+
+RunOnHead5
+
+RunOnHead4
+
+tag
+
+DocPart
+
+
+
+20353
+
+http://test-production.pagemajik.in/books
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.14)
+
+01-Review-ReRan-attribute.xslt
+
+02-Review-ReRan-datachange.xslt
+
+03-Review-ReRan.xslt
+
+Home/Production/UMP/RE_RUN/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.3)
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.29)
+
+
+
+Script: Home/Config Project/Transformation/Word to IDML/OneShot.zip(2.27)
+
+Tested book: RE_RUN
+
+
+
+
+
+math
+
+https://test-editorial.pagemajik.in/books
+
+Math Demo
+
+Home/Config Project/Transformation/XML/XHTML-TO-XML.zip(1.6)
+
+
+
+https://test-production.pagemajik.in/books
+
+Home/Production/Anitha/BIS-XML Advanced/Config Project/Transformation/XML/XHTML-TO-XML.zip(2.53)
+
+BIS-XML Advanced
+
+
+
+
+
+
+
+Mastermerge:
+
+https://test-editorial.pagemajik.in/books
+
+Math Demo
+
+Home/Config Project/Transformation/XML/XHTML-TO-XML.zip(1.9)
+
+
+
+https://test-production.pagemajik.in/books
+
+Home/Production/Anitha/BIS-XML Advanced/Config Project/Transformation/XML/XHTML-TO-XML.zip(2.56)
+
+BIS-XML Advanced
+
+
+
+
+
+
+
+ec
+
+patta 
+
+citta
+
+sale lead
+
+sale agreement
+
+cmda approved 
+
+
+
+mathdemo 17-20
+
+
+
+
+
+
+
+
+
+
+
+equation spilt
+
+equation name characterstyle
+
+eqn
+
+bsl
+
+latex
+
+
+
+
+
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.27)
+
+
+
+
+
+
+
+
+
+Shades:
+
+pgph.0005177.docx - had shade information(background) available
+
+\\\&nbsp;Pntd. 0013720    - given file to sir
+
+\\\&nbsp;pone.0335662    - given file to sir
+
+
+
+
+
+xsl:element name="w:start"
+
+
+
+
+
+
+
+
+
+
+
+Bismath: 
+
+
+
+https://test-production.pagemajik.in/
+
+https://dev.azure.com/pagemajik/Pagemajik/_git/BIS_XML?version=GB146_math_missing_and_figure&path=/ParaNumber
+
+Home/Production/Anitha/BIS-XML Advanced/Config Project/Transformation/XML/XHTML-TO-XML.zip(2.59)
+
+
+
+Home/Production/A1_Ng/BIS-xml/Config Project/Transformation/XML/XHTML-TO-XML.zip(1.0)
+
+
+
+XHTML-TO-XML.zip(4.4) in sandbox
+
+
+
+
+
+<!--<xsl:template match="//small\\\\\\\[child::break]//break\\\\\\\[not(preceding-sibling::\\\\\\\*\\\\\\\[1]\\\\\\\[self::break])]">
+
+\\\&nbsp;      <xsl:text> </xsl:text>
+
+\\\&nbsp;   </xsl:template>
+
+\\\&nbsp;   <xsl:template match="//small\\\\\\\[child::break]//break\\\\\\\[preceding-sibling::\\\\\\\*\\\\\\\[1]\\\\\\\[self::break]]"/>-->
+
+\\\&nbsp;   <!--<xsl:template match="//small\\\\\\\[child::break] | //bold\\\\\\\[child::break] | //fixed-case\\\\\\\[child::break] | //italic\\\\\\\[child::break] | //monospace\\\\\\\[child::break] | //num\\\\\\\[child::break] | //overline\\\\\\\[child::break] | //roman\\\\\\\[child::break] | //sans-serif\\\\\\\[child::break] | //sc\\\\\\\[child::break] | //strike\\\\\\\[child::break] | //underline\\\\\\\[child::break]">
+
+\\\&nbsp;       <xsl:copy>
+
+\\\&nbsp;           <xsl:value-of
+
+\\\&nbsp;               select="normalize-space(
+
+\\\&nbsp;               string-join(
+
+\\\&nbsp;               for $n in node()
+
+\\\&nbsp;               return
+
+\\\&nbsp;               if ($n/self::break)
+
+\\\&nbsp;               then ' '
+
+\\\&nbsp;               else string($n),
+
+\\\&nbsp;               ''
+
+\\\&nbsp;               )
+
+\\\&nbsp;               )"/>
+
+\\\&nbsp;       </xsl:copy>
+
+\\\&nbsp;   </xsl:template>-->
+
+
+
+https://sandbox.pagemajik.ai/books
+
+Home/Config Project/Transformation/XML/XHTML-TO-XML.zip(4.20)
+
+break issue
+
+
+
+<xsl:template match="thead\\\\\\\[following-sibling::\\\\\\\*\\\\\\\[1]\\\\\\\[self::thead]/string-length(.) &gt; 0]">
+
+\\\&nbsp;       
+
+\\\&nbsp;       
+
+\\\&nbsp;   </xsl:template>
+
+
+
+
+
+8248513936
+
+
+
+
+
+
+
+9943287355
+
+
+
+
+
+
+
+
+
+
+
+Label number missing from the figure ID
+
+Figure label splits and present inside caption tag instead fig tag
+
+Label number missing from the figure ID
+
+heading number 10.2 1 – 1 missing:
+
+
+
+
+
+
+
+
+
+Home/Config Project/Transformation/XML/XHTML-TO-XML.zip(4.24)
+
+
+
+
+
+Home/Config Project/Transformation/XML/XHTML-TO-XML.zip(4.38)
+
+
+
+https://sandbox.pagemajik.ai/books
+
+
+
+Nap:
+
+07-ReplacingStoryTab.xslt
+
+14-epub-genxhtml.xslt
+
+15
+
+32-cc
+
+
+
+34-Bits-genxhtml2.xslt - pending
+
+36-Final-Bits.xslt
+
+
+
+43-Final-Bits  - doubt
+
+
+
+
+
+pandoc:
+
+
+
+C:\>pandoc C:\Pagemajik\pandoc\chapter1.json -t jats_publishing -o C:\Pagemajik\pandoc\chapter1.xml
+
+C:\>pandoc C:\Pagemajik\pandoc\chapter1.json -t jats_publishing -o C:\Pagemajik\pandoc\chapter1.xml
+
+
+
+C:\>pandoc C:\Pagemajik\pandoc\chapter2.json -t jats_publishing -o C:\Pagemajik\pandoc\chapter2.xml
+
+
+
+
+
+
+
+
+
+https://test-production.pagemajik.in/books
+
+Home/Config Project/Input/IdmlToSplitXHTML.xml(1.5)
+
+Home/Config Project/Transformation/IDML to Word/OneShot-SplitXHTML.zip(1.42)
+
+
+
+20809 - 
+
+
+
+1\\\\. boxed-text ignored
+
+2\\\\. <book-part-meta><title-group><title> moved afer the frontmatter
+
+3\\\\. remove duplicate title in side 
+
+4\\\\. Acronyms and Abbreviations captured in the body instead FM
+
+5\\\\. fm duplicate
+
+
+
+
+
+
+
+
+
+githup co pilot
+
+codex
+
+sidvaru@2127 for mail
+
+
+
+
+
+
+
+
+
+Nap sandbox nap2
+
+chapter level script
+
+
+
+
+
+
+
+\\\\\\\[not(contains(@ObjectStyle,'$ID/\\\\\\\[None]'))]
+
+
+
+
+
+
+
+
+
+
+
+20865
+
+20866
+
+
+
+
+
+
+
+
+
+
+
+To run the combined ast.json to jats xml
+
+Fist go to folder path in comd 
+
+pandoc book.bits.ast.json -s -t jats_publishing -o book.bits1.xml
+
+pandoc merged.ast.json -s -t jats_publishing -o book.bits1.xml
+
+
+for html
+
+pandoc book.bits.ast.json -s -t html -o book.bits1.html
+pandoc merged.ast.json -s -t html -o book.bits1.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--binder "data\Nap_Inputs\BookBinder.json" `
+
+\\\&nbsp; --inputs-root "data\Nap_Inputs" `
+
+\\\&nbsp; --styles "data\styles\NAP_StylesCollection.xml" `
+
+\\\&nbsp; --master-styles "data\Nap_Inputs\MasterStylesCollection.xml" ``
+
+\\\&nbsp; --meta "data\Nap_Inputs\Metadata Form_ANS.json"
+
+\\\&nbsp; --output "data\Nap_outputs\book.bits.xml"
+
+
+
+--binder "data\Nap_Inputs\BookBinder.json" `
+
+\\\&nbsp; --inputs-root "data\Nap_Inputs" `
+
+\\\&nbsp; --styles "data\styles\NAP_StylesCollection.xml" `
+
+\\\&nbsp; --master-styles "data\Nap_Inputs\MasterStylesCollection.xml" ``
+
+\\\&nbsp; --meta "data\Nap_Inputs\Metadata Form_ANS.json"
+
+\\\&nbsp; --output "data\Nap_outputs\book.bits.xml"
+
+
+
+
+
+--binder "data\Nap_liveinput\BookBinder.json" `
+
+\\\&nbsp; --inputs-root "data\Nap_liveinput" `
+
+\\\&nbsp; --styles "data\styles\NAP_StylesCollection.xml" `
+
+\\\&nbsp; --master-styles "data\Nap_liveinput\MasterStylesCollection.xml" ``
+
+\\\&nbsp; --meta "data\Nap_liveinput\Metadata Form_ANS.json"
+
+\\\&nbsp; --output "data\Nap_liveoutput\book.bits.xml"
+
+
+
+
+
+python tools/legacy/idml_to_bits.py ^
+
+&nbsp; --binder "data\Nap_liveinput\BookBinder.json" ^
+
+&nbsp; --inputs-root "data\Nap_liveinput" ^
+
+&nbsp; --styles "data\styles\NAP_StylesCollection.xml" ^
+
+&nbsp; --master-styles "data\Nap_liveinput\MasterStylesCollection.xml" ^
+
+&nbsp;  --meta "data\Nap_liveinput\Metadata Form_ANS.json" ^
+
+&nbsp;  --output "data\Nap_liveoutput\book.bits.xml"
+
+
+
+
+
+python tools/legacy/idml_to_bits.py ^
+
+\\\&nbsp; --binder "data/Bis_liveinput\BookBinder.json" ^
+
+\\\&nbsp; --inputs-root "data\Bis_liveoutput" ^
+
+\\\&nbsp; --styles "data\styles\BIS_StylesCollection.xml" ^
+
+\\\&nbsp; --master-styles "data\MasterStylesCollection.xml" ^
+
+\\\&nbsp;  --output "data\Bis_liveoutput\book.bis.xml"
+
+
+
+
+
+python tools/legacy/idml_to_bits.py ^
+
+\\\&nbsp; --binder "data\Bis_liveinput\BookBinder.json" ^
+
+--inputs-root "data\Bis_liveinput" ^
+
+\\\&nbsp; --styles "data\styles\BIS_StylesCollection.xml" ^
+
+\\\&nbsp; --master-styles "data\styles\MasterStylesCollection.xml" ^
+
+\\\&nbsp;  --output "data\Bis_liveoutput\book.bits.xml"
+
+
+
+
+
+
+
+python tools/legacy/idml_to_bis.py ^
+
+\\\&nbsp; --inputs-root "data\Bis_liveinput" ^
+
+\\\&nbsp; --styles "data\styles\BIS_StylesCollection.xml" ^
+
+\\\&nbsp; --master-styles "data\styles\MasterStylesCollection.xml" ^
+
+\\\&nbsp; --output "data\Bis_liveoutput\book.bis.xml"
+
+
+
+
+
+
+
+\\\*python tools\legacy\idml_to_bis.py ^\\\*
+
+    \\\*--inputs-root "data\Bis_liveinput" ^\\\*
+
+  \\\*--styles "data\styles\BIS_StylesCollection.xml" ^\\\*
+
+  \\\*--master-styles "data\styles\MasterStylesCollection.xml" ^\\\*
+
+  \\\*--output "data\Bis_liveoutput\book.bis.xml"\\\*
+
+
+
+
+
+
+
+
+
+C:\Pagemajik\pandoc\PandocAstSuite_new_finalwithfrontmatter\src\filters/xml_profile_common.lua
+
+C:\Pagemajik\pandoc\PandocAstSuite_new_finalwithfrontmatter\src\filters/xml_profile_writer.lua
+
+
+
+Ngmajik index 20758
+
+
+
+input:Home/Config Project/Input/WordtoXHTML.xml
+
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip
+
+Marking idex into idml:
+
+Home/Config Project/Transformation/Word to IDML/MergeIndex.zip
+
+bookindex:
+
+Home/Config Project/Transformation/XHTML5/MergeIndex.zip
+
+
+
+
+
+
+
+
+
+
+
+rerun:
+
+site: 
+
+https://test-production.pagemajik.in/books
+
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.31)
+
+
+
+
+
+
+
+cline
+
+z.ai
+
+clin.4.7
+
+
+
+
+
+648723
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var object = {};
+
+
+
+temp1.forEach(function(ele){
+
+\\\&nbsp;  object\\\\\\\[ele.chapterId] = object\\\\\\\[ele.chapterId] ? \\\\\\\[...object\\\\\\\[ele.chapterId],ele] : \\\\\\\[ele] 
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+python tools/legacy/idml_to_bits.py `
+
+&nbsp; --format bis `
+
+&nbsp; --binder "data/Bis_liveinput/BookBinder.json" `
+
+&nbsp; --inputs-root "data/Bis_liveinput" `
+
+&nbsp; --styles "data/styles/BIS_StylesCollection.xml" `
+
+&nbsp; --master-styles "data/styles/MasterStylesCollection.xml" `
+
+&nbsp; --output "data/Bis_liveoutput/book.bis.xml"
+
+
+
+
+
+
+
+
+
+
+
+
+
+python tools\\legacy\idml_to_bis.py ^
+
+ --binder "data\Bis_liveinput\BookBinder.json" ^
+
+ --inputs-root "data\Bis_liveinput" ^
+
+ --styles "data\styles\BIS_StylesCollection.xml" ^
+
+ --master-styles "data\styles\MasterStylesCollection.xml" ^
+
+ --meta "data\Bis_liveinput\meta.json" ^
+
+ --output "data\Bis_liveoutput\book.bits.xml"
+
+
+
+
+python tools/legacy/idml_to_bits.py ^
+--binder "data\Bis_liveinput\BookBinder.json" ^
+  --inputs-root "data/Bis_liveinput" ^
+  --styles "data/styles/BIS_StylesCollection.xml" ^
+  --master-styles "data/styles/MasterStylesCollection.xml" ^
+  --meta "data\Bis_liveinput\meta.json" ^
+  --output "data\Bis_liveoutput\book.bits.xml"
+
+
+
+
+python local_runner/ast_to_xml.py ^
+  --defaults profiles/bis.yaml ^
+  data/Bis_liveinput/your.ast.json ^
+  data/outputs/your_bis_output.xml
+
+
+
+
+
+21169
+https://test-production.pagemajik.in/books?
+Home/Production/UMP/Entity_Test/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+
+21319
+https://sandbox.pagemajik.ai/tabview
+Home/Production/AOne/entityandidspace/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+entityandidspace
+
+Master:
+Home/Config Project/Transformation/Word to HTML/W2XScript.zip(1.45)
+
+entity issue from prakash:
+https://sandbox.pagemajik.ai/books
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(3.34)
+
+
+
+git clone --branch  LR49 https://pagemajik@dev.azure.com/pagemajik/Pagemajik/_git/ruta
+git status
+git add .
+git status
+git commit -m "25-03-2022 - 08.45 PM (LR49) Occurrence issue - Quotes and sflog file updation when exception occurs during first three jars."
+git push
+git reset --hard 18ae20185d7927b89c6014f7a9d29dc8feae9b31
+git push origin testrelease --force
+
+
+
+21460 hyperlink, 21497 alt text
+https://sandbox.pagemajik.ai/books
+Home/Production/AOne/entityandidspace/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+entityandidspace
+
+0329722_latex
+
+
+<!---command-->
+
+
+
+
+
+
+
+
+<!--Added for Alt test value for marriapan 16-06-2020-->
+                                <xsl:variable name="name" select="$al/Chapter/art[contains(@path, $FPM)][1]/@name"/>
+                                <xsl:if test="$Alttext//artdetail[@data-artname = $name]">
+                                    <xsl:text disable-output-escaping="yes">&#x3C;XMLAttribute Self="di2XMLAttributenlinkend" Name="Alt" Value="</xsl:text>                 
+                                    <xsl:value-of select="$Alttext//artdetail[@data-artname = $name]/@data-artalt"/>
+                                    <xsl:text disable-output-escaping="yes">"/&#x3E;</xsl:text>
+                                </xsl:if>
+                                <!--End-->
+
+
+
+
+
+21473 - table color missing by <w:cnfStyle w:val="001000000000"/>
+21366 - Figure not retained
+
+
+21449
+https://test-production.pagemajik.in/books
+Home/Config Project/Transformation/XML/XhtmlToTEX_Extract.zip(1.2)
+
+
+
+21497
+https://sandbox.pagemajik.ai/
+Home/Production/AOne/Altext/Config Project/Transformation/Word to IDML/W2XScript.zip(1.1)
+Altext
+
+21602
+mathsplit
+Home/Production/Saradha/Mathsplit/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+Mathsplit
+
+https://test-journals.pagemajik.in/books
+Home/Production/AONE/Testing/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+
+https://test-journals.pagemajik.in/
+Documents & Media/Journals/Collections: TESTING/Issues/TabView/Testing November
+
+
+
+
+
+ArtManuscriptIndesignReviewMiscellaneous
+difference
+Testing November
+circlepone.0344989_Latex
+
+pone.0344989_Latex.docx
+246k1.1
+
+pone.0344989_Latex.xhtml
+1M1.0
+
+pone.0344989_Peer_Review
+  
+
+Revised paper.pdf
+423k1.0
+
+Supplementary Files
+  
+
+Text missing 
+bookmark retained
+entities
+index
+list
+
+
+
+21626
+Text missing:
+https://test-production.pagemajik.in/books
+Home/Production/UMP/box_missing_new/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+Tested book:
+box_missing_new
+box_missing_new
+
+Master:
+https://test-production.pagemajik.in/books
+Home/Production/UMP/box_missing_Master/Config Project/Transformation/Word to HTML/W2XScript.zip(1.0)
+box_missing_new
+box_missing_Master
+
+
+21579
+https://test-production.pagemajik.in/books
+Home/Config Project/Transformation/IDML to Word/OneShot.zip(2.43)
+Home/Config Project/Transformation/Word to IDML/AuthorProof.zip(1.32)
+C:\Users\PAGE MAJIK - 2\Downloads\XHTML-To-IDML_Script (6)
+
+altext
+hyperlink 
+
+21642
+https://sandbox.pagemajik.ai/
+
+Toc bookmark and entity
+Home/Production/WKH/Toc_hyperlink_new/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+TOC_HYPERLINK_OLD
+Toc_hyperlink_new
+
+21573
+
+footnoteinside bibreflinks
+Home/Production/UMP/footnoteinsidelinks_new/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+footnoteinsidelinks_old
+FOOTNOTEINSIDELINKS_NEW
+
+
+
+21579
+https://sandbox.pagemajik.ai/
+Home/Production/Sample/Entity Icon/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(3.1)
+
+
+
+Nap
+https://test-production.pagemajik.in/books
+Home/Production/NAP/Nap_alttocfootnotelinks_New/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.0)
+
+
+
+
+td class name
+
+
+brackets
+hyphen to ndash(next number ,), not next ndash
+bold no need for main entries
+
+
+Bookmark:
+Index term para
+<HyperlinkTextDestination Self="HyperlinkTextDestination/22_Story_p_1_txtid_u19a5_Y_87_X_53_W_331_H_520_C_1_FEID_2556893801_UUID_para73884101" Name="22_Story_p_1_txtid_u19a5_Y_87_X_53_W_331_H_520_C_1_FEID_2556893801_UUID_para73884101" Hidden="true" DestinationUniqueKey="13408" />
+
+Name="22_Story_p_1_txtid_u19a5_Y_87_X_53_W_331_H_520_C_1_FEID_2556893801_UUID_para73884101"
+para73884101
+
+
+
+table colgroup
+Home/Production/UMP/TABLECOLGROUP_New/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.0)
+
+
+python tools/legacy/idml_to_bits.py ^
+--binder "data/Bis_liveinput\BookBinder.json" ^
+  --inputs-root "data/Bis_liveinput" ^
+  --styles "data/styles/BIS_StylesCollection.xml" ^
+  --master-styles "data/styles/MasterStylesCollection.xml" ^
+  --meta "data\Bis_liveinput\meta.json" ^
+  --output "data\Bis_liveoutput\book.bits.final.xml"
+
+doc-number
+<standard xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" id="11434" dtd-version="1.2">
+
+
+BIS command:
+python tools/legacy/idml_to_bis.py ^
+  --binder "path/to/BookBinder.json" ^
+  --inputs-root "data/Bis_liveinput" ^
+  --styles "data/styles/BIS_StylesCollection.xml" ^
+  --master-styles "data/styles/MasterStylesCollection.xml" ^
+  --meta "data/Bis_liveinput/meta.json" ^
+    --output "data/Bis_liveoutput/bis_xml.xml"
+
+python tools/legacy/idml_to_bis.py ^
+  --defaults profiles/bis.yaml ^
+  data/Bis_liveoutput/11434.ast.json ^
+  data/Bis_liveoutput/11434.xml
+
+
+
+
+
+python tools\legacy\bis_consolidated.py ^
+  --binder "data\Bis_liveinput\BookBinder.json" ^
+  --inputs-root "data\Bis_liveinput" ^
+  --styles "data\styles\BIS_StylesCollection.xml" ^
+  --master-styles "data\styles\MasterStylesCollection.xml" ^
+  --output "data\Bis_liveoutput\book.bits.final.xml" ^
+  --doc-id "A11434"
+
+
+
+
+
+python local_runner/springer_book_to_xml.py ^
+   --inputs-root "data/inputs" ^
+  --output "data/outputs" ^
+  --styles "data\styles/StylesCollection.xml" ^
+--master-styles "data\styles\MasterStylesCollection.xml" ^
+  --binder "data/inputs/BookBinder.json"^
+  --pipeline jats
+
+
+
+batch run:
+run_bis_conversion.bat
+
+
+
+python local_runner/idml_to_ast.py --styles "data/styles/StylesCollection.xml" "input.idml" output.ast.json
+python local_runner/docx_to_ast.py --styles "data/styles/StylesCollection.xml" "input.docx" output.ast.json
+pandoc --defaults profiles/xml/jats/canonical.yaml output.ast.json -o output.jats.xml
+
+
+java -cp "saxon-he-11.jar;xmlresolver.jar" net.sf.saxon.Transform -s:3423.jats.xml -xsl:jats-to-niso-sts.xsl -o:bis.xml
+
+
+python local_runner\ast_to_xml.py --defaults profiles\bits.yaml data\outputs\11434.ast.json book.bits.final.xml
+
+
+21449
+	
+Home/Config Project/Transformation/XML/XhtmlToTEX_Extract.zip(1.6)
+
+
+https://test-production.pagemajik.in/books
+Home/Production/UMP/footnoteinsidelinks_new/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.4)
+
+Nap:
+Home/Production/NAP/Nap_alttocfootnotelinks_New/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.2)
+
+
+
+
+
+To run the combined ast.json to jats xml
+
+Fist go to folder path in comd 
+
+pandoc book.bits.ast.json -s -t jats_publishing -o book.bits1.xml
+
+pandoc merged.ast.json -s -t jats_publishing -o book.bits1.xml
+
+
+for html
+
+pandoc book.bits.ast.json -s -t html -o book.bits1.html
+pandoc merged.ast.json -s -t html -o book.bits1.html
+
+
+
+Bis:
+python tools\legacy\bis_pipeline_singlestep.py --binder "data\Bis_liveinput\BookBinder.json" --inputs-root "data\Bis_liveinput" --styles "data\styles\BIS_StylesCollection.xml" --output "data\Bis_liveoutput\book.bits.final.xml" 
+Nap bits"
+
+python tools\legacy\idml_to_bits.py ^
+  --binder "data\Nap_liveinput\BookBinder.json" ^
+  --inputs-root "data\Nap_liveinput" ^
+  --styles "data\styles\NAP_StylesCollection.xml" ^
+  --master-styles "data\styles\MasterStylesCollection.xml" ^
+  --meta "data\Nap_liveinput\Metadata Form_ANS.json" ^
+  --output "data\Nap_liveoutput\book.bits.xml"
+
+run_bis_conversion.bat
+
+run_bis_from_raw_ast.bat
+
+bibref inside footnote
+data-hyperlink
+alttext
+uuid for Toc
+sup not applied in footnote text
+
+
+
+Msreceived datae
+commitnamenew
+table 1 and 2 m3rged
+
+
+
+pico
+
+
+
+
+<italic>
+<std std-id="2">
+bis-clause="Obligatory" sec-type="numbered-paragraph" MIssing in section
+entity
+<xref ref-type="sec" rid="A17924_sec_8">  section link
+
+full italic retained in xml for title 
+<title>
+<italic>Test Solution</italic>
+</title>
+e values indicated i n
+
+than the values indicated i n <xref ref-type="table" rid="A17924_table_3">Table 3</xref> semicoln mising ; in end
+
+
+<fn-group>
+<fn fn-type="table-footnote" id="A17924_tablefn3_1">NOTES</fn> table end not tagged like this 
+
+<sec><label><title> instead of p
+in 25 ml hexane. - text missing
+0.2 ml of n-hexane containing 10 ng/ml of carbophenothion and sonicate.
+<caption>
+<p>
+<xref ref-type="table" rid="A17924_t_3">Table 2</xref> Relative Retention Time of Insecticides</p>
+</caption>
+<fn fn-type
+
+
+
+bisclause
+sec-type
+table align
+entity
+
+
+preprocess_ast.lua + bis.lua
+C:\Users\PAGE MAJIK - 2\Downloads\PandocAstSuite_BIS_New\src\filters\bis_modules
+add_stub_ids_standalone.py 
+bis_postprocess_fixed.py 
+ bis_final_postprocess.py 
+
+
+
+<xref ref-type="sec"  missing
+
+sorting order
+
+
+
+
+
+
+2. 817_2
+sorting issue
+
+     <p>Part 3 TIG welding</p> went to a section below
+    <p>Part 4 MIG/MAG welding</p>
+
+3. 395_1
+<sup>
+<sup>
+commitee missing by style
+frontmatter duplicate in ast
+text duplicate
+
+
+IQ400501.xml introduction
+3523.xml
+8395_1.xml
+
+
+rest api
+db
+microserveice(orm frame)
+
+
+
+
+
+
+
+
+pandoc --from json --to jats --lua-filter src/filters/bis_filter.lua --template src/templates/bis_template.xml --metadata project_styles="data/styles/BIS_StylesCollection.xml" --metadata master_styles="data/styles/MasterStylesCollection.xml" --metadata style_map="configs/style_maps/style_bis_map.json" data/Bis_liveoutput/817_2.ast.json -o output/817_2.bis.xml
+
+
+pandoc data\Bis_liveoutput\15392.ast.json ^
+  --lua-filter src\filters\bis_filter.lua ^
+  --from=json --to=jats ^
+  --metadata="style_map=configs/style_maps/style_bis_map.json" ^
+  --standalone ^
+  --template templates\bis-standard.xml ^
+  -o output\15392.bis.xml
+
+
+<th colspan="2" align="center" valign="top">Nominal Thickness</th>
+<boxed-text>
+<label><bold>ANNEX A</bold></label>
+
+
+
+pandoc "data\Bis_liveoutput\15392.ast.json" --from=json --to=jats --lua-filter "src\filters\bis_filter.lua" --template "src\templates\bis_template.xml" --metadata "style_map=configs/style_maps/style_bis_map.json" -o "output\15392.bis.xml"
+
+for %f in (data\Bis_liveoutput\*.ast.json) do pandoc "%f" --from=json --to=jats --lua-filter "src\filters\bis_filter.lua" --template "src\templates\bis_template.xml" --metadata "style_map=configs/style_maps/style_bis_map.json" -o "output\%~nf.bis.xml"
+
+
+
+
+
+<sec sec-type="numbered-paragraph" id="IS817_1996_sec_1.">
+<label>1.</label>
+<p>The principal objectives for the course of instruction covered by
+this code are. </p>
+</sec>
+
+
+
+for %f in (data\Bis_liveoutput\*.ast.json) do pandoc "%f" --from=json --to=jats --lua-filter "src\filters\bis_filter.lua" --template "src\templates\bis_template.xml" --metadata "style_map=configs/style_maps/style_bis_map.json" -o "output\%~nf.xml" && echo OK: %~nf || echo FAIL: %~nf 
+
+
+# run_single.ps1
+param($stem)
+pandoc "data\Bis_liveoutput\$stem.ast.json" --from=json --to=jats `
+  --lua-filter "src\filters\preprocess_ast.lua" `
+  --lua-filter "src\filters\bis_filter.lua" `
+  --template "src\templates\bis_template.xml" `
+  --metadata "style_map=configs/style_maps/style_bis_map.json" `
+  -o "output\$stem.bis.xml"
+
+.\run_bis_batch.ps1
+
+snowflake
+databrik
+juptiter notebook
+
+
+for %f in (data\Bis_liveoutput\*.ast.json) do pandoc "%f" --from=json --to=jats --lua-filter "src\filters\bis_filter.lua" --template "src\templates\bis_template.xml" --metadata "style_map=configs/style_maps/style_bis_map.json" -o "output\%~nf.xml" && echo OK: %~nf || echo FAIL: %~nf
+
+
+                                              
+
+
+
+17751 sorting
+17924.xml
+
+
+
+pandoc data/Bis_liveoutput/15571.ast.json ^
+  --from=json --to=jats ^
+  --lua-filter src/filters/preprocess_ast.lua ^
+  --lua-filter src/filters/bis_filter.lua ^
+  --metadata doc_id=IS15571 ^
+  --metadata styles_path=data/styles/BIS_StylesCollection.xml ^
+  --metadata style_map=configs/style_maps/style_bis_map.json ^
+  --template templates/bis-standard.xml ^
+  -o data/Bis_liveoutput/15571.xml
+
+
+MainTitle  - level 1
+FirstHead1 - level 2
+Head1       - level 2
+
+RunonHead2 ,Head2 - levl 3
+RunonHead3  ,Head3- level 4
+RunonHead4  ,Head4- level 5
+RunonHead5  ,Head5- level 6
+RunonHead6  ,Head6- level 7
+
+
+
+for %f in (data\Bis_liveoutput\*.ast.json) do pandoc "%f" --from=json --to=jats --lua-filter "src\filters\preprocess_ast.lua" --lua-filter "src\filters\bis_filter.lua" --metadata "style_map=configs/style_maps/style_bis_map.json" --metadata "styles_path=data/styles/BIS_StylesCollection.xml" --template "templates\bis-standard.xml" --standalone -V lang=en -o "data\Bis_liveoutput\%~nf.ast.xml" && echo OK: %~nf || echo FAIL: %~nf
+
+
+
+
+IO7240_4.xml
+table in output to list in ast
+<ext-link ext-link-type="uri" xlink:href="https://6.12">
+
+
+cross+basic 8.33% x12 +1800 
+
+
+
+18237 - correct grouping
+817_2 - figure link missing in ast
+<fig id="IS817_2_fig_2" position="float">
+<caption>
+<title>Fig, 2 Method of Making Fillet Weld Test Specimen for Initial Qualification, Annual and Periodic Control Test</title>
+</caption>
+<graphic xlink:href="images/image2"/>
+</fig>
+
+
+
+pandoc "data\Bis_liveoutput\817_2neww.ast.json" --from=json --to=jats --lua-filter "src\filters\bis_filter.lua" --template "src\templates\bis_template.xml" --metadata "style_map=configs/style_maps/style_bis_map.json" -o "output\817_2neww.ast.xml"   && echo OK: IO7240_4.ast   || echo FAIL: IO7240_4.ast
+OK: IO7240_4.ast
+
+
+21573
+21853
+21805
+
+
+For Toc bookmark
+empty hyperlink
+comment duplicate
+alttext missing
+
+https://test-production.pagemajik.in/
+Home/Production/UMP/footnoteinsidelinks_new/Config Project/Transformation/Word to IDML\XHTML-To-IDML_Script.zip(2.1)
+
+Home/Production/UMP/footnoteinsidelinks_new/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(2.2)
+footnoteinsidelinks_new/IJCCP_26_21_1.8
+
+Mastermerge:
+https://sandbox.pagemajik.ai/books?
+Home/Production/UMP/FOOTNOTEINSIDELINKS_NEW/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+FOOTNOTEINSIDELINKS_NEW
+
+22134
+https://test-production.pagemajik.in/
+Home/Production/UMP/Config Project/Transformation/Word to HTML/xhtml2word.zip(1.5)
+XHTMLTOWORD
+
+
+
+NAP:
+https://sandbox.pagemajik.ai/books
+Home/Production/UMP/FOOTNOTEINSIDELINKS_NEW_Nap/Config Project/Transformation/Word to IDML/XHTML-To-IDML_Script.zip(1.1)
+FOOTNOTEINSIDELINKS_NEW_Nap
+https://dev.azure.com/pagemajik/Pagemajik/_git/XHTML-To-IDML_Script?version=GBNAP_Master
+
+
+22208
+https://test-production.pagemajik.in/books
+Home/Production/UMP/Underlinemissinginxhtml/Config Project/Transformation/Word to HTML/W2XScript.zip(1.1)
+UNDERLINEMISSINGINXHTML
+
+22226
+https://test-production.pagemajik.in/books
+Home/Production/UMP/Underlinemissinginxhtml/Config Project/Transformation/Word to HTML/W2XScript.zip(1.3)
+Underlinemissinginxhtml
+https://dev.azure.com/pagemajik/Pagemajik/_git/W2XScript?version=GB159_Footnotesymbol

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JournalBE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<JournalName>PNTD</JournalName>
+<PublisherCode>PNTD</PublisherCode>
+<JournalTitle>PLOS Neglected Tropical Diseases</JournalTitle>
+<JournalTitleAbbreviation>PLOS Neglected Tropical Diseases</JournalTitleAbbreviation>
+<ISSNPpub></ISSNPpub>
+<ISSNEpub>1935-2735</ISSNEpub>
+<PublisherName>Public Library of Science</PublisherName>
+<PublisherLocation>San Francisco, CA USA</PublisherLocation>
+<CopyRightStatement></CopyRightStatement>
+<CopyRightYear>2026</CopyRightYear>
+<CopyRightHolder></CopyRightHolder>
+<Publisher-ID>plos</Publisher-ID>
+<PMC>plosntds</PMC>
+<NLM>PLoS Negl Trop Dis</NLM>
+<DOI>10.1371/journal.pntd</DOI>
+<Volume>20</Volume>
+<ext-link Journal="PNTD" xlink:href="http://journals.plos.org/plosntds/article/asset?unique&amp;id=info:doi/10.1371/journal."/>
+
+<history jcode="PNTD" msc="Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PNTD" msc="Formal Comment" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+
+<history jcode="PNTD" msc="Viewpoints" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Education" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Review" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Correction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Expression of Concern" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Retraction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Expert Commentary" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Editorial" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Editorial Note" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Historical Profiles and Perspectives" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Photo Quiz" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="From InNovation to Application" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Policy Platform" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Profiles" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PNTD" msc="Symposium" hopt="no" received="no" rev-recd="no" accepted="no"/>
+</JournalBE>

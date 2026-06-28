@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JournalBE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<JournalName>PGPH</JournalName>
+<PublisherCode>PGPH</PublisherCode>
+<JournalTitle>PLOS Global Public Health</JournalTitle>
+<JournalTitleAbbreviation>PLOS Global Public Health</JournalTitleAbbreviation>
+<ISSNPpub></ISSNPpub>
+<ISSNEpub>2767-3375</ISSNEpub>
+<PublisherName>Public Library of Science</PublisherName>
+<PublisherLocation>San Francisco, CA USA</PublisherLocation>
+<CopyRightStatement></CopyRightStatement>
+<CopyRightYear>2026</CopyRightYear>
+<CopyRightHolder></CopyRightHolder>
+<Publisher-ID>plos</Publisher-ID>
+<PMC>plosgph</PMC>
+<NLM>PLOS Glob Public Health</NLM>
+<DOI>10.1371/journal.pgph</DOI>
+<Volume>6</Volume>
+<ext-link Journal="PGPH" xlink:href="http://journals.plos.org/globalpublichealth/article/asset?unique&amp;id=info:doi/10.1371/journal."/>
+
+<history jcode="PGPH" msc="Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PGPH" msc="Formal Comment" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+
+<history jcode="PGPH" msc="Review" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PGPH" msc="Essay" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PGPH" msc="Correction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PGPH" msc="Expression of Concern" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PGPH" msc="Retraction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PGPH" msc="Editorial" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PGPH" msc="Editorial Note" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PGPH" msc="Opinion" hopt="no" received="no" rev-recd="no" accepted="no"/>
+</JournalBE>

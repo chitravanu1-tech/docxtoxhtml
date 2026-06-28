@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JournalBE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<JournalName>PCLM</JournalName>
+<PublisherCode>PCLM</PublisherCode>
+<JournalTitle>PLOS Climate</JournalTitle>
+<JournalTitleAbbreviation>PLOS Climate</JournalTitleAbbreviation>
+<ISSNPpub></ISSNPpub>
+<ISSNEpub>2767-3200</ISSNEpub>
+<PublisherName>Public Library of Science</PublisherName>
+<PublisherLocation>San Francisco, CA USA</PublisherLocation>
+<CopyRightStatement></CopyRightStatement>
+<CopyRightYear>2026</CopyRightYear>
+<CopyRightHolder></CopyRightHolder>
+<Publisher-ID>plos</Publisher-ID>
+<PMC>plosclimate</PMC>
+<NLM>PLOS Clim</NLM>
+<DOI>10.1371/journal.pclm</DOI>
+<Volume>5</Volume>
+<ext-link Journal="PCLM" xlink:href="http://journals.plos.org/climate/article/asset?unique&amp;id=info:doi/10.1371/journal."/>
+
+<history jcode="PCLM" msc="Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PCLM" msc="Formal Comment" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+
+<history jcode="PCLM" msc="Review" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCLM" msc="Essay" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCLM" msc="Correction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCLM" msc="Expression of Concern" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCLM" msc="Retraction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCLM" msc="Editorial" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCLM" msc="Editorial Note" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCLM" msc="Opinion" hopt="no" received="no" rev-recd="no" accepted="no"/>
+
+</JournalBE>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JournalBE xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<JournalName>PCSY</JournalName>
+<PublisherCode>PCSY</PublisherCode>
+<JournalTitle>PLOS Complex Systems</JournalTitle>
+<JournalTitleAbbreviation>PLOS Complex Systems</JournalTitleAbbreviation>
+<ISSNPpub></ISSNPpub>
+<ISSNEpub>2837-8830</ISSNEpub>
+<PublisherName>Public Library of Science</PublisherName>
+<PublisherLocation>San Francisco, CA USA</PublisherLocation>
+<CopyRightStatement></CopyRightStatement>
+<CopyRightYear>2026</CopyRightYear>
+<CopyRightHolder></CopyRightHolder>
+<Publisher-ID>plos</Publisher-ID>
+<PMC>ploscomlsys</PMC>
+<NLM>PLOS Complex Syst</NLM>
+<DOI>10.1371/journal.pcsy</DOI>
+<Volume>3</Volume>
+
+<history jcode="PCSY" msc="Research Article" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+<history jcode="PCSY" msc="Formal Comment" hopt="yes" received="yes" rev-recd="no" accepted="yes"/>
+
+<history jcode="PCSY" msc="Review" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCSY" msc="Correction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCSY" msc="Expression of Concern" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCSY" msc="Retraction" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCSY" msc="Editorial" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCSY" msc="Editorial Note" hopt="no" received="no" rev-recd="no" accepted="no"/>
+<history jcode="PCSY" msc="Opinion" hopt="no" received="no" rev-recd="no" accepted="no"/>
+</JournalBE>

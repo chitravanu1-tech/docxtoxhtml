@@ -1,0 +1,28 @@
+\nonstopmode
+\documentclass{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{fontspec}
+
+
+\usepackage[defaultmathsizes,italic]{mathastext}
+
+% Do the measuring in the preamble, using the macro defined in the main file
+\newsavebox{\eqbox}
+\newlength{\width}
+\newlength{\height}
+\newlength{\depth}
+\begin{lrbox}{\eqbox}\myequationcontent\end{lrbox}
+\settowidth{\width}{\usebox{\eqbox}}
+\settoheight{\height}{\usebox{\eqbox}}
+\settodepth{\depth}{\usebox{\eqbox}}
+\addtolength{\depth}{0.5pt}
+\newwrite\file
+\immediate\openout\file=\jobname.bsl
+\immediate\write\file{Depth = \the\depth}
+\immediate\write\file{Height = \the\height}
+\addtolength{\height}{\depth}
+\immediate\write\file{TotalHeight = \the\height}
+\immediate\write\file{Width = \the\width}
+\closeout\file

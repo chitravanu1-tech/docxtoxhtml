@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<W2XHTMLConversion>
+<Type Name="xmltowordxml" DocumentType="2010">
+    <Steps Process="Parse" XsltFile="/1_HtmlToXml.xslt" XmlFile="/out.xml" output="/out1.xml" Input="True"/>
+    <Steps Process="Parse" XsltFile="/2_HtmlToXml.xslt" XmlFile="/out1.xml" output="/outfinal.xml" Input="True"/>    
+</Type>
+</W2XHTMLConversion>
