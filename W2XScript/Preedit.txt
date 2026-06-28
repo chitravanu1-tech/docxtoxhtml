@@ -1,0 +1,1198 @@
+
+//<rule>
+//<category name="Capitalization_Rules"> 
+       //<span id="00" name="Century Capitalization"> 
+            DECLARE CenturyCapitalization,CenturyCapitalizationPassage,century;
+            DECLARE  CT_REPLACE_Century_Capitalization(STRING replace,STRING description);
+            (NumberinWord{STARTSWITH(CW)}|num) (Superscript|RankPosition)? @W{-STARTSWITH(Sentence),-PARTOF(DZ_Heading),-STARTSWITH(PassageandList),-PARTOF(DZ_ExcludeGrammarRules),REGEXP("Century|CENTURY")->MARK( CT_REPLACE_Century_Capitalization,1,3)};             
+            BLOCK(foreach)  CT_REPLACE_Century_Capitalization{}
+            {
+                 CT_REPLACE_Century_Capitalization{->  CT_REPLACE_Century_Capitalization.replace=toLowerCase( CT_REPLACE_Century_Capitalization.ct)};
+                STRING s;
+                ASSIGN(s, CT_REPLACE_Century_Capitalization.replace);
+                 CT_REPLACE_Century_Capitalization{-> CT_REPLACE_Century_Capitalization.description= "Always use the form "+ s+"."};
+
+            }                              
+       //</span>
+       
+       //<span id="002" name="University">  
+            DECLARE ME_University (STRING replace,STRING description);
+            DECLARE University;
+            W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("The",true)} @W{REGEXP("university")->MARK(ME_University,1,2)};
+            ME_University{->ME_University.description="The Word University should be capitalized in instances where it stands in place of the full name of a particular university."};                       
+       //</span>
+       
+       //<span id="006" name="Heading Capitalization"> 
+            DECLARE ME_Heading_Capitalization( STRING replace,STRING description);        
+            BLOCK (foreach) DZ_Heading{}
+            {
+                W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("this|than||that|when|where")->MARK(ME_Heading_Capitalization,1,2)};
+                ME_Heading_Capitalization{->ME_Heading_Capitalization.description="All verbs, nouns, pronouns, and This, Than, That, When, and Where in headings should be capitalized."};
+            }
+       //</span>
+       
+       //<span id="007" name="List Capitalization"> 
+            DECLARE  StartwithSmallCaseList,TempCopyofList; 
+            FULL_LIST{->TempCopyofList};
+            TempCopyofList{-> TRIM(CleanLowerRomanSpecial,CleanNumberNewSpecial,CleanUpperNewSpecial,CleanLowerNewSpecial,CleanUpperRomanSpecial)};
+            DECLARE  CT_REPLACE_List_Capitalization(STRING replace,STRING description);
+            BLOCK (foreach) TempCopyofList{}
+            {                 
+                 W{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(UpperNewSpecial),-PARTOF(LowerNewSpecial),-PARTOF(UpperNewSpecial),-PARTOF(LowerRomanSpecial),POSITION(TempCopyofList,1),STARTSWITH(SW)->MARK( CT_REPLACE_List_Capitalization), CT_REPLACE_List_Capitalization.description="Capitalize the first letter of each item in list."};
+                 CT_REPLACE_List_Capitalization{->  CT_REPLACE_List_Capitalization.replace=firstCharToUpperCase( CT_REPLACE_List_Capitalization.ct)};
+            
+            }
+       //</span>
+       
+       //<span id="008" name="After Colon Capitalization">  
+            DECLARE ME_After_Colon_Capitalization( STRING replace,STRING description);
+            DECLARE NexttoColonpassage;                       
+            COLON ANY{-PARTOF(MayBeMeasurements),-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(SPECIAL),-PARTOF(NUM),-PARTOF(CW), -PARTOF(CAP),-PARTOF(FULL_LIST),-PARTOF(DZP_FirstUnNumberedList),-PARTOF(DZP_UnNumberedList)->MARK(ME_After_Colon_Capitalization),ME_After_Colon_Capitalization.description="Capitalize the first letter after a colon unless it is a list."};
+       //</span>
+       
+       //<span id="009" name="Capitalization">   
+            DECLARE ME_Capitalization( STRING replace,STRING description); 
+            Capitalization{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Capitalization)->MARK(ME_Capitalization),ME_Capitalization.description="Set in title case."};     
+       //</span>
+               
+       //<span id="010" name="Specific Capitalization"> 
+            DECLARE Specific_Capitalization,Replace_Cap,ReplaceTest;
+            DECLARE  CT_REPLACE_Specific_Capitalization( STRING replace,STRING description);
+            W{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF( CT_REPLACE_Specific_Capitalization),REGEXP("rule|section|form")} NUM {->MARK( CT_REPLACE_Specific_Capitalization,1)};
+            BLOCK(foreach)  CT_REPLACE_Specific_Capitalization{}
+            {
+                 CT_REPLACE_Specific_Capitalization{->  CT_REPLACE_Specific_Capitalization.replace=firstCharToUpperCase( CT_REPLACE_Specific_Capitalization.ct)};
+                STRING s;
+                ASSIGN(s, CT_REPLACE_Specific_Capitalization.replace);
+                 CT_REPLACE_Specific_Capitalization{-> CT_REPLACE_Specific_Capitalization.description= s+" should be capitalized."};
+
+            }                  
+                                
+       //</span>
+       
+       //<span id="011" name="Age"> 
+            DECLARE  CT_REPLACE_Age (STRING replace,STRING description); 
+            DECLARE Replace_Age;
+             (W{REGEXP("age",true)} W{REGEXP("of",true)}) (num|NumberinWord) W{REGEXP("Years|Year",true),-PARTOF(DZ_ExcludeGrammarRules)-> MARK( CT_REPLACE_Age,1,3),MARK(Replace_Age,1,2)};
+            
+            BLOCK(foreach)  CT_REPLACE_Age{}
+            {
+                STRING agerepl;
+                STRING s;
+                ASSIGN(s, CT_REPLACE_Age.ct);                
+                Replace_Age{->MATCHEDTEXT(agerepl)};
+                 CT_REPLACE_Age{-> CT_REPLACE_Age.replace=agerepl};
+                 CT_REPLACE_Age{-> CT_REPLACE_Age.description= agerepl+" "+" ,not "+s};  
+            }                  
+       //</span>                                      
+//</category> 
+
+
+
+//<category name="Lowercase">        
+       //<span id="014" name="Heading LowerCase"> 
+            DECLARE ME_Heading_LowerCase( STRING replace,STRING description);
+            BLOCK (foreach) DZ_Heading{}
+            {
+                LowerCaseInheading{-PARTOF(DZ_ExcludeGrammarRules),-STARTSWITH(DZ_Heading),-PARTOF(ME_Heading_LowerCase)->MARK(ME_Heading_LowerCase),ME_Heading_LowerCase.description="Lower case first letter"};
+            }
+       //</span>       
+       
+       //<span id="015" name="Lowercase Section Heading"> 
+            DECLARE  CT_REPLACE_Lowercase_SectionHeading( STRING replace,STRING description);
+            DECLARE LowercaseSectionHeading;
+            W{REGEXP("Chapter|Lesson|Topic|Part|Section|Unit",true),-PARTOF(LowercaseSectionHeading)-> MARK(LowercaseSectionHeading)};                         
+            W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("In",true)} W{REGEXP("This",true)}W?{REGEXP("following",true)} (FloatElement|LowercaseSectionHeading){STARTSWITH(CW)->MARK( CT_REPLACE_Lowercase_SectionHeading)} ANY{-PARTOF(NUM)};
+             CT_REPLACE_Lowercase_SectionHeading{->  CT_REPLACE_Lowercase_SectionHeading.replace=toLowerCase( CT_REPLACE_Lowercase_SectionHeading.ct)};
+             CT_REPLACE_Lowercase_SectionHeading{-> CT_REPLACE_Lowercase_SectionHeading.description="Lower case 's' for 'section' in 'in this section'"}; 
+       //</span>        
+//</category> 
+
+
+
+//<category name="Units">
+       //<span id="016" name="Unit">  
+            DECLARE  CT_REPLACE_Unit( STRING replace,STRING description);
+            DECLARE Replace_Unit,unintsarticles;                         
+            W{REGEXP("The",true)} @UnitsandArticles{-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Unit,1,2),MARK(Replace_Unit,2)};
+            CT_REPLACE_Unit{-> CT_REPLACE_Unit.description="Delete ‘the’ before unit."};
+
+            BLOCK(foreach)  CT_REPLACE_Unit{}
+            {
+                STRING removeThe;          
+                Replace_Unit{->MATCHEDTEXT(removeThe)};
+                CT_REPLACE_Unit{-> CT_REPLACE_Unit.replace=removeThe};     
+            }                                                 
+       //</span>
+       
+       //<span id="017" name="Include thinSpace between number and unit"> 
+            DECLARE  CT_REPLACE_Thin_Space( STRING replace,STRING description);                        
+            Document{->RETAINTYPE(SPACE)};
+            num @UnitsandArticles {-PARTOF(DZ_ExcludeGrammarRules),-PARTOF( CT_REPLACE_Thin_Space)->MARK( CT_REPLACE_Thin_Space,1,2)};
+             CT_REPLACE_Thin_Space{-> CT_REPLACE_Thin_Space.description="There should be a thin space between number and unit."};
+           BLOCK(foreach)  CT_REPLACE_Thin_Space{}
+           {
+                STRING unit;
+                STRING unitnum;
+                UnitsandArticles{->MATCHEDTEXT(unit)};
+                num{->MATCHEDTEXT(unitnum)};
+                 CT_REPLACE_Thin_Space{-> CT_REPLACE_Thin_Space.replace=unitnum+" "+unit};
+           }            
+            RETAINTYPE;
+       //</span>
+
+       //<span id="018" name="Unit Number">
+            DECLARE ME_Unit_Number( STRING replace,STRING description);                        
+            (num) HYPHEN? @UNITS{-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Unit_Number,1,3)};
+            ME_Unit_Number{->ME_Unit_Number.description="Abbreviate the units (90 m not 90 meters)"};                         
+       //</span> 
+
+       //<span id="019" name="Unit Spacing"> 
+            DECLARE Lowercamelcase,Uppercamelcase;
+            DECLARE  CT_REPLACE_Unit_Spacing( STRING replace,STRING description);
+            BLOCK(landucasepass) PassageandList{}
+            {
+                Document{-> RETAINTYPE(SPACE)};
+                SW CW{->MARK(Lowercamelcase,1,2)};
+                CW CW{->MARK(Uppercamelcase,1,2)};
+                RETAINTYPE;
+            }
+            (Lowercamelcase|Uppercamelcase|CAP){-PARTOF(DZ_ExcludeGrammarRules),REGEXP("mmHg|MmHg|MMHG")->MARK( CT_REPLACE_Unit_Spacing), CT_REPLACE_Unit_Spacing.description="There must always be a space between mm and Hg"};                       
+            BLOCK(foreach)  CT_REPLACE_Unit_Spacing{}
+            {
+                STRING spacerepl="mm Hg";
+                 CT_REPLACE_Unit_Spacing{-> CT_REPLACE_Unit_Spacing.replace=spacerepl};
+            }                  
+       //</span> 
+
+       //<span id="020" name="Unit Duplicates">
+            DECLARE ME_Unit_Duplicates( STRING replace,STRING description); 
+            DECLARE UnitDuplicateRemove;                    
+            (num MayBeMeasurements  (W{REGEXP("And",true)}|HYPHEN|COMMA )num MayBeMeasurements)+{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Unit_Duplicates)} (W{REGEXP("And",true)})?  num?  MayBeMeasurements?{-PARTOF(ME_Unit_Duplicates),-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Unit_Duplicates,1,5),MARK(UnitDuplicateRemove,2)};
+            ME_Unit_Duplicates{->ME_Unit_Duplicates.description="Use 10-20 m or 10, 20, and 30 m not 10 m-20 m or 10 m and 11 m."};
+            BLOCK(foreach) ME_Unit_Duplicates{}
+            {
+                STRING unitdublicateremove="";
+                ME_Unit_Duplicates{->ME_Unit_Duplicates.replace=unitdublicateremove};
+            }                  
+       //</span>
+
+       //<span id="021" name="Units in Chemistry">
+            DECLARE Units_Chemistry,ReplaceChemistroyUnit; 
+            DECLARE  CT_REPLACE_Units_Chemistry( STRING replace,STRING description);                        
+            (NumberinWord|num){-PARTOF(Superscript)} HYPHEN? @W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("molar|normal",true)->MARK( CT_REPLACE_Units_Chemistry,3),MARK(ReplaceChemistroyUnit,3)};
+             CT_REPLACE_Units_Chemistry{-> CT_REPLACE_Units_Chemistry.description="Use numerals and abbreviate the units (3 M solution not three molar or 2 molar)"} ;
+            BLOCK(foreach)  CT_REPLACE_Units_Chemistry{}
+            {
+                STRING changeunitsinchemistry="";
+                ReplaceChemistroyUnit{->MATCHEDTEXT(changeunitsinchemistry)};
+                 CT_REPLACE_Units_Chemistry{IF(equalsIgnoreCase(changeunitsinchemistry,"Molar"))-> CT_REPLACE_Units_Chemistry.replace="M"};
+                 CT_REPLACE_Units_Chemistry{IF(equalsIgnoreCase(changeunitsinchemistry,"Normal"))-> CT_REPLACE_Units_Chemistry.replace="N"};
+            }                  
+       //</span>
+       
+       //<span id="022" name="Units Computer"> 
+            DECLARE ME_Units_Computer( STRING replace,STRING description);                        
+            Document{->RETAINTYPE(SPACE)};
+            num (PERIOD num)? @COMPUTERUNITS{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Units_Computer)->MARK(ME_Units_Computer,1,3)};
+            (num|DecimalNumber){-PARTOF(ME_Units_Computer)} @COMPUTERUNITS{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Units_Computer)->MARK(ME_Units_Computer,1,2)};
+            ME_Units_Computer{->ME_Units_Computer.description="Retain space between units and quantity."};
+            RETAINTYPE; 
+           BLOCK(foreach) ME_Units_Computer{}
+           {
+                STRING unit;
+                STRING unitnum;
+                (num|DecimalNumber){->MATCHEDTEXT(unitnum)};
+                COMPUTERUNITS{->MATCHEDTEXT(unit)};
+                ME_Units_Computer{->ME_Units_Computer.replace=unitnum+" "+unit};
+           }            
+                                 
+       //</span>
+
+       //<span id="023" name="Milliliter"> 
+            DECLARE milliliter;
+            DECLARE  CT_REPLACE_Milliliter( STRING replace,STRING description);
+            num @W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("ml|ML|Ml"),-PARTOF( CT_REPLACE_Milliliter)->MARK( CT_REPLACE_Milliliter,2)};
+             CT_REPLACE_Milliliter{-> CT_REPLACE_Milliliter.description="Change ml to mL."};
+            BLOCK(foreach)  CT_REPLACE_Milliliter{}
+            {
+                STRING changeml="mL";
+                 CT_REPLACE_Milliliter{-> CT_REPLACE_Milliliter.replace=changeml};
+            }                  
+       //</span>
+//</category>  
+
+
+//<category name="Degree Symbol">              
+       //<span id="024" name="Degree_Symbol">
+            DECLARE Replace_Degree_Symbol; 
+            DECLARE  CT_REPLACE_Degree_Symbol( STRING replace,STRING description); 
+            num @W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("Degrees|Degree|deg",true)} W{REGEXP("c|f",true),-PARTOF(CT_REPLACE_Degree_Symbol)->MARK( CT_REPLACE_Degree_Symbol,2)};
+             CT_REPLACE_Degree_Symbol{-> CT_REPLACE_Degree_Symbol.description="Use symbol instead of spell out form."};
+            DEGREESYMBOL{->MARK(Replace_Degree_Symbol)};           
+            BLOCK(foreach)  CT_REPLACE_Degree_Symbol{}
+            {
+                STRING repDegreeSymbol="°";
+                Replace_Cap{->MATCHEDTEXT(repDegreeSymbol)};
+                 CT_REPLACE_Degree_Symbol{-> CT_REPLACE_Degree_Symbol.replace=repDegreeSymbol};
+            }                              
+       //</span> 
+
+       //<span id="025" name="Celsius_Degree"> 
+            DECLARE CELSIUSDEGREE,ReplaceSpace;                       
+            DECLARE  CT_REPLACE_Celsius_Degree( STRING replace,STRING description);
+            Document{->RETAINTYPE(SPACE)};
+            num SPACE? @DEGREESYMBOL SPACE W{REGEXP("F|C",true),-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Celsius_Degree,2),MARK( CT_REPLACE_Celsius_Degree,4)};
+            num SPACE @DEGREESYMBOL SPACE? W{REGEXP("F|C",true),-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Celsius_Degree,2),MARK( CT_REPLACE_Celsius_Degree,4)};
+             CT_REPLACE_Celsius_Degree{-> CT_REPLACE_Celsius_Degree.description="Degree symbol should be closed up with Celsius 'C' or Fahrenheit 'F'."};            
+            BLOCK(each)  CT_REPLACE_Celsius_Degree{}
+            {
+                STRING removeSpace="";
+                 CT_REPLACE_Celsius_Degree{-> CT_REPLACE_Celsius_Degree.replace=removeSpace};
+            }                              
+           RETAINTYPE;                                     
+       //</span>
+
+       //<span id="026" name="Kelvin"> 
+            DECLARE  CT_REPLACE_Kelvin ( STRING replace,STRING description);                        
+            num @DEGREESYMBOL W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("k",true)->MARK( CT_REPLACE_Kelvin,2)};
+             CT_REPLACE_Kelvin{-> CT_REPLACE_Kelvin.description="Do not use degree symbol for Kelvin."};
+            BLOCK(foreach)  CT_REPLACE_Kelvin{}
+            {
+                STRING removeDegree="";
+                 CT_REPLACE_Kelvin{-> CT_REPLACE_Kelvin.replace=removeDegree};
+            }                  
+             
+       //</span>
+
+       //<span id="027" name="Superscript Degree"> 
+            DECLARE  CT_REPLACE_Superscript_Degree( STRING replace,STRING description);                        
+            DECLARE SuperscriptDegree;
+            //num ("O"|"o") ("C"|"c"|"F"|"f"){-PARTOF(Reference)->MARK( CT_REPLACE_Superscript_Degree,2), CT_REPLACE_Superscript_Degree.description="There is a character 'o' in the place of a degree symbol. Replace 'o' or 'O' with degree symbol for degree Celsius."};
+            num W{REGEXP("o",true)} W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("c|f",true)->MARK( CT_REPLACE_Superscript_Degree,2)};
+             CT_REPLACE_Superscript_Degree{-> CT_REPLACE_Superscript_Degree.description="There is a character 'o' in the place of a degree symbol. Replace 'o' or 'O' with degree symbol."};
+            BLOCK(foreach)  CT_REPLACE_Superscript_Degree{}
+            {
+                STRING removeSpace="°";
+                 CT_REPLACE_Superscript_Degree{-> CT_REPLACE_Superscript_Degree.replace=removeSpace};
+            }                  
+       //</span>
+
+       //<span id="028" name="Degree_Directions"> 
+            DECLARE ME_Degree_Directions( STRING replace,STRING description);
+            num (DEGREESYMBOL|W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("Degrees|Degree|deg",true)}) W{REGEXP("c|f",true)} W{REGEXP("N|E|W|S",true),-PARTOF(ME_Degree_Directions)->MARK(ME_Degree_Directions,1,4)};
+            ME_Degree_Directions{->ME_Degree_Directions.description="Degree latitudes and longitudes should be closed up with the numeral."};
+       //</span>              
+//</category> 
+
+
+
+//<category name="Numbers">    
+       //<span id="029" name="Numeral_Word">
+            DECLARE NUMERALWORD;
+            DECLARE  CT_REPLACE_From_and_between( STRING replace,STRING description);                       
+            W{REGEXP("From|Between",true)} num @Endash num{-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_From_and_between,3)};
+             CT_REPLACE_From_and_between{-> CT_REPLACE_From_and_between.description="“Do not use endash in expressions with the words from-to or between-and. Use ‘from 1 to 11’ not ‘from 1–11.’"};
+            BLOCK(foreach)  CT_REPLACE_From_and_between{}
+            {
+                STRING removeendash="";
+                 CT_REPLACE_From_and_between{-> CT_REPLACE_From_and_between.replace=removeendash};
+            }                                                  
+       //</span> 
+
+       //<span id="030" name="Word Numeral"> 
+            DECLARE WORDNUMERAL;
+            DECLARE ME_Word_Numeral( STRING replace,STRING description);
+            RETAINTYPE(SPACE);                        
+            ("E"|"e") num{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(Superscript),-PARTOF(Subscript)->MARK(ME_Word_Numeral,1,5)};
+            RETAINTYPE; 
+            ME_Word_Numeral{->ME_Word_Numeral.description="Place the numeral after “e” in superscript."};
+       //</span>
+
+       //<span id="031" name="Decades"> 
+            DECLARE  CT_REPLACE_Decades( STRING replace,STRING description);                         
+            W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("MID",true)} num{REGEXP(".{4}")} W{REGEXP("s",true)->MARK( CT_REPLACE_Decades,1)};
+             CT_REPLACE_Decades{-> CT_REPLACE_Decades.description="Hyphenate mid-1970s."}; 
+            BLOCK(foreach)  CT_REPLACE_Decades{}
+            {
+                STRING addHyphen="mid-";
+                 CT_REPLACE_Decades{-> CT_REPLACE_Decades.replace=addHyphen};
+            }                  
+            
+       //</span>
+
+       //<span id="032" name="Punctuation Decades"> 
+           DECLARE ME_Punctuation_Decades( STRING replace,STRING description);           
+           num{-PARTOF(DZ_ExcludeGrammarRules),REGEXP(".{4}")} (SingleQuotes|DoubleQuotes) W{REGEXP("s",true)->MARK(ME_Punctuation_Decades,1,3)};
+           ME_Punctuation_Decades{->ME_Punctuation_Decades.description="No apostrophe after the year denoting decades (should be 1970s)"};
+             (SingleQuotes|DoubleQuotes) num ("S"|"s"){-PARTOF(Reference),-PARTOF(ME_Punctuation_Decades)->MARK(ME_Punctuation_Decades,1,3)};
+       //</span>
+
+       //<span id="033" name="Spellout Centuries"> 
+             DECLARE ME_Spellout( STRING replace,STRING description);                        
+             num RankPosition (W{REGEXP("AND|TO",true)}) num RankPosition @W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("(Centuries|Century)",true)->MARK(ME_Spellout,1,6)};
+             ME_Spellout{->ME_Spellout.description="Spell out references to particular centuries. Decades may be either spelled out or expressed in numerals followed by the letter 's'."};                                               
+       //</span> 
+
+       //<span id="034" name="Spellout Numbers"> 
+             DECLARE ME_Spellout_Fraction( STRING replace,STRING description);                         
+             num{REGEXP(".")} @frontslash num{REGEXP(".")} RankPosition{-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Spellout_Fraction,1,4)};
+             ME_Spellout_Fraction{->ME_Spellout_Fraction.description="Spell out the fraction."};                         
+       //</span>
+
+       //<span id="035" name="Retain Numeral">
+             DECLARE ME_Retain_Numeral( STRING replace,STRING description);                        
+             NumberinWord @HYPHEN W{REGEXP("tenth|eleveth|twelfth|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen",true),-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Retain_Numeral,1,3)};
+             ME_Retain_Numeral{->ME_Retain_Numeral.description="Use numbers instead of spelling out the above. i.e., 1/10th, not one-tenth"};
+       //</span>
+
+       //<span id="036" name="Hyphenate Fractions"> 
+             DECLARE  CT_REPLACE_Hyphenate_Fractions( STRING replace,STRING description);                         
+             NumberinWord W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("(twen|thir|for|fif|six|seven|eigh|nine)tieth|quarter|(|four|fif|six|seven|eigh|nin|hundred|thousand)th|third",true)->MARK( CT_REPLACE_Hyphenate_Fractions,1)};
+              CT_REPLACE_Hyphenate_Fractions{-> CT_REPLACE_Hyphenate_Fractions.description="Hyphenate fractions one-third, two-seventh etc."}; 
+ 
+            BLOCK(foreach)  CT_REPLACE_Hyphenate_Fractions{}
+            {
+                 STRING numinWord;
+                 NumberinWord{->MATCHEDTEXT(numinWord)};
+                  CT_REPLACE_Hyphenate_Fractions{-> CT_REPLACE_Hyphenate_Fractions.replace=numinWord +" -"};
+            }            
+       
+       //</span>
+
+       //<span id="037" name="Factor and order"> 
+             DECLARE ME_Factor_and_order( STRING replace,STRING description);
+             W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("Factor|Order",true)} W{REGEXP("OF",true)} @NumberinWord{->MARK(ME_Factor_and_order,1,3)};
+             ME_Factor_and_order{->ME_Factor_and_order.description="Retain numeral after ‘factor of’ and ‘order of’."}; 
+       //</span>
+
+       //<span id="038" name="Century Numerals"> 
+             DECLARE CenturyNumerals;
+             DECLARE ME_Century_Numerals( STRING replace,STRING description);
+             NumberinWord Superscript? RankPosition? century{-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Century_Numerals,1,4)}; 
+             ME_Century_Numerals{->ME_Century_Numerals.description="Use numeral for century; do not use superscript letters in 20th and 21st."};       
+        //</span>
+
+       //<span id="039" name="Numbers Capitalization"> 
+             DECLARE NumbersCapitalization,SecondNumbersCapitalization,Replaceinsmallcase;
+             DECLARE ME_Numbers_Capitalization( STRING replace,STRING description);                        
+             NumberinWord @HYPHEN NumberinWord{STARTSWITH(CW),-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Numbers_Capitalization,1,3),MARK(Replaceinsmallcase)};
+             ME_Numbers_Capitalization{->ME_Numbers_Capitalization.description="Second word in a hyphenated number begins with a small letter. That is, Forty-second amendment NOT Forty-Second ammendment. [Exceptions: Version numbers...]"}; 
+            BLOCK(foreach) ME_Numbers_Capitalization{}
+            {
+                STRING replacesmallcase;              
+                Replaceinsmallcase{->MATCHEDTEXT(replacesmallcase)};
+                ME_Numbers_Capitalization{->ME_Numbers_Capitalization.replace=toLowerCase(replacesmallcase)}; 
+            }                  
+       //</span>
+
+       //<span id="041" name="Spell out">  
+             DECLARE ME_Spell_out(STRING replace,STRING description);
+             DECLARE Notspellout,out,Excludewordsinspellout,Maybepercent,Spelloutexcludewords,Spelloutexcludenumbers,Multiplenotes,Singlenote;                
+             W{REGEXP("C",true)} PERIOD W{REGEXP("F",true)} PERIOD W{REGEXP("R",true)} PERIOD {->MARK(Excludewordsinspellout,1,6)};
+             W{REGEXP("mid|degree|degrees|circa|ca|Analog|microliters|times|time|And|RPM|volts|amperes|Part|Unit|Section|Chapter|Per|Counts|Count|Cell|Cells|Operators|Operator|types|type|versions|version|Lessons|LessonCycles|Euro|feet|Dollar|Dollars|Rupees||Rupee|Rs|Milligrams|Mg|Milligram|Metres|Metre|Meters|Meter|Kilograms|Kilogram|Miles|Mile|Ppm|Kg|Litre|Liter|Litres|Minutes|Minute|Min|Seconds|Second|Sec|Age|Percent|Hr|h||units|unit|ppm|liters|liter|AND|TO|countries|county|hours|min|litre|hour|age|aged|ages|weeks|week|percent|shares|year|years|months|month|Millions|Million|Billions|Billion|Trillions|Trillion|Quadrillion|Quintillion|Sextillion|Septillion|Hundreds|Hundred|Thousands|Thousand|Croredays|dayzday|months|month|weeks|week|years|year|day|days|or",true)}PERIOD?{->MARK(Excludewordsinspellout,1,2)};
+             W{REGEXP("mid|degree|degrees|circa|ca|Analog|microliters|times|time|And|RPM|volts|amperes|Per|Counts|Count|Part|Unit|Section|Chapter|Cell|Cells|Operators|Operator|types|type|versions|version|Lessons|Lesson|feet|Cycles|Euro|Dollar|Dollars|Rupees||Rupee|Rs|Milligrams|Mg|Milligram|Metres|Metre|Meters|Meter|Kilograms|Kilogram|Miles|Mile|Ppm|Kg|Litre|Liter|Litres|Minutes|Minute|Min|Seconds|Second|Sec|Age|Percent|Hr|h||units|unit|ppm|liters|literAND|age|aged|ages|to|from|paragraphs|paragraph|forms|form|items|item|Columns|Column|Exhibits|Exhibit|Questions|Question|Instructions|Instruction|days|day|months|month|weeks|week|years|year|Or",true)}PERIOD?{->MARK(Spelloutexcludewords,1,2)};                
+             W{REGEXP("Counts|Count",true)} W{REGEXP("of",true),-PARTOF(Spelloutexcludewords)->MARK(Spelloutexcludewords,1,2)};
+             W{REGEXP("nn",true)} PERIOD{->MARK(Multiplenotes,1,2)};
+             W{REGEXP("n",true)} PERIOD{->MARK(Singlenote,1,2)};
+             (Spelloutexcludewords|Chapter|Part|Section|Unit|Multiplenotes|Singlenote) NUM (Linktag|W{REGEXP("And",true)})? NUM?{-PARTOF(Spelloutexcludenumbers)->MARK(Spelloutexcludenumbers,2,4)};
+             NUM? (Linktag|W{REGEXP("And",true)})? @NUM (Excludewordsinspellout|MayBeMeasurements){-PARTOF(Spelloutexcludenumbers)->MARK(Spelloutexcludenumbers,1,3)};   
+             BLOCK (foreach) FULL_LIST{}
+             {
+                num{REGEXP(".|.."),-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(UpperNewSpecial),-PARTOF(NumberNewSpecial),-PARTOF(LowerNewSpecial),-PARTOF(UpperNewSpecial),-PARTOF(LowerRomanSpecial),OR(POSITION(FULL_LIST,2),POSITION(FULL_LIST,1))->MARK(Notspellout)};
+             }
+                
+             RETAINTYPE(SPACE); 
+             (SPACE) NUM{-PARTOF(DZC_TableNumber),-PARTOF(DZC_FigureNumber),-PARTOF(DZC_BoxNumber),-PARTOF(DZC_SchemeNumber),-PARTOF(DZC_ExhibitNumber),-PARTOF(DZC_StructureNumber),-PARTOF(DZC_ImageNumber),-PARTOF(CharFootNotesText),-PARTOF(DecimalNumber),-PARTOF(Notspellout),-PARTOF(Superscript),-PARTOF(Subscript),-PARTOF(DecimalNumber),-PARTOF(STYLE),-PARTOF(DZC_Abbreviation),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(Abbrshortform),-PARTOF(DZP_FootNotesText),-PARTOF(QuotesLines),-PARTOF(Month),-PARTOF(Spelloutexcludenumbers),-PARTOF(Maybepercent),-PARTOF(BRACKETCONTENT),-PARTOF(DZC_ExhibitCitation),-PARTOF(DZP_FigureLegend),-PARTOF(DZP_SeriesHeading),-PARTOF(DZP_DisplayHeading),-PARTOF(DZP_AppendixCaption),-PARTOF(DZP_ExhibitCaption),-PARTOF(DZP_SupplFigureLegend),-PARTOF(DZP_TableCaption),
+             -PARTOF(DZC_MultiStructureCitation),-PARTOF(DZC_StructureCitation),-PARTOF(DZC_MultiSchemeCitation),-PARTOF(DZC_SchemeCitation),
+             -PARTOF(DZC_MultiBoxCitation),-PARTOF(DZC_BoxCitation),-PARTOF(DZC_ImageCitation),-PARTOF(DZC_ImageCitation),-PARTOF(DZC_MultiTableCitation),
+             -PARTOF(DZC_TableCitation),-PARTOF(DZC_SupplTableCitation),-PARTOF(DZC_MultiFigureCitation),-PARTOF(DZC_MultiFigureCitation),
+             -PARTOF(DZC_SupplFigureCitation),-PARTOF(DZC_SupplMultiFigureCitation),-PARTOF(DZC_FigureCitation),-PARTOF(DZC_AppendixCitation),-PARTOF(DZC_ExhibitCitation),
+             -PARTOF(TableContent),-REGEXP("0"),-PARTOF(DecimalNumber),-PARTOF(DZP_ParaFirstLineInd),-PARTOF(DZP_EndNotesText),-PARTOF(DZ_Heading),
+             -PARTOF(DZP_UnitTitle),-PARTOF(DZP_SectionTitle),-PARTOF(DZP_ChapterTitle),-PARTOF(DZP_PartTitle),-PARTOF(DZP_UnitNumber),
+             -PARTOF(DZP_SectionNumber),-PARTOF(DZP_PartNumber),-PARTOF(Reference),-PARTOF(DZP_ChapterNumber),-PARTOF(ONLYNUM_PASSAGE),
+             -PARTOF(NumberNewSpecial),-PARTOF(DZP_EndNotesText),REGEXP(".|..")->MARK(ME_Spell_out),ME_Spell_out.description="Spell out from one to ninety-nine."} (SPACE);
+             RETAINTYPE;
+             (MathSplChar|Month|Time|HYPHEN|RupeeSymbol|DOLLARSYMBOL|EuroSYMBOL|PoundSYMBOL|Percent|Measurements|MathSymbol) @ME_Spell_out{->UNMARK(ME_Spell_out)};
+             ME_Spell_out (MathSymbol|Month|Time|HYPHEN|RupeeSymbol|DOLLARSYMBOL|EuroSYMBOL|PoundSYMBOL|Percent|Measurements|MathSplChar){->UNMARK(ME_Spell_out,1)};
+       //</span>
+
+       //<span id="043" name="Percentage">                                                                
+             DECLARE ME_Percentage_and_dollar_symbols(STRING replace,STRING description); 
+             NumberinWord{-STARTSWITH(Sentence)} (Percent|DOLLARSYMBOL){-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Percentage_and_dollar_symbols)->MARK(ME_Percentage_and_dollar_symbols,1,2)};
+             ME_Percentage_and_dollar_symbols{->ME_Percentage_and_dollar_symbols.description="Use percentage and dollar symbols only with numerals."};             
+       //</span> 
+
+       //<span id="044" name="Spell out Century"> 
+             DECLARE ME_Spell_Out_Centuries(STRING replace,STRING description);                       
+             num (Superscript|RankPosition)? @W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("century",true)->MARK(ME_Spell_Out_Centuries,1,3)};
+             ME_Spell_Out_Centuries{->ME_Spell_Out_Centuries.description="Spell out the Century."};                                    
+       //</span> 
+
+       //<span id="049" name="Fold"> 
+             DECLARE fold,Rationum;
+             DECLARE  CT_REPLACE_Fold( STRING replace,STRING description);
+             Document{->RETAINTYPE(SPACE)};
+             NumberinWord (Hyphen|SPACE) W{REGEXP("fold",true),-PARTOF(DZ_ExcludeGrammarRules),-PARTOF( CT_REPLACE_Fold)->MARK( CT_REPLACE_Fold,1)};
+             RETAINTYPE;
+             num @COLON num{->MARK(Rationum,1,3)};
+             num{-PARTOF(DZC_URL),-PARTOF(DZP_Equation),-PARTOF(EMAIL),-PARTOF(DZP_Affiliation),-PARTOF(DZP_CorrespondenceInfo),-PARTOF(Rationum)} W{REGEXP("fold",true),-PARTOF(DZP_EndNotesText),-PARTOF(DZC_Abbreviation),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(Abbrshortform),-PARTOF(QuotesLines),-PARTOF(DZP_FootNotesText),-PARTOF(Reference),-PARTOF( CT_REPLACE_Fold)->MARK( CT_REPLACE_Fold,1)};
+              CT_REPLACE_Fold{-> CT_REPLACE_Fold.description="Use 2-fold or twofold."};
+              BLOCK(foreach)  CT_REPLACE_Fold{}
+              {
+                 STRING addHyphen;
+                 (NumberinWord|num){->MATCHEDTEXT(addHyphen)};
+                   CT_REPLACE_Fold{-> CT_REPLACE_Fold.replace=addHyphen +" -"};
+              }
+  
+ 
+      //</span>
+//</category> 
+
+
+//<category name="MonthFormat">                      
+      //<span id="051" name="Month Format"> 
+             DECLARE MONTHFORMAT;
+             DECLARE ME_Month_Format( STRING replace,STRING description);                      
+             (Month num RankPosition){-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Month_Format),ME_Month_Format.description="In dates, use numerals without ordinal endings."};
+       //</span>
+
+       //<span id="052" name="ME_Full inclusive numbers"> 
+              DECLARE ME_Full_inclusive_numbers( STRING replace,STRING description);                        
+              NUM{REGEXP(".{4}")} @HYPHEN NUM{REGEXP(".{2}"),-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(Unicode),-PARTOF(Superscript),-PARTOF(Subscript)->MARK(ME_Full_inclusive_numbers,1,3)};
+              ME_Full_inclusive_numbers{->ME_Full_inclusive_numbers.description="Use full (not abbreviated) inclusive numbers."};
+       //</span>
+
+       //<span id="053" name="Use of fractions to denote months"> 
+              DECLARE ME_Half_Month( STRING replace,STRING description);                       
+              num @frontslash num W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("months|month",true)->MARK(ME_Half_Month,1,5)};
+              ME_Half_Month{->ME_Half_Month.description="Check if 11/2 months should be changed to 1.5 months."};                       
+       //</span>
+//</category> 
+
+
+//<category name="Punctuation">
+       //<span id="054" name="Parens Quotes"> 
+              DECLARE ParensQuotes;
+              DECLARE ME_Parenthesis_and_quotes( STRING replace,STRING description);                        
+              LParen DoubleQuotes ANY DoubleQuotes RParen{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Parenthesis_and_quotes)->MARK(ME_Parenthesis_and_quotes,1,5)};
+              ME_Parenthesis_and_quotes{->ME_Parenthesis_and_quotes.description="Do not use both parenthesis and quotes."};
+       //</span>
+
+       //<span id="055" name="Before ChristYear"> 
+              DECLARE  CT_REPLACE_AD( STRING replace,STRING description); 
+              DECLARE YearbeforeAd,AdafterYear;                        
+              num{REGEXP(".{4}")} ((W{REGEXP("a",true)} PERIOD W{REGEXP("d",true)} PERIOD)|W{REGEXP("AD",true)}) {-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_AD,1,2),MARK(YearbeforeAd,1),MARK(AdafterYear)};
+               CT_REPLACE_AD{-> CT_REPLACE_AD.description="AD should be before the year."}; 
+              BLOCK(foreach)  CT_REPLACE_AD{}
+             {
+                STRING yearbeforeAd;
+                STRING adafterYear;
+                YearbeforeAd{->MATCHEDTEXT(yearbeforeAd)};
+                AdafterYear{->MATCHEDTEXT(adafterYear)};
+                 CT_REPLACE_AD{-> CT_REPLACE_AD.replace=adafterYear+" "+yearbeforeAd};
+             }            
+       //</span>
+
+       //<span id="056" name="After ChristYear">
+              DECLARE Yearbeforebc,BcafterYear; 
+              DECLARE  CT_REPLACE_BC( STRING replace,STRING description);                        
+              ((W{REGEXP("b",true)} PERIOD W{REGEXP("c",true)} PERIOD)|W{REGEXP("BC",true)}) num{REGEXP(".{4}"),-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_BC,1,2),MARK(BcafterYear,1),MARK(Yearbeforebc)};
+               CT_REPLACE_BC{-> CT_REPLACE_BC.description="BC should be after the year."};
+              BLOCK(foreach)  CT_REPLACE_BC{}
+             {
+                STRING yearbeforebc;
+                STRING bcafterYear;
+                Yearbeforebc{->MATCHEDTEXT(yearbeforebc)};
+                BcafterYear{->MATCHEDTEXT(bcafterYear)};
+                CT_REPLACE_BC{-> CT_REPLACE_BC.replace=yearbeforebc+" "+bcafterYear};
+             }                          
+       //</span>                                                   
+//</category>
+
+//<category name="Dollar,Pound,Euro">
+
+       //<span id="057" name="Dollar"> 
+              DECLARE DOLLAR;
+              DECLARE  CT_REPLACE_Dollar( STRING replace,STRING description);                        
+              Document{->RETAINTYPE(SPACE)};
+              W{REGEXP("CAD",true)} @DOLLARSYMBOL{-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Dollar,1,2)};
+              CT_REPLACE_Dollar{-> CT_REPLACE_Dollar.description="Canadian dollar is represented as Can $ and not 'CAD$"};
+              Document{->RETAINTYPE};              
+              BLOCK(foreach)  CT_REPLACE_Dollar{}
+              {
+               STRING addSpace="Can$";
+              CT_REPLACE_Dollar{-> CT_REPLACE_Dollar.replace=addSpace};
+               }                  
+       //</span>
+
+       //<span id="058" name="Multiple Units">                     
+              DECLARE  CT_REPLACE_Monetary_Units(STRING replace,STRING description);
+              Document{->RETAINTYPE(SPACE)}; 
+              (EuroSYMBOL|DOLLARSYMBOL|PoundSYMBOL|RupeeSymbol) SPACE NUM{-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Monetary_Units,2)};
+               CT_REPLACE_Monetary_Units{-> CT_REPLACE_Monetary_Units.description="Monetary units should be closed up with numeral."};
+              Document{->RETAINTYPE};
+              BLOCK(foreach)  CT_REPLACE_Monetary_Units{}
+              {
+               STRING remove="";
+                CT_REPLACE_Monetary_Units{-> CT_REPLACE_Monetary_Units.replace=remove};
+              }                                
+       //</span>
+
+       //<span id="059" name="Duplication of Currency symbol for a range"> 
+               DECLARE Money;
+               DECLARE  CT_REPLACE_Unit_Currency_Duplicates( STRING replace,STRING description);                         
+               W{REGEXP("Millions|Million|Billion|Trillion|Quadrillion|Quintillion|Sextillion|Septillion|Hundreds|Hundred|Thousands|Thousand",true)->MARK(Money)};
+               //DOLLARSYMBOL num ("[a-zA-Z]")? (HYPHEN|TO|(COMMA? num)?)?{->MARK( CT_REPLACE_UNIT_Currency_DUPLICATeS,4)};
+               (EuroSYMBOL|DOLLARSYMBOL|PoundSYMBOL|RupeeSymbol) num @Money (HYPHEN|W{REGEXP("AND|TO",true)}) (RupeeSymbol|EuroSYMBOL|DOLLARSYMBOL|PoundSYMBOL) num Money{-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Unit_Currency_Duplicates,3)};
+                CT_REPLACE_Unit_Currency_Duplicates{-> CT_REPLACE_Unit_Currency_Duplicates.description="Use $10-$20 billion not $10 billion-$20 billion"};
+               BLOCK(foreach)  CT_REPLACE_Unit_Currency_Duplicates{}
+               {
+                STRING removeDuplicateCurrency="";
+                 CT_REPLACE_Unit_Currency_Duplicates{-> CT_REPLACE_Unit_Currency_Duplicates.replace=removeDuplicateCurrency};
+              }                  
+       //</span>
+
+       //<span id="060" name="Unit Currency Duplicates">                          
+               DECLARE ME_Thousands( STRING replace,STRING description);                          
+               ANY{-PARTOF(DOLLARSYMBOL),-PARTOF(EuroSYMBOL)}  NUM Money{-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Thousands,2,3)} W{-REGEXP("years|year",true)};
+               ME_Thousands{->ME_Thousands.description="Spell thousands, millions."};
+       //</span> 
+
+       //<span id="061" name="Monetary Naming"> 
+               DECLARE MonetaryNaming,ReplaceUnits;
+               DECLARE  CT_REPLACE_Monetary_Naming( STRING replace,STRING description);
+               (EuroSYMBOL|DOLLARSYMBOL|PoundSYMBOL|RupeeSymbol) num W{REGEXP("b|m|bn|mn",true),-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Monetary_Naming,1,4),MARK(ReplaceUnits,3)};
+                CT_REPLACE_Monetary_Naming{-> CT_REPLACE_Monetary_Naming.description="Monetary units should not be abbreiviated, that is, $10 million not $10m."}; 
+                BLOCK(foreach)  CT_REPLACE_Monetary_Naming{}
+                {
+                STRING changemonetary="";
+                ReplaceUnits{->MATCHEDTEXT(changemonetary)};
+                CT_REPLACE_Monetary_Naming{IF(equalsIgnoreCase(changemonetary,"bn"))-> CT_REPLACE_Monetary_Naming.replace="billion"};
+                CT_REPLACE_Monetary_Naming{IF(equalsIgnoreCase(changemonetary,"mn"))-> CT_REPLACE_Monetary_Naming.replace="million"};
+                CT_REPLACE_Monetary_Naming{IF(equalsIgnoreCase(changemonetary,"b"))-> CT_REPLACE_Monetary_Naming.replace="billion"};
+                CT_REPLACE_Monetary_Naming{IF(equalsIgnoreCase(changemonetary,"m"))-> CT_REPLACE_Monetary_Naming.replace="million"};    
+                }                  
+       //</span>        
+//</category> 
+
+
+
+//<category name="Volume and Weight and Mole and Percent">
+       //<span id="062" name="Units Volume Percent"> 
+               DECLARE UNITS_VOLUME_PERCENT,VOLUME;
+               DECLARE  CT_REPLACE_Units_Volume_Percent( STRING replace,STRING description);
+               W{REGEXP("volume|vol",true)} PERIOD @Percent{-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Units_Volume_Percent,1,3)};
+               CT_REPLACE_Units_Volume_Percent{-> CT_REPLACE_Units_Volume_Percent.description="Use vol% instead of vol.% "};
+               BLOCK(foreach)  CT_REPLACE_Units_Volume_Percent{}
+               {
+               STRING changeunits="vol%";
+               CT_REPLACE_Units_Volume_Percent{-> CT_REPLACE_Units_Volume_Percent.replace=changeunits};
+               }                                 
+       //</span>
+
+       //<span id="063" name="Units Weight Percent"> 
+               DECLARE UNITS_WEIGHT_PERCENT,WEIGHT;
+               DECLARE  CT_REPLACE_Units_Weight_Percent( STRING replace,STRING description);                        
+               W{REGEXP("weight|wt",true)} PERIOD @Percent{-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Units_Weight_Percent,1,3)};
+                CT_REPLACE_Units_Weight_Percent{-> CT_REPLACE_Units_Weight_Percent.description="Use wt% instead of wt.% "};
+               BLOCK(foreach)  CT_REPLACE_Units_Weight_Percent{}
+               {
+                STRING changeunits="wt%";
+                 CT_REPLACE_Units_Weight_Percent{-> CT_REPLACE_Units_Weight_Percent.replace=changeunits};
+               }                                 
+       //</span>
+
+       //<span id="064" name="Units Mol Percent"> 
+               DECLARE UNITS_MOL_PERCENT,MOL;
+               DECLARE  CT_REPLACE_Units_Mol_Percent( STRING replace,STRING description);                        
+               W{REGEXP("MOL|MOLE",true)} PERIOD @Percent{-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Units_Mol_Percent,1,3)};
+               CT_REPLACE_Units_Mol_Percent{-> CT_REPLACE_Units_Mol_Percent.description="Use mol% instead of mol.% "};
+               BLOCK(foreach)  CT_REPLACE_Units_Mol_Percent{}
+               {
+               STRING changeunits="mol%";
+               CT_REPLACE_Units_Mol_Percent{-> CT_REPLACE_Units_Mol_Percent.replace=changeunits};
+               }                  
+       //</span>
+//</category>
+
+
+
+
+
+//<category name="Others"> 
+       //<span id="065" name="Desamino">
+               DECLARE  CT_REPLACE_Desamino( STRING replace,STRING description);
+               W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("Desamino",true)->MARK( CT_REPLACE_Desamino), CT_REPLACE_Desamino.description="deamino (not desamino)'"}; 
+               BLOCK(foreach)  CT_REPLACE_Desamino{}
+               {
+                STRING desamino="deamino";
+                 CT_REPLACE_Desamino{-> CT_REPLACE_Desamino.replace=desamino};
+               }                  
+       //</span>
+
+       //<span id="066" name="Abbreviate Circa to Ca."> 
+                DECLARE  CT_REPLACE_Abbreviate_circa( STRING replace,STRING description);
+                W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("circa",true)} PERIOD? NUM {->MARK( CT_REPLACE_Abbreviate_circa,1,2)};
+                 CT_REPLACE_Abbreviate_circa{-> CT_REPLACE_Abbreviate_circa.description="Change to ca. (if this stands for circa)"};
+                BLOCK(foreach)  CT_REPLACE_Abbreviate_circa{}
+                {
+                STRING replacetext="ca.";
+                 CT_REPLACE_Abbreviate_circa{-> CT_REPLACE_Abbreviate_circa.replace=replacetext};
+               }                  
+       //</span>
+
+       //<span id="067" name="Phosphate"> 
+                DECLARE phosphate;
+                DECLARE ME_Phosphate( STRING replace,STRING description);                        
+                num HYPHEN? W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("phosphate")->MARK(ME_Phosphate,1,3)};
+                ME_Phosphate{->ME_Phosphate.description=" Phosphate groupings attached to biochemical molecules must be located in the name"}; 
+       //</span>
+
+       //<span id="068" name="Era"> 
+                DECLARE ME_Era( STRING replace,STRING description);                        
+                W{REGEXP("c",true)} PERIOD W{REGEXP("e",true)} PERIOD{-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Era,1,4)};
+                W{REGEXP("b",true)} PERIOD W{REGEXP("c",true)} PERIOD W{REGEXP("e",true)} PERIOD {-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Era,1,6)};
+                ME_Era{->ME_Era.description="Check and Convert C.E. (Current Era) and B.C.E. to A.D. and B.C."};
+       //</span>
+
+       //<span id="069" name="Chemistry Orbitals">
+                DECLARE Elements,name;
+                DECLARE  CT_REPLACE_Chemistry_Orbitals( STRING replace,STRING description);
+                num @HYPHEN W?{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("s|p|d|f",true)} W{REGEXP("orbitals|elements|blocks",true)->MARK( CT_REPLACE_Chemistry_Orbitals,2)};
+                 CT_REPLACE_Chemistry_Orbitals{-> CT_REPLACE_Chemistry_Orbitals.description="No hyphen for s, p, d, f orbitals and elements."};
+                BLOCK(foreach)  CT_REPLACE_Chemistry_Orbitals{}
+                {
+                STRING removehyphen="";
+                 CT_REPLACE_Chemistry_Orbitals{-> CT_REPLACE_Chemistry_Orbitals.replace=removehyphen};
+                }                                  
+       //</span>
+
+       //<span id="070" name="Am and PM"> 
+                DECLARE ME_Time_of_day( STRING replace,STRING description);                         
+                num W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("AM|PM",true),-PARTOF(ME_Time_of_day)->MARK(ME_Time_of_day,2)};
+                BLOCK(foreach) ME_Time_of_day{}
+                {
+                STRING changetime;
+                ME_Time_of_day{->MATCHEDTEXT(changetime)};
+                ME_Time_of_day{IF(equalsIgnoreCase(changetime,"AM"))->ME_Time_of_day.replace="a.m."};
+                ME_Time_of_day{IF(equalsIgnoreCase(changetime,"PM"))->ME_Time_of_day.replace="p.m."};
+                ME_Time_of_day{IF(equalsIgnoreCase(changetime,"am"))->ME_Time_of_day.replace="a.m."};
+                ME_Time_of_day{IF(equalsIgnoreCase(changetime,"pm"))->ME_Time_of_day.replace="p.m."};
+                ME_Time_of_day{IF(equalsIgnoreCase(changetime,"Am"))->ME_Time_of_day.replace="a.m."};
+                ME_Time_of_day{IF(equalsIgnoreCase(changetime,"Pm"))->ME_Time_of_day.replace="p.m."};                  
+               }                                  
+       //</span>
+
+       //<span id="071" name="Etal"> 
+                DECLARE et,al,Etal;
+                DECLARE  CT_REPLACE_Et_al( STRING replace,STRING description);
+                W{REGEXP("et",true)} W{REGEXP("al",true)} ANY{-PARTOF( CT_REPLACE_Et_al),-PARTOF(PERIOD),-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Et_al,1,2)};                        
+                 CT_REPLACE_Et_al{-> CT_REPLACE_Et_al.description="'et al' should be always followed by full point."};
+                BLOCK(foreach)  CT_REPLACE_Et_al{}
+                {
+                STRING addPeriod;
+                 CT_REPLACE_Et_al{->MATCHEDTEXT(addPeriod)};
+                 CT_REPLACE_Et_al{-> CT_REPLACE_Et_al.replace=addPeriod+"."};
+                }                  
+       //</span> 
+
+       //<span id="072" name="Equal compounds denoting Color"> 
+                DECLARE  CT_REPLACE_Color( STRING replace,STRING description);
+                DECLARE Colorhyphen;                         
+                Color Emdash Color{-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Color,2), CT_REPLACE_Color.description="Use an endash between colors e.g. red–black mixture"};
+                BLOCK(foreach)  CT_REPLACE_Color{}
+                {
+                 CT_REPLACE_Color{-> CT_REPLACE_Color.replace="–"};
+                }                                   
+       //</span>
+
+
+//</category>
+
+
+
+//<category name="Hyphenation">                    
+       //<span id="073" name="Hyphenation"> 
+                DECLARE ME_Hyphenation( STRING replace,STRING description);                       
+                W{REGEXP("e|Trade",true)} W{REGEXP("(commerce|criminal|money|banking|sign|mark)",true),-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Hyphenation,1,2)};
+                ME_Hyphenation{->ME_Hyphenation.description="Hyphenation"};
+       //</span>
+
+       //<span id="074" name="No Hyphenation Words">
+                DECLARE NotHyphenationWords,No_HyphenationWords,NotHyphenWord,phUnit;
+                DECLARE  CT_REPLACE_No_Hyphenation_Words( STRING replace,STRING description);
+                "pH"->phUnit;
+                (W{REGEXP("re|trans|post|mid",true)} Hyphen (NumberinWord|W{REGEXP("create|fatty|formed|hoc",true)})){->MARK(NotHyphenWord)};
+                W{REGEXP("ante|anti|bi|bio|co|counter|cyber|extra|fold|hyper|infra|inter|intra|macro|mega|meta|micro|mid|mini|multi|neo|non|over|post|pre|pro|proto|pseudo|re|semi|sub|super|supra|trans|ultra|un|under",true)->MARK(NotHyphenationWords)};  
+                NotHyphenationWords @Hyphen Nationality {-PARTOF(DZ_ExcludeGrammarRules)->MARK(No_HyphenationWords,1,2)};
+                W Hyphen W @Hyphen W{->MARK(No_HyphenationWords,1,5)};
+                NotHyphenationWords @Hyphen W{-REGEXP("and|pH",true),STARTSWITH(SW),-PARTOF(phUnit),-PARTOF(Mail),-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(No_HyphenationWords),-PARTOF(NotHyphenWord)->MARK( CT_REPLACE_No_Hyphenation_Words,2)};
+                 CT_REPLACE_No_Hyphenation_Words{-PARTOF(NotHyphenWord)-> CT_REPLACE_No_Hyphenation_Words.description="Do not use hyphen with these prefixes. Do hyphenate if two like vowels are juxtaposed." };  
+                BLOCK(foreach)  CT_REPLACE_No_Hyphenation_Words{}
+                {
+                STRING removehyphen="";
+                 CT_REPLACE_No_Hyphenation_Words{-> CT_REPLACE_No_Hyphenation_Words.replace=removehyphen};
+                }                        
+       //</span>
+
+
+//</category> 
+
+
+
+//<category name="End period after Abbreviations">                         
+       //<span id="076" name="End period">           
+                DECLARE  CT_REPLACE_End_period(STRING replace,STRING description);
+                DECLARE CorrectRule1;
+                W{REGEXP("n",true)} PERIOD W{REGEXP("d",true)} PERIOD{->MARK(CorrectRule1,1,4)};                      
+                W{REGEXP("rev|rt|assyr|ca|cent|cf|heb|suppl")} @PERIOD {->MARK(CorrectRule1,1,2)};
+                W{REGEXP("Per",true)}  W{REGEXP("cent",true),-PARTOF(CorrectRule1)->MARK(CorrectRule1)};
+                W{-PARTOF(DZP_FigureLegend),-PARTOF(DZP_SeriesHeading),-PARTOF(DZP_DisplayHeading),-PARTOF(DZP_AppendixCaption),-PARTOF(DZP_ExhibitCaption),-PARTOF(DZP_SupplFigureLegend),-PARTOF(DZP_TableCaption),-PARTOF(DZP_Source),-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(CorrectRule1),REGEXP("Rev|Rt|Heb")} NUM{->MARK( CT_REPLACE_End_period,1)};
+                CT_REPLACE_End_period{-> CT_REPLACE_End_period.description="Use period after Rev, Rt, etc."};                
+                BLOCK(foreach)  CT_REPLACE_End_period{}
+                {
+                STRING addPeriod;
+                CT_REPLACE_End_period{->MATCHEDTEXT(addPeriod)};
+                CT_REPLACE_End_period{-> CT_REPLACE_End_period.replace=addPeriod+"."};
+                }                                         
+       //</span> 
+
+       //<span id="077" name="Abbreviation_in_heading">                 
+              DECLARE ME_Abbreviation_in_heading(STRING replace,STRING description);                       
+              DZ_Heading{CONTAINS(DZC_AbbreviationExpansion)->MARK(ME_Abbreviation_in_heading),ME_Abbreviation_in_heading.description="Check if abbreviation is allowed in heading."};
+       //</span>
+
+       //<span id="078" name="Abbreviation at start of sentence or paragraph">               
+                DECLARE ME_Abbreviation_Start(STRING replace,STRING description);                       
+                (PassageandList|Sentence){-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Abbreviation_Start),STARTSWITH(DZC_Abbreviation),-PARTOF(Reference)->MARK(ME_Abbreviation_Start),ME_Abbreviation_Start.description="Check if abbreviation is allowed at the start of a sentence or paragraph."};                          
+      //</span>
+//</category> 
+
+
+
+//<category name="Do Not Italicize"> 
+      //<span id="080" name="Not Italicize">  
+                DECLARE ME_Not_Italicize( STRING replace,STRING description);                         
+                W{-PARTOF(DZ_ExcludeGrammarRules),PARTOF(I),-PARTOF(ME_Not_Italicize),REGEXP("vice|realpolitik|priori",true)} W?{REGEXP("versa",true)->MARK(ME_Not_Italicize,1,2)};
+                ME_Not_Italicize{->ME_Not_Italicize.description="Do not italicize common foreign abbreviations (vice versa, realpolitik, a priori). Do not italicize foreign words if they are not italicized in Merriam-Webster's Collegiate Dictionary."};                                                  
+      //</span>
+
+      //<span id="081" name="Italic Words"> 
+                DECLARE ME_Italic_Words( STRING replace,STRING description); 
+                LParen W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("See",true)} W?{REGEXP("ALSO|GENERALLY",true)} RParen{->MARK(ME_Italic_Words,1,3)};
+                ME_Italic_Words{->ME_Italic_Words.description="Italicize this text."};                         
+       //</span>
+
+       //<span id="082" name="Email">  
+                DECLARE ME_Email( STRING replace,STRING description);
+                DECLARE EmailWords,EmailPassage;                         
+                (EMAIL|DZC_URL){-PARTOF(DZP_EndNotesText),-PARTOF(DZC_Abbreviation),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(Abbrshortform),-PARTOF(DZP_FootNotesText),-PARTOF(I),-PARTOF(Reference),-PARTOF(QuotesLines)->MARK(ME_Email),ME_Email.description="Italicize this text."};                         
+       //</span>
+
+       //<span id="083" name="Foreign Words">
+                DECLARE ME_Foreign_words(STRING replace,STRING description);          
+                Anglicized{-PARTOF(DZ_ExcludeGrammarRules),PARTOF(I)->MARK(ME_Foreign_words),ME_Foreign_words.description="Do not italicize foreign words or phrases that are common enough to appear in the dictionary."};                        
+       //</span>
+
+       //<span id="084" name="Transliterated Words">                 
+                DECLARE ME_Transliterated_Words(STRING replace,STRING description);
+                DECLARE ShouldItalicsWords;                          
+                W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("pravoslavnaya|oikonomia|podvig",true),-PARTOF(I)->MARK(ME_Transliterated_Words),ME_Transliterated_Words.description="Use italics for words that are transliterated."};
+       //</span>
+//</category> 
+
+
+
+//<category name="Dashes">              
+  //<span id="085" name="En dash"> 
+                DECLARE ME_En_dash(STRING replace,STRING description);
+                DECLARE Endashnumbers;
+                BLOCK(foreach)PassageandList{}
+                {  
+                
+                     DECLARE ExcludefromEndashwords;
+                     W{REGEXP("vicryl",true)->MARK(ExcludefromEndashwords)};
+                     RETAINTYPE(SPACE);               
+                      ANY{-PARTOF(ONLYNUM_PASSAGE),-PARTOF(FAX_FORMAT),-PARTOF(TELEPHONE_FORMAT),-PARTOF(DZP_Exhibit_Place_Holder),-PARTOF(DZP_Table_Place_Holder),-PARTOF(DZP_Photo_Place_Holder),-PARTOF(DZP_Figure_Place_Holder),-PARTOF(DZP_Scheme_Place_Holder),-PARTOF(DZP_Image_Place_Holder),-PARTOF(DZP_Box_Place_Holder),-PARTOF(DZP_Structure_Place_Holder),-PARTOF(Uppercase),-PARTOF(Lowercase)} num (Hyphen|Emdash){-PARTOF(DZC_SupplFigureCitation),-PARTOF(DZC_FigureCitation),-PARTOF(DZC_MultiFigureCitation),-PARTOF(DZC_SupplTableCitation),-PARTOF(DZC_TableCitation),
+                                           -PARTOF(DZC_MultiTableCitation),-PARTOF(DZC_ImageCitation),-PARTOF(DZC_MultiImageCitation),-PARTOF(DZC_PhotoCitation),-PARTOF(DZC_MultiPhotoCitation),
+                                           -PARTOF(DZC_BoxCitation),-PARTOF(DZC_MultiBoxCitation),-PARTOF(DZC_SchemeCitation),-PARTOF(DZC_MultiSchemeCitation),-PARTOF(DZC_StructureCitation),
+                                           -PARTOF(DZC_MultiStructureCitation),-PARTOF(DZC_ExhibitCitation),-PARTOF(DZC_MultiExhibitCitation),-PARTOF(DZC_AppendixCitation),-PARTOF(DZC_MultiAppendixCitation),
+                                           -PARTOF(DZC_SupplFigureCitation),-PARTOF(DZC_TableCitation),-PARTOF(DZP_AppendixCaption),-PARTOF(DZP_ExhibitCaption),-PARTOF(DZP_StructureLegend),-PARTOF(DZP_SchemeSource),-PARTOF(DZP_SchemeLegend),-PARTOF(DZP_ManyBoxTitle),-PARTOF(DZP_BoxTitle),-PARTOF(DZP_PhotoCaption),-PARTOF(DZP_ImageCaption),-PARTOF(DZP_ManyTableCaption),-PARTOF(DZP_TableCaption),-PARTOF(DZP_SupplTableCaption),-PARTOF(DZP_ManyFigureCaption),-PARTOF(DZP_FigureLegend),-PARTOF(DZP_SupplFigureLegend),-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_En_dash,3),MARK(Endashnumbers,1,4)} num{-PARTOF(Superscript)} ANY;
+                      ANY{-PARTOF(ONLYNUM_PASSAGE),-PARTOF(Uppercase),-PARTOF(Lowercase)} num (Hyphen|Emdash){-PARTOF(DZP_AppendixCaption),-PARTOF(DZP_ExhibitCaption),-PARTOF(DZP_StructureLegend),-PARTOF(DZP_SchemeSource),-PARTOF(DZP_SchemeLegend),-PARTOF(DZP_ManyBoxTitle),-PARTOF(DZP_BoxTitle),-PARTOF(DZP_PhotoCaption),-PARTOF(DZP_ImageCaption),-PARTOF(DZP_ManyTableCaption),-PARTOF(DZP_TableCaption),-PARTOF(DZP_SupplTableCaption),-PARTOF(DZP_ManyFigureCaption),-PARTOF(DZP_FigureLegend),-PARTOF(DZP_SupplFigureLegend),-PARTOF(DZC_SupplFigureCitation),-PARTOF(DZC_FigureCitation),-PARTOF(DZC_MultiFigureCitation),-PARTOF(DZC_SupplTableCitation),-PARTOF(DZC_TableCitation),
+                     -PARTOF(DZC_MultiTableCitation),-PARTOF(DZC_ImageCitation),-PARTOF(DZC_MultiImageCitation),-PARTOF(DZC_PhotoCitation),-PARTOF(DZC_MultiPhotoCitation),
+                     -PARTOF(DZC_BoxCitation),-PARTOF(DZC_MultiBoxCitation),-PARTOF(DZC_SchemeCitation),-PARTOF(DZC_MultiSchemeCitation),-PARTOF(DZC_StructureCitation),
+                     -PARTOF(DZC_MultiStructureCitation),-PARTOF(DZC_ExhibitCitation),-PARTOF(DZC_MultiExhibitCitation),-PARTOF(DZC_AppendixCitation),-PARTOF(DZC_MultiAppendixCitation),
+                     -PARTOF(DZC_SupplFigureCitation),-PARTOF(DZC_TableCitation),-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_En_dash,3),MARK(Endashnumbers,1,4)} num{PARTOF(LastToken)}; 
+                     ME_En_dash{->ME_En_dash.description="Use en dash for range."};                     
+                     ME_En_dash num SPACE? W{REGEXP("monocryl")->UNMARK(ME_En_dash,1)};
+                     ME_En_dash num SPACE? ExcludefromEndashwords{->UNMARK(ME_En_dash,1)};
+                     Endashnumbers{->TRIM(SPACE)};
+                  RETAINTYPE;  
+                  }
+                   BLOCK(Endashnumbers)Endashnumbers{}
+                  {  
+                     RETAINTYPE(SPACE);      
+                     INT FirstNumber,Second;          
+                     num{PARSE(FirstNumber)} SPACE? @ME_En_dash SPACE? num{PARSE(Second)};
+                     ME_En_dash{IF(FirstNumber>Second)->UNMARK(ME_En_dash)};
+                     RETAINTYPE; 
+                  }                                          
+       //</span> 
+       
+       //<span id="086" name="RangeSpacing"> 
+                     // DECLARE RANGESPACING;
+                     DECLARE  CT_REPLACE_Em_dash( STRING replace,STRING description);
+                     Document{->RETAINTYPE(SPACE)};
+                     W SPACE (Endash) SPACE W {-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Em_dash,3)};
+                     CT_REPLACE_Em_dash{-> CT_REPLACE_Em_dash.description="Use em dash for parenthetical text."};
+                     BLOCK(foreach)  CT_REPLACE_Em_dash{}
+                     {
+                     CT_REPLACE_Em_dash{-> CT_REPLACE_Em_dash.replace="—"};
+                     }                                  
+                     RETAINTYPE;                          
+       //</span>
+                
+       //<span id="087" name="Within quotes">
+                     DECLARE EndWithColonwithQuotes;
+                     DECLARE  CT_REPLACE_Within_quotes(STRING replace,STRING description);                  
+                     (SingleEndQuotes|SmartSingleEndQuotes|DoubleEndQuotes|SmartDoubleEndQuotes) (PERIOD|COMMA){-PARTOF(Reference),-PARTOF(Abbrshortform),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(DZP_Equation),-PARTOF(DZC_URL),-PARTOF(EMAIL),-PARTOF(DZP_ExtractText),-PARTOF(DZP_EndNotesText),-PARTOF(DZP_FootNotesText),-PARTOF(DZP_KeyTerms),-PARTOF(NewFrontContent),-PARTOF(FrontContent),-PARTOF(DZP_CorrespondenceInfo),-PARTOF(DZP_Affiliation),-PARTOF(DZP_DocumentAuthor)->MARK( CT_REPLACE_Within_quotes,1,2)};
+                      CT_REPLACE_Within_quotes{-> CT_REPLACE_Within_quotes.description="Comma and end period should be within quotes."};                     
+                      BLOCK(foreach)  CT_REPLACE_Within_quotes{}
+                      {
+                       STRING changeperiodorcomma,changequotes;
+                       (SingleEndQuotes|SmartSingleEndQuotes|DoubleEndQuotes|SmartDoubleEndQuotes){->MATCHEDTEXT(changequotes)};
+                       (PERIOD|COMMA){->MATCHEDTEXT(changeperiodorcomma)};
+                       CT_REPLACE_Within_quotes{-> CT_REPLACE_Within_quotes.replace=changeperiodorcomma+changequotes};
+                      }                                                                                 
+       //</span>
+       
+       //<span id="088" name="Outside quotes"> 
+                     DECLARE  CT_REPLACE_Outside_quotes(STRING replace,STRING description);
+                     (COLON|SEMICOLON) (SingleEndQuotes|SmartSingleEndQuotes|DoubleEndQuotes|SmartDoubleEndQuotes){-PARTOF(Reference),-PARTOF(Abbrshortform),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(DZP_Equation),-PARTOF(DZC_URL),-PARTOF(EMAIL),-PARTOF(DZP_ExtractText),-PARTOF(DZP_EndNotesText),-PARTOF(DZP_FootNotesText),-PARTOF(DZP_KeyTerms),-PARTOF(NewFrontContent),-PARTOF(FrontContent),-PARTOF(DZP_CorrespondenceInfo),-PARTOF(DZP_Affiliation),-PARTOF(DZP_DocumentAuthor)->MARK( CT_REPLACE_Outside_quotes,1,2)};
+                      CT_REPLACE_Outside_quotes{-> CT_REPLACE_Outside_quotes.description="Colon and semicolon should be outside the quotes."};
+                     BLOCK(foreach)  CT_REPLACE_Outside_quotes{}
+                     {
+                       STRING changeperiodorcolon,changequotes;
+                       (SingleEndQuotes|SmartSingleEndQuotes|DoubleEndQuotes|SmartDoubleEndQuotes){->MATCHEDTEXT(changequotes)};
+                       (COLON|SEMICOLON){->MATCHEDTEXT(changeperiodorcolon)};
+                        CT_REPLACE_Outside_quotes{-> CT_REPLACE_Outside_quotes.replace=changequotes+changeperiodorcolon};
+                     }                          
+      //</span>
+//</category>
+
+
+
+//<category name="PSU Citations"> 
+       //<span id="94" name="Citation casing">         
+                     DECLARE ME_Citation_casing(STRING replace,STRING description);
+                     BLOCK(FOREAACH)PassageandList{}
+                     {
+                        W{REGEXP("Photos|PHOTOS|Photo|PHOTO|Figures|FIGURES|Figure|FIGS|Figs|FIGURE|FIG|Fig|Schemes|SCHEMES|Scheme|SCHEME|
+                        Images|IMAGES|Image|IMAGE|IMGS|Imgs|IMG|Img|BOXS|Boxs|Box|BOX|Schemes|SCHEMES|Scheme|SCHEME|Structures|STRUCTURES|
+                        Structure|STRUCTURE|Structures|STRUCTURES|Structure|STRUCTURE|Diagram|DIAGRAM|MAP|Map|Part|PART|Chapter|CHAPTER|
+                        APPENDIX|Appendix|Sections|SECTIONS|Section|SECTION|Tables|TABLES|Table|TABLE|TABS|Tabs|Tab|TAB"),-PARTOF(DZP_ChapterTitle),-PARTOF(DZP_ChapterWord),-PARTOF(DZP_Exhibit_Place_Holder),-PARTOF(DZP_Table_Place_Holder),-PARTOF(DZP_Photo_Place_Holder),-PARTOF(DZP_Figure_Place_Holder),-PARTOF(DZP_Scheme_Place_Holder),-PARTOF(DZP_Image_Place_Holder),-PARTOF(DZP_Box_Place_Holder),-PARTOF(DZP_Structure_Place_Holder),
+                        -PARTOF(DZP_ChapterNumber),-PARTOF(DZP_PartTitle),-PARTOF(DZP_PartNumber),-PARTOF(DZP_PhotoTitle),
+                        -PARTOF(DZP_PhotoCaptions),-PARTOF(DZP_PartWord),-PARTOF(DZP_FigureLegend),-PARTOF(DZP_FigureLegends),
+                        -PARTOF(DZP_SectionTitle),-PARTOF(DZP_SectionWord),-PARTOF(DZP_StructureLegends),-PARTOF(DZP_StructureLegends),
+                        -PARTOF(DZP_SchemeLegends),-PARTOF(DZP_SchemeLegend),-PARTOF(DZP_SupplTableCaption),-PARTOF(DZP_SeriesHeadings),
+                        -PARTOF(DZP_SeriesHeading),-PARTOF(DZP_SupplFigureSource),-PARTOF(DZP_ImageCaption),-PARTOF(DZP_ImageCaptions),
+                        -PARTOF(DZP_BoxTitles),-PARTOF(DZP_BoxHeading),-PARTOF(DZP_BoxTitle),-PARTOF(DZP_AppendixCaptions),
+                        -PARTOF(DZP_FootNotesText),-PARTOF(DZC_Abbreviation),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(Abbrshortform),
+                        -PARTOF(Reference),-PARTOF(DZP_TableCaption),-STARTSWITH(Sentence),-PARTOF(DZP_EndNotesText),-PARTOF(DZP_ManyFigureCaption),
+                        -PARTOF(DZP_ManyTableCaption),-PARTOF(DZP_ManyBoxTitle),-PARTOF(DZP_Photo_Place_Holder),-PARTOF(DZP_Figure_Place_Holder),
+                        -PARTOF(DZP_Scheme_Place_Holder),-PARTOF(DZP_Image_Place_Holder),-PARTOF(DZP_Box_Place_Holder),-PARTOF(DZP_Structure_Place_Holder),
+                        -PARTOF(DZP_Exhibit_Place_Holder),-PARTOF(DZP_Table_Place_Holder),-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Citation_casing,1,2)}NUM;                       
+                        ME_Citation_casing{->ME_Citation_casing.description="In running text, lowercase “fig.” and “figure,” “table,” “diagram,” “map,” 
+                        “part,” “chapter,” “appendix,” and the like."};
+                        }                       
+       //</span> 
+//</category> 
+
+
+ //<category name="PSU Extract">                           
+       //<span id="99" name="Single quotes within double quotes">                       
+                   DECLARE ME_Single_quotes_within_double_quotes(STRING description,STRING message);       
+                   DECLARE MaybeSingleQuotePassage;
+                   (SingleStartQuotes #{-CONTAINS(SingleStartQuotes)} SingleEndQuotes){-PARTOF(MaybeSingleQuotePassage)->MARK(MaybeSingleQuotePassage)};
+                   MaybeSingleQuotePassage{-PARTOF(DZP_Equation),-PARTOF(EMAIL),-PARTOF(DZP_Affiliation),-PARTOF(DZP_CorrespondenceInfo),-PARTOF(DZP_EndNotesText),-PARTOF(DZP_FootNotesText),-PARTOF(DZC_Abbreviation),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(Abbrshortform),-PARTOF(Reference),CONTAINS(DoubleQuotes)->MARK(ME_Single_quotes_within_double_quotes)};
+                   ME_Single_quotes_within_double_quotes{->ME_Single_quotes_within_double_quotes.description="Use double (“ ”) rather than single (‘ ’) quotation marks, except for quotes within quotes and for individual terms as terms, if required"}; 
+      //</span> 
+      
+      //<span id="101" name="Possessives">
+                     DECLARE  CT_REPLACE_Possessives( STRING replace,STRING description);
+                     RETAINTYPE(SPACE);                         
+                     num{REGEXP(".{4}")}  SingleQuotes W{REGEXP("s",true),-PARTOF(DZ_ExcludeGrammarRules)->MARK( CT_REPLACE_Possessives,2)};
+                     RETAINTYPE;
+                      CT_REPLACE_Possessives{-> CT_REPLACE_Possessives.description="Use 1700s, not 1700’s"};
+                     BLOCK(foreach)  CT_REPLACE_Possessives{}
+                     {
+                     STRING removequotes="";
+                      CT_REPLACE_Possessives{-> CT_REPLACE_Possessives.replace=removequotes};
+                     }                                                                      
+       //</span>  
+       
+       //<span id="102" name="Small caps"> 
+                     DECLARE ME_Small_caps(STRING description,STRING message);
+                     DECLARE Small_Caps_Keywords;
+                     (W{REGEXP("B",true)} PERIOD W{REGEXP("C",true)} PERIOD W?{REGEXP("E",true)} PERIOD?){-PARTOF(Small_Caps_Keywords)->MARK(Small_Caps_Keywords)};
+                     (W{REGEXP("A",true)} PERIOD W{REGEXP("D|M",true)} PERIOD){-PARTOF(Small_Caps_Keywords)->MARK(Small_Caps_Keywords)};
+                     (W{REGEXP("P",true)} PERIOD W{REGEXP("M",true)} PERIOD){-PARTOF(Small_Caps_Keywords)->MARK(Small_Caps_Keywords)};
+                     (W{REGEXP("C",true)} PERIOD W{REGEXP("E",true)}PERIOD){-PARTOF(Small_Caps_Keywords)->MARK(Small_Caps_Keywords)};
+                     Small_Caps_Keywords{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(SmallCaps)->MARK(ME_Small_caps)}; 
+                     ME_Small_caps{->ME_Small_caps.description="Use small caps for B.C., A.D., A.M., P.M., C.E., B.C.E."};  
+       //</span> 
+
+        //<span id="104" name="Early Or Late Century"> 
+                     DECLARE ME_Early_Or_Late_Century(STRING replace,STRING description);             
+                     W{REGEXP("early|late")} HYPHEN (NumberinWord|W{REGEXP("(ten|eleve|twelf|((thir|four|fif|six|seven|eigh|nine)teen))th",true)}) Superscript? @W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("Century",true) ->MARK(ME_Early_Or_Late_Century,2)};
+                     ME_Early_Or_Late_Century{->ME_Early_Or_Late_Century.description="Do not hyphenate “early” and “late” for centuries"};
+                     BLOCK(foreach) ME_Early_Or_Late_Century{}
+                      {
+                        STRING addemptyspace="";
+                       ME_Early_Or_Late_Century{->ME_Early_Or_Late_Century.replace=caprepl};
+                      }                  
+ 
+       //</span>
+
+      //<span id="107" name="Nbsp for ellipses"> 
+                     DECLARE ME_Nbsp_for_ellipses(STRING replace,STRING description);
+                     RETAINTYPE(SPACE);               
+                     (PERIOD SPACE{-PARTOF(NBSP)} PERIOD SPACE{-PARTOF(NBSP)} PERIOD){-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Nbsp_for_ellipses)};
+                     RETAINTYPE;     
+                     ME_Nbsp_for_ellipses{->ME_Nbsp_for_ellipses.description="Insert nonbreaking spaces as needed.."};  
+      //</span> 
+//</category> 
+
+
+
+//<category name="UTP">
+       //<span id="112" name="Compared_To"> 
+                     DECLARE  CT_REPLACE_Compared_to(STRING replace,STRING description); 
+                     DECLARE Replace_Compared;            
+                     W{REGEXP("compared",true)} W{REGEXP("to",true),-PARTOF(DZ_ExcludeGrammarRules) ->MARK( CT_REPLACE_Compared_to,1,2)};
+                     CT_REPLACE_Compared_to{-> CT_REPLACE_Compared_to.description="Change all instances of “compared to” to “compared with.”"};
+                     BLOCK(foreach)  CT_REPLACE_Compared_to{}
+                     {
+                          STRING comrepl;
+                           CT_REPLACE_Compared_to{-> CT_REPLACE_Compared_to.replace="compared with"};
+                     }
+       //</span>                        
+       
+       //<span id="116" name="ME_AddComma">
+                     DECLARE  CT_REPLACE_AddSpace_After_Comma(STRING replace,STRING description);
+                     RETAINTYPE(SPACE,BREAK);
+                     ANY{-PARTOF(NUM)} COMMA ANY{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(CharFootNotesText),-PARTOF(Superscript),-PARTOF(COMMA),-PARTOF(SPACE),-PARTOF(BREAK),-PARTOF(SingleQuotes),-PARTOF(DoubleQuotes)->MARK( CT_REPLACE_AddSpace_After_Comma,2)};
+                     CT_REPLACE_AddSpace_After_Comma{-> CT_REPLACE_AddSpace_After_Comma.description="Add space after comma (exclude numbers)."};
+                     BLOCK(foreach)  CT_REPLACE_AddSpace_After_Comma{}
+                     {
+                          STRING commarepl;
+                           CT_REPLACE_AddSpace_After_Comma{->MATCHEDTEXT(commarepl)};
+                           CT_REPLACE_AddSpace_After_Comma{-> CT_REPLACE_AddSpace_After_Comma.replace=commarepl+" "};
+                     }
+                      
+                     RETAINTYPE; 
+                
+        //</span>     
+
+  //<span id="117" name="ME_Straight_Quote_to_Smart_Quote_End">
+                     DECLARE ME_Straight_Quote_to_Smart_Quote_End(STRING replace,STRING description);
+                     DECLARE GreekLetter,Straight_Quote_to_Smart_Quote;
+                     RETAINTYPE(SPACE);
+                     (StraightSingleQuotes StraightSingleQuotes){->MARK(StraightDoubleQuotes)};
+                     StraightSingleQuotes{PARTOF(StraightDoubleQuotes)->UNMARK(StraightSingleQuotes)};
+                     RETAINTYPE;                    
+                     RETAINTYPE(SPACE,BREAK);                     
+                     W{REGEXP("α|β|γ|Δ|δ|ε|ζ|η|Θ|θ|Γ|ι|Λ|λ|μ|Ξ|ξ|Π|π|ρ|Σ|σ|ς|τ|υ|Φ|φ|Ψ|ψ|Ω|ω")->MARK(GreekLetter)};  
+                     ANY{-PARTOF(Reference),-PARTOF(Abbrshortform),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(DZP_Equation),-PARTOF(DZC_URL),-PARTOF(EMAIL),-PARTOF(DZP_ExtractText),-PARTOF(DZP_EndNotesText),-PARTOF(DZP_FootNotesText),-PARTOF(DZP_KeyTerms),-PARTOF(NewFrontContent),-PARTOF(FrontContent),-PARTOF(DZP_CorrespondenceInfo),-PARTOF(DZP_Affiliation),-PARTOF(DZP_DocumentAuthor),-PARTOF(GreekLetter),-PARTOF(NUM),-PARTOF(Lowercase),-PARTOF(Uppercase),-PARTOF(GreekLetter)} StraightSingleQuotes{->MARK(ME_Straight_Quote_to_Smart_Quote_End,2)} (SPACE|BREAK|Lowercase|Uppercase|PERIOD);
+                     ME_Straight_Quote_to_Smart_Quote_End{->ME_Straight_Quote_to_Smart_Quote_End.description="Change straight quote to smart quote."};
+                     BLOCK(foreach) ME_Straight_Quote_to_Smart_Quote_End{}
+                     {
+                      ME_Straight_Quote_to_Smart_Quote_End{->ME_Straight_Quote_to_Smart_Quote_End.replace="’"};
+                     }                 
+                     RETAINTYPE;
+          
+        //</span> 
+
+       //<span id="118" name="ME_Straight_Quote_to_Smart_Quote_Start"> 
+                     DECLARE ME_Straight_Quote_to_Smart_Quote_Start(STRING replace,STRING description);
+                     RETAINTYPE(SPACE,BREAK);
+                     ANY{-PARTOF(Reference),-PARTOF(Abbrshortform),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(DZP_Equation),-PARTOF(DZC_URL),-PARTOF(EMAIL),-PARTOF(DZP_ExtractText),-PARTOF(DZP_EndNotesText),-PARTOF(DZP_FootNotesText),-PARTOF(DZP_KeyTerms),-PARTOF(NewFrontContent),-PARTOF(FrontContent),-PARTOF(DZP_CorrespondenceInfo),-PARTOF(DZP_Affiliation),-PARTOF(DZP_DocumentAuthor),-PARTOF(ME_Straight_Quote_to_Smart_Quote_End),-PARTOF(GreekLetter),-PARTOF(NUM),-PARTOF(Lowercase),-PARTOF(Uppercase),-PARTOF(GreekLetter)} StraightSingleQuotes{-PARTOF(ME_Straight_Quote_to_Smart_Quote_End)->MARK(ME_Straight_Quote_to_Smart_Quote_Start,2)};
+                     ME_Straight_Quote_to_Smart_Quote_Start{->ME_Straight_Quote_to_Smart_Quote_Start.description="Change straight quote to smart quote."};
+                     BLOCK(foreach) ME_Straight_Quote_to_Smart_Quote_Start{}
+                     {
+                      ME_Straight_Quote_to_Smart_Quote_Start{->ME_Straight_Quote_to_Smart_Quote_Start.replace="‘"};
+                     }                 
+                     RETAINTYPE;
+        //</span>                    
+
+       //<span id="119" name="ME_Double_Straight_Quote_to_Smart_Quote_End"> 
+                     DECLARE ME_Double_Straight_Quote_to_Smart_Quote_End(STRING replace,STRING description);
+                     RETAINTYPE(SPACE,BREAK); 
+                     ANY{-PARTOF(Reference),-PARTOF(Abbrshortform),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(DZP_Equation),-PARTOF(DZC_URL),-PARTOF(EMAIL),-PARTOF(DZP_ExtractText),-PARTOF(DZP_EndNotesText),-PARTOF(DZP_FootNotesText),-PARTOF(DZP_KeyTerms),-PARTOF(NewFrontContent),-PARTOF(FrontContent),-PARTOF(DZP_CorrespondenceInfo),-PARTOF(DZP_Affiliation),-PARTOF(DZP_DocumentAuthor),-PARTOF(GreekLetter),-PARTOF(NUM),-PARTOF(Lowercase),-PARTOF(Uppercase),-PARTOF(GreekLetter)} StraightDoubleQuotes{->MARK(ME_Double_Straight_Quote_to_Smart_Quote_End,2)} (SPACE|BREAK|Lowercase|Uppercase|PERIOD);
+                     ME_Double_Straight_Quote_to_Smart_Quote_End{->ME_Double_Straight_Quote_to_Smart_Quote_End.description="Change straight quote to smart quote."};
+                     BLOCK(foreach) ME_Double_Straight_Quote_to_Smart_Quote_End{}
+                     {
+                      ME_Double_Straight_Quote_to_Smart_Quote_End{->ME_Double_Straight_Quote_to_Smart_Quote_End.replace="”"};
+                     }                 
+                     RETAINTYPE;
+        //</span> 
+
+       //<span id="120" name="Double_Straight_Quote_to_Smart_Quote_Start"> 
+                     DECLARE ME_Double_Straight_Quote_to_Smart_Quote_Start(STRING replace,STRING description);
+                     RETAINTYPE(SPACE,BREAK);
+                     ANY{-PARTOF(Reference),-PARTOF(Abbrshortform),-PARTOF(DZC_AbbreviationExpansion),-PARTOF(DZP_Equation),-PARTOF(DZC_URL),-PARTOF(EMAIL),-PARTOF(DZP_ExtractText),-PARTOF(DZP_EndNotesText),-PARTOF(DZP_FootNotesText),-PARTOF(DZP_KeyTerms),-PARTOF(NewFrontContent),-PARTOF(FrontContent),-PARTOF(DZP_CorrespondenceInfo),-PARTOF(DZP_Affiliation),-PARTOF(DZP_DocumentAuthor),-PARTOF(ME_Double_Straight_Quote_to_Smart_Quote_Start),-PARTOF(GreekLetter),-PARTOF(NUM),-PARTOF(Lowercase),-PARTOF(Uppercase),-PARTOF(GreekLetter)} StraightDoubleQuotes{-PARTOF(ME_Double_Straight_Quote_to_Smart_Quote_End)->MARK(ME_Double_Straight_Quote_to_Smart_Quote_Start,2)};
+                     ME_Double_Straight_Quote_to_Smart_Quote_Start{->ME_Double_Straight_Quote_to_Smart_Quote_Start.description="Change straight quote to smart quote."};
+                     BLOCK(foreach) ME_Double_Straight_Quote_to_Smart_Quote_Start{}
+                     {
+                      ME_Double_Straight_Quote_to_Smart_Quote_Start{->ME_Double_Straight_Quote_to_Smart_Quote_Start.replace="“"};
+                     }                 
+                     RETAINTYPE;
+        //</span>                    
+
+       //<span id="122" name="Spaced hyphen">  
+                     // DECLARE RANGESPACING;
+                     DECLARE  CT_REPLACE_Spaced_hyphen( STRING replace,STRING description);
+                     Document{->RETAINTYPE(SPACE)};
+                     W SPACE (Hyphen) SPACE W {-PARTOF(DZ_ExcludeGrammarRules)->MARK(CT_REPLACE_Spaced_hyphen,3)};
+                     CT_REPLACE_Spaced_hyphen{-> CT_REPLACE_Spaced_hyphen.description="Change spaced hyphen to spaced en dash."};
+                     BLOCK(foreach)  CT_REPLACE_Spaced_hyphen{}
+                     {
+                       CT_REPLACE_Spaced_hyphen{-> CT_REPLACE_Spaced_hyphen.replace="–"};
+                     }                
+                     RETAINTYPE;                          
+       //</span>
+       //<span id="126" name="Rule_1">     
+                     DECLARE  CT_REPLACE_Cross_Ref_Casing( STRING replace,STRING description);
+                     W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("chapter|part|section|unit")} (NUM|Uppercase|Lowercase){->MARK(CT_REPLACE_Cross_Ref_Casing,1)};
+                     CT_REPLACE_Cross_Ref_Casing{-> CT_REPLACE_Cross_Ref_Casing.description="Change to title case."};
+                     BLOCK(foreach)  CT_REPLACE_Cross_Ref_Casing{}
+                     {
+                        STRING changeheading;
+                       CT_REPLACE_Cross_Ref_Casing{->MATCHEDTEXT(changeheading)};
+                       CT_REPLACE_Cross_Ref_Casing{IF(equalsIgnoreCase(changeheading,"chapter"))-> CT_REPLACE_Cross_Ref_Casing.replace="Chapter"};
+                       CT_REPLACE_Cross_Ref_Casing{IF(equalsIgnoreCase(changeheading,"part"))-> CT_REPLACE_Cross_Ref_Casing.replace="Part"};
+                       CT_REPLACE_Cross_Ref_Casing{IF(equalsIgnoreCase(changeheading,"section"))-> CT_REPLACE_Cross_Ref_Casing.replace="Section"};
+                       CT_REPLACE_Cross_Ref_Casing{IF(equalsIgnoreCase(changeheading,"unit"))-> CT_REPLACE_Cross_Ref_Casing.replace="Unit"};
+                      }                  
+                      //</span> 
+
+                    //<span id="127" name="Spellout Numbers"> 
+                    DECLARE ME_Spell_Out( STRING replace,STRING description);                         
+                    num{REGEXP(".")}  RankPosition{-PARTOF(DZ_ExcludeGrammarRules)->MARK(ME_Spell_Out,1,4)};
+                    ME_Spell_Out{->ME_Spell_Out.description="Spell out ordinals one to ninety-nine."};                         
+                    //</span>
+
+                     //<span id="128" name="Rule_1">    
+                     DECLARE  CT_REPLACE_Double_Hypyen( STRING replace,STRING description);
+                     (Hyphen Hyphen) ANY{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(Hyphen)->MARK( CT_REPLACE_Double_Hypyen,1)};
+                      CT_REPLACE_Double_Hypyen{-> CT_REPLACE_Double_Hypyen.description="Change double hyphens to em dash or spaced en dash."};
+                     
+                     BLOCK(foreach)  CT_REPLACE_Double_Hypyen{}
+                     {
+                       CT_REPLACE_Double_Hypyen{-> CT_REPLACE_Double_Hypyen.replace="—"};
+                     }                                      
+                     //</span>
+
+                     //<span id="129" name="Abbreviate_in_parenthesis"> 
+                     DECLARE  ME_Abbreviate_in_parenthesis( STRING replace,STRING description);
+                     DECLARE AbbreviationsExpand1,AbbreviationsExpand2,AbbreviationsExpand3;
+                     
+                     BLOCK(Brackt)  BRACKETCONTENT{}
+                     {
+                     (W{REGEXP("that",true)} W{REGEXP("is",true)}){-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(AbbreviationsExpand1)->MARK(AbbreviationsExpand1),MARK(ME_Abbreviate_in_parenthesis)};
+                     (W{REGEXP("for",true)} W{REGEXP("example",true)}){-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(AbbreviationsExpand2)->MARK(AbbreviationsExpand2),MARK(ME_Abbreviate_in_parenthesis)};
+                     (W{REGEXP("and",true)}  W{REGEXP("so",true)} W{-PARTOF(DZ_ExcludeGrammarRules),REGEXP("forth",true)}){-PARTOF(AbbreviationsExpand3)->MARK(AbbreviationsExpand3),MARK(ME_Abbreviate_in_parenthesis)};
+                     }
+                     BLOCK(foreach)  ME_Abbreviate_in_parenthesis{}
+                     {
+                        STRING abbreviationReplace;
+                        (AbbreviationsExpand1|AbbreviationsExpand2|AbbreviationsExpand3){->MATCHEDTEXT(abbreviationReplace)};
+                        ME_Abbreviate_in_parenthesis{IF(equalsIgnoreCase(abbreviationReplace,"that is"))-> ME_Abbreviate_in_parenthesis.replace="i.e."};
+                        ME_Abbreviate_in_parenthesis{IF(equalsIgnoreCase(abbreviationReplace,"for example"))-> ME_Abbreviate_in_parenthesis.replace="e.g."};
+                        ME_Abbreviate_in_parenthesis{IF(equalsIgnoreCase(abbreviationReplace," and so forth"))-> ME_Abbreviate_in_parenthesis.replace="etc."};
+                     }                       
+                     ME_Abbreviate_in_parenthesis{-> ME_Abbreviate_in_parenthesis.description="Abbreviate 'that is', 'for example', 'and so forth' in parenthesis."};                                    
+                      //</span>
+                      
+                     //<span id="130" name="Expand_in_running_text">    
+                     DECLARE  ME_Expand_in_running_text( STRING replace,STRING description);
+                     DECLARE AbbreviationsShort1,AbbreviationsShort2,AbbreviationsShort3;
+                     (W{REGEXP("i",true)} PERIOD W{REGEXP("e",true)} PERIOD){-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(BRACKETCONTENT),-PARTOF(AbbreviationsShort1)->MARK(AbbreviationsShort1),MARK(ME_Expand_in_running_text)};
+                     (W{REGEXP("e",true)} PERIOD W{REGEXP("g",true)} PERIOD){-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(BRACKETCONTENT),-PARTOF(AbbreviationsShort2)->MARK(AbbreviationsShort2),MARK(ME_Expand_in_running_text)};
+                     (W{REGEXP("etc",true)} PERIOD){-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(BRACKETCONTENT),-PARTOF(AbbreviationsShort3)->MARK(AbbreviationsShort3),MARK(ME_Expand_in_running_text)};
+                     BLOCK(foreach)  ME_Expand_in_running_text{}
+                     {
+                        STRING shortReplace;
+                        (AbbreviationsShort1|AbbreviationsShort2|AbbreviationsShort3){->MATCHEDTEXT(shortReplace)};
+                        ME_Expand_in_running_text{IF(equalsIgnoreCase(shortReplace,"i.e."))-> ME_Expand_in_running_text.replace="that is"};
+                        ME_Expand_in_running_text{IF(equalsIgnoreCase(shortReplace,"e.g."))-> ME_Expand_in_running_text.replace="for example"};
+                        ME_Expand_in_running_text{IF(equalsIgnoreCase(shortReplace,"etc."))-> ME_Expand_in_running_text.replace="so forth"};
+                     }                                      
+
+                      ME_Expand_in_running_text{-> ME_Expand_in_running_text.description="Expand 'e.g.', 'i.e.', 'etc' in running text."};
+                       //</span>
+   
+                    //<span id="131" name="Small_cap"> 
+                    DECLARE ME_Small_cap( STRING replace,STRING description);
+                    DZC_Abbreviation{-PARTOF(SmallCaps),PARTOF(CAP)->MARK(ME_Small_cap)};
+                    ME_Small_cap{-> ME_Small_cap.description="Abbreviations should be in small caps."};
+                    //</span>  
+
+                    //<span id="132" name="Chapter_title">
+                    DECLARE ME_Chapter_title( STRING replace,STRING description);
+                    BLOCK(foreach)  DZP_ChapterTitle{}
+                     {
+                     DZC_ChapterNumber{-PARTOF(FirstToken)} # {->MARK(ME_Chapter_title,1,2)};
+                     ME_Chapter_title{->ME_Chapter_title.description="Chapter title should be in this format: '1. The Legacy of Beethoven'."}; 
+                     } 
+                     //</span>  
+
+                      //<span id="133" name="Selected_bibliography">
+                      DECLARE BibliographyHead;
+                      DECLARE ME_Selected_bibliography( STRING replace,STRING description); 
+                      (W{REGEXP("Select",true)} W{REGEXP("Bibliography",true)}){-PARTOF(BibliographyHead)->MARK(BibliographyHead)};
+                      PassageandList{-PARTOF(DZ_ExcludeGrammarRules),IS(BibliographyHead)->MARK(ME_Selected_bibliography)};
+                      BLOCK(foreach)  ME_Selected_bibliography{}
+                      {
+                         ME_Selected_bibliography{-> ME_Selected_bibliography.replace="Selected Bibliography"};  
+                      } 
+                      ME_Selected_bibliography{-> ME_Selected_bibliography.description="Change Select Bibliography to Selected Bibliography."};
+                      //</span>
+
+                    //<span id="134" name="Web_address">  
+                    DECLARE ME_Web_address( STRING replace,STRING description);
+                    DZC_URL{PARTOF(I)->ME_Web_address};
+                    ME_Web_address{-> ME_Web_address.description="Do not italicize web addresses."};
+                    //</span>  
+
+                     //<span id="135" name="Punctuation_after_italics"> 
+                    DECLARE ME_Punctuation_after_italics( STRING replace,STRING description);
+                    W{PARTOF(I)} PM{PARTOF(I)} ANY{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(I)->MARK(ME_Punctuation_after_italics,2)};
+                    ME_Punctuation_after_italics{-> ME_Punctuation_after_italics.description="Set punctuation following italicized words in roman unless the punctuation belongs to a title or to the word it follows."};
+                     //</span>
+                     
+                     //<span id="136" name="Page_and_note_number"> 
+                    DECLARE ME_Page_and_note_number( STRING replace,STRING description);
+                    RETAINTYPE(SPACE);
+                    NUM SPACE?{-PARTOF(ME_Page_and_note_number)} W{REGEXP("N",true)} PERIOD{-PARTOF(ME_Page_and_note_number)} SPACE?{-PARTOF(ME_Page_and_note_number)} NUM{-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Page_and_note_number)->MARK(ME_Page_and_note_number,1,6)};
+                    RETAINTYPE;
+                    BLOCK(foreach)  ME_Page_and_note_number{}
+                    {
+                     ME_Page_and_note_number{->ME_Page_and_note_number.replace=" "};
+                    }
+                    ME_Page_and_note_number{-> ME_Page_and_note_number.description="When both the page and the note number appears, the period is omitted after the n and no space appears on either side (e.g., 102n4)."};
+                    DECLARE ME_Part_Number( STRING replace,STRING description);
+                    (UpperRoman|Uppercase|NumberinWord){-PARTOF(DZ_ExcludeGrammarRules),-PARTOF(ME_Part_Number),PARTOF(DZC_PartNumber)->MARK(ME_Part_Number)};
+                    ME_Part_Number{->ME_Part_Number.description="use arabic numerals for part numbers. In creative works, roman numerals are permissible only if the author insists."};             
+                     //</span>
+             
+       
+      
+                    
+//</category>                   
+
+
+
+     
+//</rule>                
