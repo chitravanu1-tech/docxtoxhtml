@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+<meta name="Generator" content="Microsoft Word 14 (filtered)"/>
+<style>
+
+/* Font Definitions */
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@PMingLiU";
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	color:#000000;
+}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	font-size:9.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+	span.msoIns
+	{mso-style-name:"msoIns";
+	text-decoration:underline;
+	color:#008080;}
+	span.msoDel
+	{mso-style-name:"msoDel";
+	text-decoration:line-through;
+	color:#FF0000;}
+	/* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+	span.MsoPlaceholderText
+	{color:#808080;}
+	span.MsoFootnoteReference
+{mso-style-noshow:yes;
+	mso-style-priority:99;
+	vertical-align:super;}
+	a.action_link
+{text-decoration: none;}
+ol.closeParen {
+counter-reset: list;
+text-indent: -0.8em;
+}
+ol.closeParen &gt; li {
+list-style: none;
+/*position:relative;*/
+}
+ol.closeParen &gt; li:before {
+counter-increment: list;
+content: counter(list) ") ";
+/*position: absolute;*/
+left: -1.4em;
+}
+ol.openParen &gt; li:before {
+counter-increment: list;
+content: "(" counter(list) "";
+/*position: absolute;*/
+left: -1.4em;
+}
+ol.openParen {
+counter-reset: list;
+text-indent: -0.8em;
+}
+ol.openParen &gt; li {
+list-style: none;
+/*position:relative;*/
+}
+ol.openSParen {
+counter-reset: list;
+text-indent: -0.8em;
+}
+ol.openSParen &gt; li {
+list-style: none;
+/*position:relative;*/
+}
+ol.openSParen &gt; li:before {
+counter-increment: list;
+content: "[" counter(list) "";
+/*position: absolute;*/
+left: -1.4em;
+}
+ol.closeSParen {
+counter-reset: list;
+text-indent: -0.8em;
+}
+ol.closeSParen &gt; li {
+list-style: none;
+/*position:relative;*/
+}
+ol.closeSParen &gt; li:before {
+counter-increment: list;
+content: counter(list) "] ";
+/*position: absolute;*/
+left: -1.4em;
+}
+ol.opencloseSParen {
+counter-reset: list;
+text-indent: -0.8em;
+}
+ol.opencloseSParen &gt; li {
+list-style: none;
+/*position:relative;*/
+}
+ol.opencloseSParen &gt; li:before {
+counter-increment: list;
+content: "[" counter(list) "] ";
+/*position: absolute;*/
+left: -1.4em;
+}
+ol.opencloseParen {
+counter-reset: list;
+text-indent: -0.8em;
+}
+ol.opencloseParen &gt; li {
+list-style: none;
+/*position:relative;*/
+}
+ol.opencloseParen &gt; li:before {
+counter-increment: list;
+content: "[" counter(list) "] ";
+/*position: absolute;*/
+left: -1.4em;
+}
+span.DUnderline { text-decoration:underline;
+border-bottom: 1px solid #000; }
+span.double-strike {
+position: relative;
+}
+span.double-strike div.the-lines {
+position: absolute;
+top: 10px; /* Depends on the font size */
+left: 0;
+border-top: 3px double black;
+width: 100%;
+height: 100%;}
+
+</style>
+</head>
+<link src="./ckeditor.css"/><body><document><StoryPreference OpticalMarginAlignment="false" OpticalMarginSize="12" FrameType="TextFrameType" StoryOrientation="Horizontal" StoryDirection="LeftToRightDirection"/><XMLElement Self="di3" MarkupTag="XMLTag/book" XMLContent="u340">
+<p class="PartNumber" data-name="PartNumber">PART ONE</p>
+<p class="PartTitle" data-name="PartTitle">Gynecologic Sonography</p>
+<p class="ChapterNumber" data-name="ChapterNumber">CHAPTER 1</p>
+<p class="ChapterTitle" data-name="ChapterTitle">Principles of Scanning Technique in Gynecologic Ultrasound</p>
+<p class="Head1" data-name="Head1">REVIEW OF GLOSSARY TERMS</p>
+<p class="Head2" data-name="Head2">Matching</p>
+<p class="Para-FL" data-name="Para-FL">Match the key terms with their definitions.</p>
+<p class="Head1" data-name="Head1"/>
+<p class="Head1" data-name="Head1"/><Table TableNumber="" Self="u340i3bd" HeaderRowCount="0" FooterRowCount="0" BodyRowCount="2" ColumnCount="2" AppliedTableStyle="TableStyle/$ID/[No table style]" TableDirection="LeftToRightDirection"><Row RowCellCount="2" RowNumber="0" Self="u340i3bdRow0" Name="0" SingleRowHeight="24.258071899414062" MinimumHeight="11" AutoGrow="true"/><Row RowCellCount="2" RowNumber="1" Self="u340i3bdRow1" Name="1" SingleRowHeight="369.8398666381836" MinimumHeight="11" AutoGrow="true"/><Column ColumnCellCount="2" Self="u340i3bdColumn0" Name="0" SingleColumnWidth="249"/><Column ColumnCellCount="2" Self="u340i3bdColumn1" Name="1" SingleColumnWidth="249"/><Cell RowName="0" ColumnName="0" CellNumber="" Self="u340i3bdi0" Name="0:0" RowSpan="1" ColumnSpan="1" AppliedCellStyle="CellStyle/UN-TableColumnHead1" AppliedCellStylePriority="0" LeftEdgeStrokePriority="1" RightEdgeStrokePriority="2" TopEdgeStrokePriority="1" BottomEdgeStrokePriority="85">
+<p class="UN-TableColumnHead1" data-name="UN-TableColumnHead1">KEY TERMS</p></Cell><Cell RowName="0" ColumnName="1" CellNumber="" Self="u340i3bdi1" Name="1:0" RowSpan="1" ColumnSpan="1" AppliedCellStyle="CellStyle/UN-TableColumnHead1" AppliedCellStylePriority="0" LeftEdgeStrokePriority="2" RightEdgeStrokePriority="2" TopEdgeStrokePriority="2" BottomEdgeStrokePriority="86">
+<p class="UN-TableColumnHead1" data-name="UN-TableColumnHead1">DEFINITION</p></Cell><Cell RowName="1" ColumnName="0" CellNumber="" Self="u340i3bdi2" Name="0:1" RowSpan="1" ColumnSpan="1" AppliedCellStyle="CellStyle/UN-TB-NumberList1" AppliedCellStylePriority="4" LeftEdgeStrokePriority="85" RightEdgeStrokePriority="86" TopEdgeStrokePriority="85" BottomEdgeStrokePriority="83">
+<GROUP>
+
+<one class="UN-TB-NumberList1_first" data-name="UN-TB-NumberList1_first" listtype="UN-TB-NumberList1_first" numberFormat="" numberType="" start="1">fundus</one>
+
+<one class="UN-TB-NumberList1" data-name="UN-TB-NumberList1" listtype="UN-TB-NumberList1" numberFormat="" numberType="" start="2">transabdominalelectronic medical record (EMR)picture archiving and communication system (PACS)transvaginal/endovaginalscanning protocolbioeffectsperivascular</one>
+
+<one class="UN-TB-NumberList1" data-name="UN-TB-NumberList1" listtype="UN-TB-NumberList1" numberFormat="" numberType="" start="1">ascitestransducer footprintadnexamodality worklist (MWL)lithotomy positionendocavityradiology information system (RIS)nongravidhospital information system (HIS)</one>
+</GROUP>
+</Cell><Cell RowName="1" ColumnName="1" CellNumber="" Self="u340i3bdi3" Name="1:1" RowSpan="1" ColumnSpan="1" AppliedCellStyle="CellStyle/UN-TB-NumberList1" AppliedCellStylePriority="5" LeftEdgeStrokePriority="86" RightEdgeStrokePriority="86" TopEdgeStrokePriority="86" BottomEdgeStrokePriority="86">
+<GROUP>
+
+<one class="UN-TB-Lc-AlphaList1_first" data-name="UN-TB-Lc-AlphaList1_first" listtype="UN-TB-Lc-AlphaList1_first" numberFormat="" numberType="" start="1">Area around an organ </one>
+
+<one class="UN-TB-Lc-AlphaList1" data-name="UN-TB-Lc-AlphaList1" listtype="UN-TB-Lc-AlphaList1" numberFormat="" numberType="" start="2">Fluid within the abdominal or pelvic cavityBiophysical results of the interaction of sound waves and tissueElectronic database containing all the patient informationInside a cavity such as the abdomen or pelvisTop portion of the uterusPaper-based or computerized system designed to manage hospital data, such as billing and patient recordsPosition of the patient with the feet in stirrups often used during deliveryElectronic list of patients entered into a modality, such as ultrasound, which helps reduce data-entry errorsNonpregnantAround the vesselsDatabase that stores radiologic imagesPhysical or electronic system designed to manage ­radiology data, such as billing, reports, and imagesList of images required for a complete examinationImaging through the abdomenArea of the transducer that comes in contact with the patient and emits ultrasoundWithin the vagina</one>
+</GROUP>
+</Cell></Table>
+<p class="Head1" data-name="Head1">CHAPTER REVIEW</p>
+<p class="Head2" data-name="Head2">Multiple Choice</p>
+<p class="Para-FL" data-name="Para-FL">Complete each question by circling the best answer.</p>
+<GROUP listtype="MultipleChoiceQuestionNL_first" numberFormat="1.	" numberType="1.	" start="1">
+
+<one class="MultipleChoiceQuestionNL_first" data-name="MultipleChoiceQuestionNL_first" listtype="MultipleChoiceQuestionNL_first" numberFormat="1.&#x9;" numberType="1.&#x9;" start="1">What hospital electronic system would a sonographer use to locate a list of patients on the ultrasound machine?</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">HIS</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">MWL</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">RIS</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">EMR</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="2.	" numberType="2.	" start="2">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="2.&#x9;" numberType="2.&#x9;" start="2">Pertinent clinical information for a pelvic sonographic examination may include:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">surgical history, patient age, last menstrual period (LMP), human chorionic gonadotropin (hCG) levels, prior delivery dates, gravidity, and parity</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">prior delivery dates, patient age, surgical history, gravidity, and history of pelvic procedures</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">parity, gravidity, symptoms, and pelvic history to include pelvic procedures and surgical history</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">LMP, symptoms, history of pelvic procedures, patient age, hCG levels, and accession number</two>
+</GROUP></GROUP>
+<p class="Para-FL" data-name="Para-FL"/>
+<p class="Para-FL" data-name="Para-FL">Sreekarthikeyan continues para test</p>
+<p class="Para-FL" data-name="Para-FL"/>
+<p class="Para-FL" data-name="Para-FL"/>
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="3.	" numberType="3.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="3.&#x9;" numberType="3.&#x9;" start="1">Parity is:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">the number of pregnancies a patient has had</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">the total number of spontaneous and induced abortions a patient has had</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">the number of pregnancies a patient carried to term</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">the total number of pregnancies a patient has had</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="4.	" numberType="4.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="4.&#x9;" numberType="4.&#x9;" start="1">A G4P3A1T3 female is explained as having:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">four total pregnancies, three pregnancies to term, and one induced abortion</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">four total pregnancies, three pregnancies to term, and one spontaneous abortion</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">three total pregnancies, one full-term pregnancy, one abortion, and currently pregnant with twins</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">four total pregnancies, three full-term pregnancies, and one abortion</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="5.	" numberType="5.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="5.&#x9;" numberType="5.&#x9;" start="1">Every sonographer should be familiar with ultrasound-related organizations and suggested scanning protocols for their profession. Choose the group that will not provide reliable pelvic sonographic scanning information.</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">AIUM</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">ACR</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">SDMS</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">ASE</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="6.	" numberType="6.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="6.&#x9;" numberType="6.&#x9;" start="1">An adequately filled bladder usually extends ____________ the fundus of a nongravid uterus.</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">slightly below</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">at the same level of</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">slightly beyond</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">approximately 4 cm superior to</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="7.	" numberType="7.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="7.&#x9;" numberType="7.&#x9;" start="1">Select the correct optimization technique.</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">Use a lower-frequency transducer for penetration.</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">Angle the sonographic beam parallel to the structure of interest.</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">Set focal zones 1 cm inferior to the structure of interest.</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">Choose a low-frequency transducer for superficial structures.</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="8.	" numberType="8.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="8.&#x9;" numberType="8.&#x9;" start="1">If a premenopausal female should prepare for a gynecologic ultrasound by drinking 32 ounces of water 1 hour before the examination, what preparation would be suggested for a 70-year old with vaginal bleeding?</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">No water preparation is needed</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">10 ounces</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">25 ounces</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">50 ounces</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="9.	" numberType="9.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="9.&#x9;" numberType="9.&#x9;" start="1">A 5.0-MHz transducer may not produce a diagnostic image on ______ patient.</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">a large habitus</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">an elderly</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">a thin</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">a young</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="10.	" numberType="10.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="10.&#x9;" numberType="10.&#x9;" start="1">Endovaginal optimal focal range is from:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">1 to 5 cm</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">2 to 7 cm</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">the internal os to the uterine fundus</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">the fornices to the uterine fundus</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="11.	" numberType="11.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="11.&#x9;" numberType="11.&#x9;" start="1">The most appropriate transducer for an obese patient having a gynecologic examination would be:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">2.5 MHz</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">5.0 MHz</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">7.5 MHz</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">15 MHz</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="12.	" numberType="12.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="12.&#x9;" numberType="12.&#x9;" start="1">Endovaginal transducers cannot be inserted past the area of the:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">external os</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">vaginal fornices</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">internal os</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">labia minora</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="13.	" numberType="13.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="13.&#x9;" numberType="13.&#x9;" start="1">Endovaginal ultrasound may not produce a diagnostic image in a patient:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">suspected of suffering with ovarian torsion</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">that is being monitored for follicle size/ovulation</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">scheduled for ova aspiration</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">with an enlarged leiomyomatous uterus</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="14.	" numberType="14.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="14.&#x9;" numberType="14.&#x9;" start="1">Select the incorrect statement. Transperineal scanning:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">is a safe option to replace endovaginal imaging in the case of pregnancy with ruptured membranes</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">is performed between the labia on the perineum</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">may be performed if a patient declines endovaginal scanning</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">images inferior to bowel gas, therefore, avoiding obstructive shadows</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="15.	" numberType="15.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="15.&#x9;" numberType="15.&#x9;" start="1">Prior to an endovaginal ultrasound, the transducer should be lubricated. Which lubricant is best for a patient being treated for infertility?</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">saline</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">none</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">K-Y jelly</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">coupling gel</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="16.	" numberType="16.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="16.&#x9;" numberType="16.&#x9;" start="1">The sonographer can adjust power levels and scan efficiently to minimize patient exposure levels. This is known as:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">AIUM</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">ARALA</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">ALARA</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">National Institute of Health (NIH) guidelines</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="17.	" numberType="17.	" start="1">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="17.&#x9;" numberType="17.&#x9;" start="1">Saline is often used as a sonographic contrast agent in gynecologic scanning to visualize the:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">uterine fundus and adnexas</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">fallopian tubes and endometrial cavity</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">fallopian tubes and adnexas</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">uterus and ovaries</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="18.	" numberType="18.	" start="18">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="18.&#x9;" numberType="18.&#x9;" start="18">Individuals choosing sonography as a profession should become certified. The gold standard certifying body is:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">ARRT</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">ARDMS</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">AIUM</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">RDMS</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="19.	" numberType="19.	" start="19">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="19.&#x9;" numberType="19.&#x9;" start="19">Higher frequency transducers provide:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">greater depth of penetration</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">greater width assessment in transverse</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">better resolution</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">inferior resolution</two>
+</GROUP></GROUP>
+
+<GROUP listtype="MultipleChoiceQuestionNL" numberFormat="20.	" numberType="20.	" start="20">
+
+<one class="MultipleChoiceQuestionNL" data-name="MultipleChoiceQuestionNL" listtype="MultipleChoiceQuestionNL" numberFormat="20.&#x9;" numberType="20.&#x9;" start="20">4D imaging uses:</one>
+
+
+<GROUP listtype="MCQ-Options" numberFormat="a. " numberType="a. " start="1">
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">dynamic static sections</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">STIC</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">X, Y, and Z planes</two>
+
+<two class="MCQ-Options" data-name="MCQ-Options" listtype="MCQ-Options" numberFormat="d.&#x9;" numberType="d.&#x9;" start="1">X, Y, and Z planes with the dimension of time</two>
+</GROUP></GROUP>
+<p class="Head2B" data-name="Head2B">Fill-in-the-Blank</p>
+<GROUP>
+
+<one class="QuestionNL1_first" data-name="QuestionNL1_first" listtype="QuestionNL1_first" numberFormat="1.&#x9;" numberType="1.&#x9;" start="1">Optimization of an examination reduces costs and adheres to the  principle in reducing exposure to ultrasound energy and decreasing patient discomfort.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="2.&#x9;" numberType="2.&#x9;" start="2">Prior to starting a patient sonographic examination, the sonographer should use  facility accepted identifiers to confirm the patient’s identification.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="3.&#x9;" numberType="3.&#x9;" start="1">A connected hospital can offer electronic systems such as HIS (), &#8232;RIS (), EMR (), and MWL (), which will make a sonographer’s job easier through the elimination of errors.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="4.&#x9;" numberType="4.&#x9;" start="1">A full urinary bladder is necessary for a(n)  diagnostic pelvic examination, and an empty urinary bladder is necessary for a(n)  diagnostic pelvic examination.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="5.&#x9;" numberType="5.&#x9;" start="1">Gel may be prepped for the patient gynecologic examination by placing the bottle in a  or a sink of . Do not use a microwave to heat gel because it may heat unevenly and explode.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="6.&#x9;" numberType="6.&#x9;" start="1"> refers to the number of previous pregnancies and includes the current gestation.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="7.&#x9;" numberType="7.&#x9;" start="1">Parity of 3 (P3) refers to the number of pregnancies a woman has carried to .</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="8.&#x9;" numberType="8.&#x9;" start="1">Overdistention of the bladder  and displaces the pelvic viscera.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="9.&#x9;" numberType="9.&#x9;" start="1">The best resolution occurs within the  zone of the transducer.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="10.&#x9;" numberType="10.&#x9;" start="1">Base your transducer choice on patient  and examination objectives.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="11.&#x9;" numberType="11.&#x9;" start="1"> array transducers combine the wider field of view of sector transducers with greater near-field visualization and increased linear measurement accuracy.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="12.&#x9;" numberType="12.&#x9;" start="1">If endovaginal scanning is contraindicated, the  approach may enable the sonographer to obtain images of the  and lower uterine segment.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="13.&#x9;" numberType="13.&#x9;" start="1">A 3D imaging method to image the fetal heart and display it in  orthogonal planes is &#8232;called .</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="14.&#x9;" numberType="14.&#x9;" start="1">Imaging with 2D, color, and spectral Doppler is called  imaging.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="15.&#x9;" numberType="15.&#x9;" start="1">Positioning the patient in a left or right  may be helpful in the case of a less than optimally filled bladder when examining the female pelvis.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="16.&#x9;" numberType="16.&#x9;" start="1">The  accredits practices that image obstetric, gynecologic, abdominal, and breast ultrasound. The  also accredits imaging laboratories.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="17.&#x9;" numberType="17.&#x9;" start="1">A hysterosalpingogram (HSG) uses  as a contrast agent.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="18.&#x9;" numberType="18.&#x9;" start="1">When imaging a solid ovarian mass, careful examination of the liver edge, flanks for , cul-de-sac, and  pouch is necessary.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="19.&#x9;" numberType="19.&#x9;" start="1">-filled structures enhance the transmission of sound.</one>
+
+<one class="QuestionNL1" data-name="QuestionNL1" listtype="QuestionNL1" numberFormat="20.&#x9;" numberType="20.&#x9;" start="1">A  is required on the endovaginal transducer to protect the patient.</one>
+</GROUP>
+
+<p class="Head2" data-name="Head2">Short Answer</p>
+<GROUP>
+
+<one class="QuestionNL1a_first" data-name="QuestionNL1a_first" listtype="QuestionNL1a_first" numberFormat="1.&#x9;" numberType="1.&#x9;" start="1">State pertinent clinical information that should be included in an ultrasound report.</one>
+
+<one class="QuestionNL1a" data-name="QuestionNL1a" listtype="QuestionNL1a" numberFormat="2.&#x9;" numberType="2.&#x9;" start="2">Explain how a mass should be imaged, measured, and characterized.</one>
+
+<one class="QuestionNL1a" data-name="QuestionNL1a" listtype="QuestionNL1a" numberFormat="3.&#x9;" numberType="3.&#x9;" start="1">Why is a filled bladder necessary for a transabdominal pelvic ultrasound, and an empty bladder crucial to an endovaginal pelvic ultrasound?</one>
+</GROUP>
+
+<p class="Head1" data-name="Head1">IMAGE EVALUATION/PATHOLOGY</p>
+<p class="Para-FL" data-name="Para-FL">Review the images and answer the following questions.</p>
+<GROUP listtype="QuestionNL1b_first" numberFormat="1.	" numberType="1.	" start="1">
+
+<one class="QuestionNL1b_first" data-name="QuestionNL1b_first" listtype="QuestionNL1b_first" numberFormat="1.&#x9;" numberType="1.&#x9;" start="1">Review the patient data-entry document.</one>
+
+
+<GROUP listtype="Question-Lc-AL2" numberFormat="a. " numberType="a. " start="1">
+
+<two class="Question-Lc-AL2" data-name="Question-Lc-AL2" listtype="Question-Lc-AL2" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">State the patient’s LMP.</two>
+
+<two class="Question-Lc-AL2" data-name="Question-Lc-AL2" listtype="Question-Lc-AL2" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">Name the type of examination performed on the patient.</two>
+
+<two class="Question-Lc-AL2" data-name="Question-Lc-AL2" listtype="Question-Lc-AL2" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">How many pregnancies has the patient had?</two>
+</GROUP></GROUP>
+
+<GROUP listtype="QuestionNL1b" numberFormat="2.	" numberType="2.	" start="2">
+
+<one class="QuestionNL1b" data-name="QuestionNL1b" listtype="QuestionNL1b" numberFormat="2.&#x9;" numberType="2.&#x9;" start="2">What type of imaging is seen in A–C? (Notice varying bladder appearances)</one>
+
+<one class="QuestionNL1b" data-name="QuestionNL1b" listtype="QuestionNL1b" numberFormat="3.&#x9;" numberType="3.&#x9;" start="1">Review the gynecologic report.</one>
+
+
+<GROUP listtype="Question-Lc-AL2" numberFormat="a. " numberType="a. " start="1">
+
+<two class="Question-Lc-AL2" data-name="Question-Lc-AL2" listtype="Question-Lc-AL2" numberFormat="a.&#x9;" numberType="a.&#x9;" start="1">What is the endometrial thickness in centimeters?</two>
+
+<two class="Question-Lc-AL2" data-name="Question-Lc-AL2" listtype="Question-Lc-AL2" numberFormat="b.&#x9;" numberType="b.&#x9;" start="1">State indication for report.</two>
+
+<two class="Question-Lc-AL2" data-name="Question-Lc-AL2" listtype="Question-Lc-AL2" numberFormat="c.&#x9;" numberType="c.&#x9;" start="1">State uterine dimensions.</two>
+</GROUP></GROUP>
+<p class="Head1" data-name="Head1">CASE STUDY</p>
+<p class="Para-FL" data-name="Para-FL">Review the cases and answer the following questions.</p>
+<GROUP>
+
+<one class="QuestionNL1b_first" data-name="QuestionNL1b_first" listtype="QuestionNL1b_first" numberFormat="1.&#x9;" numberType="1.&#x9;" start="1">A 72-year-old patient visited her gynecologist complaining of bleeding from the vagina for approximately 1 week. A urine test was performed for possible infection and hematuria. The test was negative for both. A gynecologic examination was attempted but not completed because of the severe pain it caused the patient due to a stricture in the vagina. She was then scheduled for a pelvic ultrasound. Describe what can be done to obtain optimal pelvic images.</one>
+
+<one class="QuestionNL1b" data-name="QuestionNL1b" listtype="QuestionNL1b" numberFormat="2.&#x9;" numberType="2.&#x9;" start="2">A 22-year-old G3P2A0 was admitted to ultrasound for a 7-week obstetric ultrasound for low pelvic pain. She consumed 32 ounces of water prior to the examination, but had nausea followed by vomiting, and was therefore not able to fill her bladder. Will the sonographer be able to produce diagnostic images?</one>
+</GROUP>
+</XMLElement></document>
+</body>
+</html>
